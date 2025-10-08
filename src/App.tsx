@@ -6,7 +6,7 @@ function App() {
     <>
       <GlobalStyle />
       <div className="global-container">
-        ola
+        GRUPO JPM
       </div>
 
     </>

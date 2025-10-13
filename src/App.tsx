@@ -1,14 +1,16 @@
+import { RouterProvider } from "react-router-dom";
 import { GlobalStyle } from "./assets/style/global"
+
+import { router } from "./router/AppRoutes";
+
 
 function App() {
 
   return (
     <>
       <GlobalStyle />
-      <div className="global-container">
-        GRUPO JPM
-      </div>
-
+      <RouterProvider router={router} />
+     
     </>
   )
 }

@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
-import { HeaderTopo } from "../Header/HeaderTopo";
+import { HeaderTop } from "../Header/HeaderTop";
 import { headerInfo } from "../Header/HeaderInfo";
+import { HeaderMain } from "../Header/HeaderMain";
 
 export const Layout = () => {
     return (
         <>
-         <HeaderTopo info={headerInfo} />  
+         <HeaderTop {...headerInfo} />  
+         <HeaderMain />
         <Outlet />
         </>
        

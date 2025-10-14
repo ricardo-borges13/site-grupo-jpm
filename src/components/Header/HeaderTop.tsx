@@ -8,24 +8,22 @@ export type HeaderProps = {
   email: string;
 };
 
-type HeaderTopoProps = {
-  info: HeaderProps;
-};
 
-export const HeaderTopo = ({ info }: HeaderTopoProps) => {
+
+export const HeaderTop = ( {text, phone, email} : HeaderProps) => {
   return (
     <S.Header>
       <S.Container>
         <div>
-          <p>{info.text}</p>
+          <p>{text}</p>
         </div>
         <div>
           <LiaPhoneAltSolid />
-          <p>{info.phone}</p>
+          <p>{phone}</p>
         </div>
         <div>
           <AiOutlineMail />
-          <p>{info.email}</p>
+          <p>{email}</p>
         </div>
       </S.Container>
     </S.Header>

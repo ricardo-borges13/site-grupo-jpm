@@ -9,7 +9,6 @@ export type HeaderProps = {
 };
 
 
-
 export const HeaderTop = ( {text, phone, email} : HeaderProps) => {
   return (
     <S.Header>

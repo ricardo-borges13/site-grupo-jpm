@@ -1,5 +1,7 @@
+import { CategoryBar } from "../../components/CategoryBar/CategoryBar"
+
 export const Empresa = () => {
     return(
-        <p>A EMPRESA</p>
+        <CategoryBar />
     )
 }

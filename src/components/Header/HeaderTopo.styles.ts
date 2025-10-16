@@ -22,7 +22,7 @@ export const Container = styled.div`
     gap: 0.5rem;
 
     svg {
-      font-size: 1rem;      
+      font-size: 1.1rem;      
     }
     
   }

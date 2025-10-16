@@ -14,15 +14,15 @@ export const HeaderTop = ( {text, phone, email} : HeaderProps) => {
     <S.Header>
       <S.Container>
         <div>
-          <p>{text}</p>
+          {text}
         </div>
         <div>
           <LiaPhoneAltSolid />
-          <p>{phone}</p>
+          {phone}
         </div>
         <div>
           <AiOutlineMail />
-          <p>{email}</p>
+          {email}
         </div>
       </S.Container>
     </S.Header>

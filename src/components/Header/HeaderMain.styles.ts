@@ -18,8 +18,8 @@ export const HeaderContent = styled.div`
 `;
 
 export const ContactButton = styled(Link)`
-  background: #f59e0b;
-  color: #fff;
+  background: #E89119;
+  color: #FFFDFD;
   font-weight: bold;
   padding: 0.8rem 1.4rem;
   min-width: 120px;
@@ -28,7 +28,8 @@ export const ContactButton = styled(Link)`
   transition: 0.3s;
 
   &:hover {
-    background: #d97706;
+    background: #F4C27B;
+    color: #121212;
   }  
 `;
 

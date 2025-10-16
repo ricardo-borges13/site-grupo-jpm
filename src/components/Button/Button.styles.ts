@@ -5,27 +5,29 @@ type ButtonVariant = "primary" | "secondary";
 export const StyledButton = styled.button<{ variant: ButtonVariant }>`
   padding: 0.8rem 1.4rem;
   border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
+  border-radius: 20px;
+  font-size: 1.3rem;  
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
   ${({ variant }) =>
     variant === "primary"
       ? css`
-          background-color: #007bff;
+          background-color: #E89119;
           color: #fff;
 
           &:hover {
-            background-color: #0069d9;
+            background-color: #F4C27B;
+            color: #121212;
           }
         `
       : css`
-          background-color: #e0e0e0;
-          color: #333;
+          background-color: #001837;
+          color: #FFFBFB;
 
           &:hover {
-            background-color: #d5d5d5;
+            background-color: #064391;
           }
         `}
 `;

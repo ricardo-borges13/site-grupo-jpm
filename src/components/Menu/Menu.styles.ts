@@ -41,13 +41,13 @@ export const MenuLink = styled(Link)`
     left: 0;
     width: 0%;
     height: 4px; /* espessura da linha */
-    background-color: #f59e0b; 
+    background-color: #E89119; 
     transition: width 0.3s ease;
     border-radius: 2px;
   }
 
   &:hover {
-    color: #f59e0b; 
+    color: #E89119; 
   }
 
  
@@ -84,7 +84,7 @@ export const SubmenuItem = styled.li`
 
     &:hover {
       background: #f9f9f9;
-      color: #f59e0b;
+      color: #E89119;
     }
   }
 `;

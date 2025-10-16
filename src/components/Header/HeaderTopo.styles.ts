@@ -1,11 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Header = styled.div`
-    background-color: #001837;
-    color: #FFFFFF;   
-    
-    font-size: 0.9rem;  
-`
+  background-color: #001837;
+  color: #ffffff;
+  font-size: 0.9rem;
+`;
 
 export const Container = styled.div`
   max-width: 1200px;
@@ -22,9 +21,8 @@ export const Container = styled.div`
     gap: 0.5rem;
 
     svg {
-      font-size: 1.1rem;      
+      font-size: 1.1rem;
     }
-    
   }
 
   /* o texto à esquerda ocupa o máximo possível */
@@ -32,7 +30,6 @@ export const Container = styled.div`
     flex: 1;
   }
 
-  
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -47,6 +44,4 @@ export const Container = styled.div`
       flex: unset;
     }
   }
-
-
-`
+`;

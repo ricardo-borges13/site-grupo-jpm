@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
         max-width: 100%;
         margin: 0;
-        font-family: "Inter", "Roboto", sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 16px;      
         color: #1A1A1A;  
     }

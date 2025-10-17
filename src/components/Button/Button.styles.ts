@@ -1,30 +1,43 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
-type ButtonVariant = "primary" | "secondary";
+type ButtonVariant = 'primary' | 'secondary';
+type HeightVariant = 'small' | 'large';
 
-export const StyledButton = styled.button<{ variant: ButtonVariant }>`
+export const StyledButton = styled.button<{
+  variant: ButtonVariant;
+  heightVariant?: HeightVariant;
+}>`
   padding: 0.8rem 1.4rem;
   border: none;
   border-radius: 20px;
-  font-size: 1.3rem;  
+  font-size: 1.3rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
-  ${({ variant }) =>
-    variant === "primary"
+${({ heightVariant }) =>
+    heightVariant === "small"
       ? css`
-          background-color: #E89119;
+          padding: 0.2rem 1.8rem;
+        `
+      : css`
+          padding: 0.8rem 1.4rem;
+        `}
+
+  ${({ variant }) =>
+    variant === 'primary'
+      ? css`
+          background-color: #e89119;
           color: #fff;
 
           &:hover {
-            background-color: #F4C27B;
+            background-color: #f4c27b;
             color: #121212;
           }
         `
       : css`
           background-color: #001837;
-          color: #FFFBFB;
+          color: #fffbfb;
 
           &:hover {
             background-color: #064391;

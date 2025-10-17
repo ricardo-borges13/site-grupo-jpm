@@ -43,6 +43,12 @@ export const ImagesArea = styled.div`
     object-fit: cover;
     border-radius: 20px;
     width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
   }
 
   img:first-child {    

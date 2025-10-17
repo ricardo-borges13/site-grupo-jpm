@@ -4,11 +4,12 @@ import image1 from '../../assets/images/TecnicoEletrica.jpg';
 import image2 from '../../assets/images/automacao.jpg';
 import image3 from '../../assets/images/fioeletrico.jpg';
 import image4 from '../../assets/images/mangueira1.jpg';
-import image5 from '../../assets/images/manutencao1.jpg'
+import image5 from '../../assets/images/manutencao1.jpg';
 import { SectionInfo } from '../../components/Sections/SectionInfo';
 import type { SectionInfoProps } from '../../components/Sections/SectionInfo';
 import { ProductGroup } from '../../components/ProductGroup/ProdutctGroup';
-import * as S from './Home.styles'
+import * as S from './Home.styles';
+import { ClientsCarousel } from '../../components/ClientsCarousel/ClientsCarousel';
 
 const sobreData: SectionInfoProps = {
   title: 'Sobre o Grupo JPM',
@@ -27,12 +28,22 @@ const sobreData: SectionInfoProps = {
 export const Home = () => {
   return (
     <div>
-      <S.ContainterCarousel >
+      <S.ContainterCarousel>
         <CarouselComponent />
       </S.ContainterCarousel>
       <CategoryBar />
       <SectionInfo {...sobreData} />
-      <ProductGroup title='Nossos Produtos' image1={image3} image2={image4} image3={image2} image4={image5} />
+      <ProductGroup
+        title="Nossos Produtos"
+        image1={image3}
+        image2={image4}
+        image3={image2}
+        image4={image5}
+      />
+      <S.CarouselParceiros>
+        <h2>Parceiros</h2>
+        <ClientsCarousel />
+      </S.CarouselParceiros>
     </div>
   );
 };

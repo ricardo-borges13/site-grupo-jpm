@@ -1,15 +1,36 @@
 import { Menu } from '../Menu/Menu';
 import * as S from './HeaderMain.styles';
 import logo from '../../assets/images/LogoJPM.png';
+import { useEffect, useState } from "react";
+import { FiMenu, FiX } from 'react-icons/fi';
 
 export const HeaderMain = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30); // muda o estado ao rolar
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <S.HeaderContainer>
+    <S.HeaderContainer $isScrolled={isScrolled}>
       <S.HeaderContent>
-        <S.Image src={logo} alt="Logo" />
+        <S.Image src={logo} alt="Logo" $isScrolled={isScrolled}/>
         <S.MenuWrapper>
-          <Menu />
-          <S.ContactButton to="/contato">Entre em Contato</S.ContactButton>
+          <S.MenuToggle onClick={() => setMenuOpen(!menuOpen)}>
+             {menuOpen ? <FiX /> : <FiMenu />}
+          </S.MenuToggle>
+
+          <S.MenuContainer $open={menuOpen}>
+            <Menu />
+          </S.MenuContainer>
+            <S.ContactButton to="/contato">Entre em Contato</S.ContactButton>
+
         </S.MenuWrapper>
       </S.HeaderContent>
     </S.HeaderContainer>

@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #001837;
   color: #ffffff;
   font-size: 0.9rem;
+  z-index: 1100; /* acima do HeaderMain */
 `;
 
 export const Container = styled.div`
@@ -34,7 +39,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0.5rem;
+    gap: 0;
+    font-size: 0.7rem;
 
     > div {
       justify-content: center;

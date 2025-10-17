@@ -6,9 +6,18 @@ export const Nav = styled.nav`
   align-items: center;
   gap: 4rem;
 
-  @media (max-width: 580px) {
-    display: none
-  }
+@media (max-width: 1045px) {
+gap: 2.5rem;
+}
+
+@media (max-width: 960px) {
+gap: 1rem;
+}
+
+  @media (max-width: 781px) {
+  align-items: center;
+  gap: 0.8rem;
+}
 `;
 
 export const MenuItem = styled.div`
@@ -23,7 +32,6 @@ export const MenuItem = styled.div`
   &:hover > a::before {
     width: 100%;
   }
-
 `;
 
 export const MenuLink = styled(Link)`
@@ -41,20 +49,13 @@ export const MenuLink = styled(Link)`
     left: 0;
     width: 0%;
     height: 4px; /* espessura da linha */
-    background-color: #E89119; 
+    background-color: #E89119;
     transition: width 0.3s ease;
     border-radius: 2px;
   }
 
   &:hover {
-    color: #E89119; 
-  }
-
- 
-    @media (max-width: 768px) {
-    display: block;
-    width: 100%;
-    padding: 0.4rem 0;
+    color: #E89119;
   }
 `;
 
@@ -69,7 +70,7 @@ export const Submenu = styled.ul`
   list-style: none;
   padding: 0.5rem 0;
   min-width: 220px;
-  z-index: 100;  
+  z-index: 100;
 `;
 
 export const SubmenuItem = styled.li`

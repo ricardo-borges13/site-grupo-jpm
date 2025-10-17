@@ -8,6 +8,7 @@ import image5 from '../../assets/images/manutencao1.jpg'
 import { SectionInfo } from '../../components/Sections/SectionInfo';
 import type { SectionInfoProps } from '../../components/Sections/SectionInfo';
 import { ProductGroup } from '../../components/ProductGroup/ProdutctGroup';
+import * as S from './Home.styles'
 
 const sobreData: SectionInfoProps = {
   title: 'Sobre o Grupo JPM',
@@ -26,9 +27,9 @@ const sobreData: SectionInfoProps = {
 export const Home = () => {
   return (
     <div>
-      <div className="global-container">
+      <S.ContainterCarousel >
         <CarouselComponent />
-      </div>
+      </S.ContainterCarousel>
       <CategoryBar />
       <SectionInfo {...sobreData} />
       <ProductGroup title='Nossos Produtos' image1={image3} image2={image4} image3={image2} image4={image5} />

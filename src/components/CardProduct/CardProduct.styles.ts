@@ -9,15 +9,16 @@ export const Card = styled.div<{ side: 'left' | 'right' }>`
   side === 'right' ? '100% 0 0 100%' : '0 100% 100% 0'};
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.55);
    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+
        &:hover {
       transform: scale(1.03);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
        }
 
-  img {    
+  img {
     height: 270px;
     object-fit: cover;
+
   }
 `;
 
@@ -28,7 +29,7 @@ export const Content = styled.div`
   width: 100%;
   text-align: center;
   color: #fff;
- 
+
 
   h3 {
     margin-bottom: 130px;

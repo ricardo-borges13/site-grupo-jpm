@@ -1,8 +1,8 @@
 import * as S from './Footer.styles';
-import { LiaPhoneAltSolid } from 'react-icons/lia';
-import { AiOutlineMail } from 'react-icons/ai';
+import { BiSolidPhoneOutgoing } from 'react-icons/bi';
+import { MdEmail } from "react-icons/md";
 import logo from '../../assets/images/LogoJPMBranco.png';
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -34,13 +34,17 @@ export const Footer = () => {
           <h4>Contato</h4>
           <address>
             <span>
-            <LiaPhoneAltSolid /> (31) 3292-4650
-          </span>
-          <span>
-            <AiOutlineMail /> sac@grupojpm.com.br
-          </span>
+              <S.Icone>
+                <BiSolidPhoneOutgoing /> (31) 3292-4650
+              </S.Icone>
+            </span>
+            <span>
+              <S.Icone>
+                {' '}
+               <MdEmail /> sac@grupojpm.com.br{' '}
+              </S.Icone>
+            </span>
           </address>
-
         </S.FooterColumn>
 
         <S.FooterColumn>
@@ -54,7 +58,9 @@ export const Footer = () => {
         </S.FooterColumn>
       </S.FooterContent>
       <S.FooterBottom>
-        <span>JPM - Todos os direitos reservados | Desenvolvido por Invetec</span>
+        <span>
+          JPM - Todos os direitos reservados | Desenvolvido por Invetec
+        </span>
       </S.FooterBottom>
     </S.FooterContainer>
   );

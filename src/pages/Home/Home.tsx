@@ -1,15 +1,17 @@
 import { CarouselComponent } from '../../components/Carousel/Corousel';
 import { CategoryBar } from '../../components/CategoryBar/CategoryBar';
 import image1 from '../../assets/images/TecnicoEletrica.jpg';
-import image2 from '../../assets/images/automacao.jpg';
+import image2 from '../../assets/images/rolo-borracha.jpg';
 import image3 from '../../assets/images/fioeletrico.jpg';
 import image4 from '../../assets/images/mangueira1.jpg';
 import image5 from '../../assets/images/manutencao1.jpg';
+import image6 from '../../assets/images/automacao.jpg';
 import { SectionInfo } from '../../components/Sections/SectionInfo';
 import type { SectionInfoProps } from '../../components/Sections/SectionInfo';
 import { ProductGroup } from '../../components/ProductGroup/ProdutctGroup';
 import * as S from './Home.styles';
 import { ClientsCarousel } from '../../components/ClientsCarousel/ClientsCarousel';
+import { FormContact } from '../../components/FormContact/FormContact';
 
 const sobreData: SectionInfoProps = {
   title: 'Sobre o Grupo JPM',
@@ -37,13 +39,14 @@ export const Home = () => {
         title="Nossos Produtos"
         image1={image3}
         image2={image4}
-        image3={image2}
+        image3={image6}
         image4={image5}
       />
       <S.CarouselParceiros>
         <h2>Parceiros</h2>
         <ClientsCarousel />
       </S.CarouselParceiros>
+      <FormContact />
     </div>
   );
 };

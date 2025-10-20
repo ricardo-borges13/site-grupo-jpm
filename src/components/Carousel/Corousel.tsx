@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import video from '../../../public/videos/file.mp4';
 import banner1 from '../../assets/images/BannerJPM1.jpg'
+import * as S from './Carousel.styles'
 
 export function CarouselComponent() {
   return (
@@ -20,8 +21,10 @@ export function CarouselComponent() {
         </video>
 
         <Carousel.Caption>
-          <h3>Suprimentos Industriais</h3>
-          <p>Produtos de alta qualidade para sua empresa.</p>
+          <S.Caption>
+          <h1>Suprimentos Industriais</h1>
+          <h4>Borrachas & Materiais Elétricos.</h4>
+          </S.Caption>
         </Carousel.Caption>
       </Carousel.Item>
 

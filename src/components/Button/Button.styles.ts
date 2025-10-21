@@ -27,11 +27,11 @@ ${({ heightVariant }) =>
   ${({ variant }) =>
     variant === 'primary'
       ? css`
-          background-color: #e89119;
+          background: linear-gradient(32deg, rgb(237, 116, 50) 0%, rgb(254, 170, 18) 100%) !important;
           color: #fff;
 
           &:hover {
-            background-color: #f4c27b;
+            background: #f4c27b;
             color: #121212;
           }
         `

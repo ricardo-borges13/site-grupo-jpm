@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center; 
-  padding: 15px 0;   
+  justify-content: center;
+  padding: 15px 0;
 `;
 
 export const Inner = styled.div`
   width: 100%;
-  max-width: 1300px; /* controla a largura máxima */
+  max-width: 1200px;
   background: #eef2f7;
   border-radius: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
   0 8px 12px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-around;
@@ -50,11 +50,11 @@ export const Label = styled.span`
 `;
 
 export const Divider = styled.div`
-  width: 1px;
-  height: 35px;
+  width: 3px;
+  height: 45px;
   background-color: #aaa;
 
   @media (max-width: 768px) {
-    display: none; /* esconde divisores em telas pequenas */
+    display: none;
   }
 `;

@@ -21,10 +21,10 @@ export const ProductGroup = ({
       <h2>{title}</h2>
       <S.ImagesArea>
         <CardProduto image={image1} title="Materiais Elétricos" side="left" />
-        <CardProduto image={image2} title="Borracha" side="right" />
+        <CardProduto image={image2} title="Borrachas" side="right" />
         <CardProduto image={image3} title="Automação Industrial" side="left" />
         <CardProduto image={image4} title="Acessórios de Manutenção" side="right" />
-        
+
       </S.ImagesArea>
     </S.wrapper>
   );

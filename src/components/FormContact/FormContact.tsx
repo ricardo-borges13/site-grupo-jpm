@@ -43,8 +43,8 @@ export const FormContact = () => {
 
       if (response.ok) {
         toast.success(
-          "Mensagem enviada com sucesso! 🎉 Agradecemos o contato e responderemos em breve.",
-          { duration: 4000 }
+          "Mensagem enviada com sucesso! 🎉 Em breve entraremos em contato",
+          { duration: 5000 }
         );
         reset();
       } else {
@@ -78,7 +78,7 @@ export const FormContact = () => {
           },
         }}
       />
-      
+
       <form>
         <S.FieldGroup>
           <div style={{ flex: 1 }}>
@@ -91,14 +91,14 @@ export const FormContact = () => {
           </div>
 
           <div style={{ flex: 1 }}>
-            <label>Empresa *</label>
+            <label>Empresa</label>
             <S.Input
               placeholder="Empresa"
-              {...register("empresa", { required: "A empresa é obrigatória." })}
+              {...register("empresa")}
             />
-            {errors.empresa && (
+            {/* {errors.empresa && (
               <S.ErrorMessage>{errors.empresa.message}</S.ErrorMessage>
-            )}
+            )} */}
           </div>
         </S.FieldGroup>
 
@@ -131,7 +131,8 @@ export const FormContact = () => {
         {/* Assunto */}
         <div>
           <label>Assunto</label>
-          <S.Input placeholder="Assunto" {...register("assunto")} />
+          <S.Input placeholder="Assunto" {...register("assunto",{required: "O Assunto é obrigatório"})} />
+          {errors.assunto && <S.ErrorMessage>{errors.assunto.message}</S.ErrorMessage>}
         </div>
 
         {/* Mensagem */}

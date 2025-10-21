@@ -44,18 +44,35 @@ width: 100%;
 `;
 
 export const ContactButton = styled(Link)`
-  background: #E89119;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(32deg, rgb(237, 116, 50) 0%, rgb(254, 170, 18) 100%) !important;
   color: #FFFDFD;
-  font-weight: bold;
-  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
   min-width: 120px;
-  border-radius: 20px;
+  border-radius: 50px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 
   &:hover {
     background: #F4C27B;
     color: #121212;
+  }
+
+  .arrow {
+    transform: translateX(2px); /* empurra levemente a seta à direita */
+    transition: transform 0.2s ease;
+  }
+
+  &:hover .arrow {
+    transform: translateX(6px); /* anima a seta ao passar o mouse */
+  }
+
+  &:hover {
+    opacity: 0.9;
   }
 
   @media (max-width: 1051px) {

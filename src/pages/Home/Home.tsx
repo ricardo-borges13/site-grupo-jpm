@@ -1,17 +1,17 @@
-import { CarouselComponent } from '../../components/Carousel/Corousel';
+import { CarouselComponent } from '../../components/Carousel/Carousel';
 import { CategoryBar } from '../../components/CategoryBar/CategoryBar';
 import image1 from '../../assets/images/TecnicoEletrica.jpg';
-import image2 from '../../assets/images/rolo-borracha.jpg';
+import image2 from '../../assets/images/tubos-de-construcao2-freepik.jpg';
 import image3 from '../../assets/images/fioeletrico.jpg';
 import image4 from '../../assets/images/mangueira1.jpg';
 import image5 from '../../assets/images/manutencao1.jpg';
-import image6 from '../../assets/images/automacao.jpg';
-import { SectionInfo } from '../../components/Sections/SectionInfo';
-import type { SectionInfoProps } from '../../components/Sections/SectionInfo';
+import image6 from '../../assets/images/automação2-freepik.jpg';
+import { SectionInfo } from '../../components/SectionsSobre/SectionInfo';
+import type { SectionInfoProps } from '../../components/SectionsSobre/SectionInfo';
 import { ProductGroup } from '../../components/ProductGroup/ProdutctGroup';
 import * as S from './Home.styles';
 import { ClientsCarousel } from '../../components/ClientsCarousel/ClientsCarousel';
-import { FormContact } from '../../components/FormContact/FormContact';
+import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 
 const sobreData: SectionInfoProps = {
   title: 'Sobre o Grupo JPM',
@@ -42,11 +42,11 @@ export const Home = () => {
         image3={image6}
         image4={image5}
       />
-      <S.CarouselParceiros>
+      <SectionsContactus />
+       <S.CarouselParceiros>
         <h2>Parceiros</h2>
         <ClientsCarousel />
       </S.CarouselParceiros>
-      <FormContact />
     </div>
   );
 };

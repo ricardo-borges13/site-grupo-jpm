@@ -15,5 +15,5 @@ export const menuItems = [
       { title: 'Automação', path: '/produtos/automacao' },
     ],
   },
-  { id: 4, title: 'Trabalhe Conosco' },
+  { id: 4, title: 'Trabalhe Conosco', path: '/trabalheconosco' },
 ];

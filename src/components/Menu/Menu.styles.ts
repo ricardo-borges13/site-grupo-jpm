@@ -59,18 +59,22 @@ export const MenuLink = styled(Link)`
   }
 `;
 
-export const Submenu = styled.ul`
-  display: none;
+export const Submenu = styled.ul<{ isOpen?: boolean }>`
+  opacity: ${props => (props.isOpen ? 1 : 0)};
+  transform: ${props => (props.isOpen ? 'translateY(0)' : 'translateY(-10px)')};
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  pointer-events: ${props => (props.isOpen ? 'auto' : 'none')};
+
   position: absolute;
   top: 100%;
   left: 0;
   background: #dfdedeff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   list-style: none;
   padding: 0.5rem 0;
   min-width: 220px;
-  z-index: 100;
+  z-index: 1000;
 `;
 
 export const SubmenuItem = styled.li`
@@ -81,7 +85,7 @@ export const SubmenuItem = styled.li`
     padding: 0.6rem 1rem;
     color: #333;
     text-decoration: none;
-    transition: background 0.3s;
+      transition: background-color 0.4s ease;
 
     &:hover {
       background: #f9f9f9;

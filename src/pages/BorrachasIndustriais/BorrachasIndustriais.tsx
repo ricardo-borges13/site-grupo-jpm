@@ -1,6 +1,6 @@
 import { PageSection } from '../../components/PageSection/PageSection'
 import * as S from './BorrachasIndustriais.styles'
-import image from '../../assets/images/Banner-TrabalheConosco.png'
+import image from '../../assets/images/Banner-PagesBorracha.png'
 
 
 

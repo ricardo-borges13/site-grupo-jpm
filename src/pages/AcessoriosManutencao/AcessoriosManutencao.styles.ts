@@ -26,6 +26,12 @@ export const Container = styled.div`
 
   section {
     margin-bottom: 2.5rem;
+     h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #d49b09;
+      margin-bottom: 1rem;
+    }
 
     h2 {
       font-size: 1.4rem;

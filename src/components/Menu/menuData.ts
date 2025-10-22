@@ -6,10 +6,10 @@ export const menuItems = [
     title: 'Produtos',
     path: '/produtos',
     submenu: [
-      { title: 'Produtos Elétricos', path: '/produtos/eletricos' },
+      { title: 'Materiais Elétricos', path: '/produtos/eletricos' },
       {
         title: 'Borrachas Industriais',
-        path: '/produtos/borrachasindustriais',
+        path: '/produtos/borrachas',
       },
       { title: 'Acessórios para Manutenção', path: '/produtos/acessorios' },
       { title: 'Automação', path: '/produtos/automacao' },

@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { CarouselComponent } from '../../components/Carousel/Carousel';
 import { CategoryBar } from '../../components/CategoryBar/CategoryBar';
 import image1 from '../../assets/images/TecnicoEletrica.jpg';
@@ -28,6 +30,16 @@ const sobreData: SectionInfoProps = {
 };
 
 export const Home = () => {
+   const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo === 'produtos') {
+      const section = document.getElementById('produtos');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
   return (
     <div>
       <S.ContainterCarousel>
@@ -35,13 +47,16 @@ export const Home = () => {
       </S.ContainterCarousel>
       <CategoryBar />
       <SectionInfo {...sobreData} />
-      <ProductGroup
+      <section id='produtos'>
+         <ProductGroup
         title="Nossos Produtos"
         image1={image3}
         image2={image4}
         image3={image6}
         image4={image5}
       />
+      </section>
+
       <SectionsContactus />
        <S.CarouselParceiros>
         <h2>Parceiros</h2>

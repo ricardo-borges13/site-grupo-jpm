@@ -9,7 +9,10 @@ import { useNavigate } from "react-router-dom";
 export const HeaderMain = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-   const navigate = useNavigate();
+  const navigate = useNavigate();
+
+
+
 
   useEffect(() => {
     const handleScroll = () => {

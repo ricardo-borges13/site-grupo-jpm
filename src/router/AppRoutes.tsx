@@ -5,6 +5,7 @@ import { Layout } from "../components/Layout/Layout";
 import { Produtos } from "../pages/Produtos/Produtos";
 import { Empresa } from "../pages/Empresa/Empresa";
 import { TrabalheConosco } from "../pages/TrabalheConosco/TrabalheConosco"
+import { EntreEmContato } from "../pages/EntreEmContato/EntreEmContato";
 
 
 export const router = createBrowserRouter([
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
             },
             { path: "/produtos", element: <Produtos /> },
             { path: "/trabalheconosco", element: <TrabalheConosco /> },
+            { path: "/contato", element: <EntreEmContato /> },
             {
                 path: "*",
                 element: <NotFound />

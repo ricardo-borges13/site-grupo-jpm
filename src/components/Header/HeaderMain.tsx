@@ -4,10 +4,12 @@ import logo from '../../assets/images/LogoJPM.png';
 import { useEffect, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaAngleRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export const HeaderMain = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+   const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +32,7 @@ export const HeaderMain = () => {
           <S.MenuContainer $open={menuOpen}>
             <Menu />
           </S.MenuContainer>
-          <S.ContactButton to="/contato">
+          <S.ContactButton onClick={() => navigate('/contato')}>
             Entre em Contato
             {<FaAngleRight  size={16}  className='arrow' />}
           </S.ContactButton>

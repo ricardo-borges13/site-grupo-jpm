@@ -17,16 +17,16 @@ export const PageSection = ({
   return (
     <>
       <S.SectionWrapper>
-
         {/* --- Lado esquerdo com título --- */}
         <S.Left bgColor={bgColor}>
           <motion.h1
-            initial={{ y: 20, opacity: 0 }}
+            initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
-              type: 'spring',
-              stiffness: 70,
-              damping: 15,
+              type: 'tween',
+              duration: 2.5, // mais tempo = mais lento
+              ease: 'easeOut', // suaviza o final
+              delay: 0.5,
             }}
           >
             {title}

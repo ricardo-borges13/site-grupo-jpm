@@ -13,7 +13,7 @@ export const Content = styled.div`
   width: 100%;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 2rem;
   padding-left: 80px;

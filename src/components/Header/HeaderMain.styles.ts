@@ -43,10 +43,11 @@ width: 100%;
   }
 `;
 
-export const ContactButton = styled(Link)`
+export const ContactButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: none;
   gap: 10px;
   background: linear-gradient(32deg, rgb(237, 116, 50) 0%, rgb(254, 170, 18) 100%) !important;
   color: #FFFDFD;

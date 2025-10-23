@@ -14,6 +14,7 @@ import { ProductGroup } from '../../components/ProductGroup/ProdutctGroup';
 import * as S from './Home.styles';
 import { ClientsCarousel } from '../../components/ClientsCarousel/ClientsCarousel';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
+import { SEO } from '../../components/SEO/Seo';
 
 const sobreData: SectionInfoProps = {
   title: 'Sobre o Grupo JPM',
@@ -30,7 +31,7 @@ const sobreData: SectionInfoProps = {
 };
 
 export const Home = () => {
-   const location = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     if (location.state?.scrollTo === 'produtos') {
@@ -41,27 +42,32 @@ export const Home = () => {
     }
   }, [location]);
   return (
-    <div>
+    <>
+        <SEO
+          title="GRUPO JPM Borrachas e Materiais Elétricos"
+          description="Especialista em borrachas, materiais elétricos e automação industrial desde 1997. Soluções completas para manutenção e produção em diversos setores."
+        />
+
       <S.ContainterCarousel>
         <CarouselComponent />
       </S.ContainterCarousel>
       <CategoryBar />
       <SectionInfo {...sobreData} />
-      <section id='produtos'>
-         <ProductGroup
-        title="Nossos Produtos"
-        image1={image3}
-        image2={image4}
-        image3={image6}
-        image4={image5}
-      />
+      <section id="produtos">
+        <ProductGroup
+          title="Nossos Produtos"
+          image1={image3}
+          image2={image4}
+          image3={image6}
+          image4={image5}
+        />
       </section>
 
       <SectionsContactus />
-       <S.CarouselParceiros>
+      <S.CarouselParceiros>
         <h2>Parceiros</h2>
         <ClientsCarousel />
       </S.CarouselParceiros>
-    </div>
+    </>
   );
 };

@@ -13,7 +13,7 @@ export const FooterContent = styled.div`
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
   align-items: start;
-  padding: 0.5rem 1rem 0rem 4rem;
+  padding: 0.5rem 3rem 0rem 0;
 
   @media (max-width: 915px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;

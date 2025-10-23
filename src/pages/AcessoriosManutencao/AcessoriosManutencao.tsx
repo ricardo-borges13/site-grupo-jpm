@@ -8,61 +8,44 @@ export const AcessoriosManutencao = () => {
     <PageSection title="ACESSÓRIOS PARA MANUTENÇÃO INDUSTRIAL" image={image}>
       <S.Container>
         <header>
-          <h1>Diversos</h1>
+          <h2>Suprimentos e Acessórios Industriais</h2>
           <p>
-            Além de um mix completo de produtos elétricos, produtos para
-            automação e borrachas industriais, a JPM conta com os mais variados
-            suprimentos, marcas e especificações técnicas.
+            Além de um amplo mix de <strong>produtos elétricos</strong>, itens
+            para <strong>automação</strong> e
+            <strong> borrachas industriais</strong>, a <strong>JPM</strong>{' '}
+            oferece uma linha completa de
+            <strong> acessórios para manutenção industrial</strong>, com as mais
+            diversas marcas, especificações técnicas e alto padrão de qualidade.
           </p>
         </header>
 
         <section>
-          <h2>Acessórios Industriais</h2>
+          <h3>Acessórios Industriais</h3>
           <ul>
-            <li>
-              <strong>Correntes de elo</strong>
-            </li>
-            <li>
-              <strong>Correntes de transmissão</strong>
-            </li>
-            <li>
-              <strong>Cintas de elevação</strong>
-            </li>
-            <li>
-            <strong>Conexões</strong>
-            </li>
-            <li>
-              <strong>Rodas e rodízios</strong>
-            </li>
-            <li>
-              <strong>Rolamentos</strong>
-            </li>
-            <li>
-              <strong>Retentores</strong>
-            </li>
-            <li>
-              <strong>Pregos/Grampos(martelo pneumático)</strong>
-            </li>
-            <li>
-              <strong>Manômetros</strong>
-            </li>
-            <li>
-              <strong>Fitas adesivas</strong>
-            </li>
-            <li>
-              <strong>Plástico bolha</strong>
-            </li>
-            <li>
-              <strong>Lonas/Encerados</strong>
-            </li>
+            <li>Correntes de elo</li>
+            <li>Correntes de transmissão</li>
+            <li>Cintas de elevação</li>
+            <li>Conexões</li>
+            <li>Rodas e rodízios</li>
+            <li>Rolamentos</li>
+            <li>Retentores</li>
+            <li>Pregos e grampos (martelo pneumático)</li>
+            <li>Manômetros</li>
+            <li>Fitas adesivas</li>
+            <li>Plástico bolha</li>
+            <li>Lonas e encerados</li>
           </ul>
         </section>
 
         <section>
-          <h1>Vedações</h1>
+          <h3>Vedações</h3>
           <p>
-           Precisando de acessórios de vedação? A JPM tem juntas, gaxetas, retentores, anéis orings,
-           papelão hidráulico e muito mais. <strong> Solicite seu orçamento conosco.</strong>
+            Precisa de <strong>acessórios de vedação</strong>? A{' '}
+            <strong>JPM</strong> oferece
+            <strong> juntas</strong>, <strong>gaxetas</strong>,{' '}
+            <strong>retentores</strong>,<strong> anéis orings</strong>,{' '}
+            <strong>papelão hidráulico</strong> e muito mais.
+            <strong> Solicite seu orçamento conosco.</strong>
           </p>
         </section>
       </S.Container>

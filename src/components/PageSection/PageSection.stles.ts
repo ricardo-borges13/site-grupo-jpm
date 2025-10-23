@@ -15,6 +15,7 @@ export const SectionWrapper = styled.section`
 export const Left = styled.div<{ bgColor: string }>`
   background-color: ${({ bgColor }) => bgColor};
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
@@ -26,6 +27,10 @@ export const Left = styled.div<{ bgColor: string }>`
     line-height: 1.2;
     text-transform: uppercase;
     padding: 0 20px;
+  }
+
+  p{
+    font-size: 1rem;
   }
 `;
 

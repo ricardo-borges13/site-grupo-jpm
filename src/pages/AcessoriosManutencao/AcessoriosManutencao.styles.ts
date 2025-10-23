@@ -1,22 +1,36 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   max-width: 1100px;
   margin: 3rem auto;
   padding: 0 1.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #222;
 
   header {
     margin-bottom: 2rem;
 
-    h1 {
+
+       h2 {
       font-size: 2rem;
       font-weight: 700;
-      color: #d49b09;
+      color: #e8b341;
       margin-bottom: 1rem;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
     }
+    
+
+    h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #d49b09;
+  margin-top: 0.4rem;
+}
 
     p {
       font-size: 1rem;
@@ -25,25 +39,13 @@ export const Container = styled.div`
   }
 
   section {
-    margin-bottom: 2.5rem;
-     h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #d49b09;
-      margin-bottom: 1rem;
-    }
+    margin: 2.5rem 0 3rem 0;
 
-    h2 {
+    h3 {
       font-size: 1.4rem;
-      font-weight: 600;
       color: #d49b09;
       border-left: 5px solid #d49b09;
       padding-left: 0.5rem;
-      margin-bottom: 0.8rem;
-    }
-
-    p {
-      margin-bottom: 0.8rem;
     }
 
     ul {
@@ -51,22 +53,7 @@ export const Container = styled.div`
       margin-left: 1rem;
 
       li {
-        margin: 0.4rem 0;
-      }
-    }
-
-    dl {
-      margin-top: 1rem;
-
-      dt {
-        font-weight: 600;
-        color: #000;
-        margin-top: 0.6rem;
-      }
-
-      dd {
-        margin-left: 1rem;
-        color: #444;
+        line-height: 1.8;
       }
     }
   }
@@ -77,11 +64,5 @@ export const Container = styled.div`
     header h1 {
       font-size: 1.6rem;
     }
-
-    section h2 {
-      font-size: 1.2rem;
-    }
   }
 `;
-
-

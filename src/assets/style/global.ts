@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { normalize } from "styled-normalize";
+import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
 
 export const GlobalStyle = createGlobalStyle`
     ${normalize}
@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+  :not(input):not(textarea) {
+    caret-color: transparent;
+  }
+  
        body {
         background-color: #F9FAFB;
         width: 100%;
@@ -31,4 +35,4 @@ export const GlobalStyle = createGlobalStyle`
   font-size: 150px;
 }
 
-  `
+  `;

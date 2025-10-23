@@ -3,6 +3,7 @@ import * as S from './PageSection.stles';
 
 export type PageSectionProps = {
   title: string;
+  subTitle?: string;
   image: string;
   bgColor?: string;
   children?: React.ReactNode;
@@ -10,6 +11,7 @@ export type PageSectionProps = {
 
 export const PageSection = ({
   title,
+  subTitle,
   image,
   bgColor = '#E8B341',
   children,
@@ -30,7 +32,19 @@ export const PageSection = ({
             }}
           >
             {title}
+
           </motion.h1>
+          <motion.p
+             initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              type: 'tween',
+              duration: 2.5, // mais tempo = mais lento
+              ease: 'easeOut', // suaviza o final
+              delay: 0.5,
+            }}
+
+          >{subTitle}</motion.p>
         </S.Left>
 
         {/* --- Lado direito com imagem animada --- */}

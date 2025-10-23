@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Card = styled.div<{ side: 'left' | 'right' }>`
   position: relative;
   overflow: hidden;
-  width: 70%;
+  width: 60%;
   max-width: 500px;
   border-radius: ${({ side }) =>
   side === 'right' ? '100% 0 0 100%' : '0 100% 100% 0'};
@@ -18,7 +18,6 @@ export const Card = styled.div<{ side: 'left' | 'right' }>`
   img {
     height: 270px;
     object-fit: cover;
-
   }
 `;
 

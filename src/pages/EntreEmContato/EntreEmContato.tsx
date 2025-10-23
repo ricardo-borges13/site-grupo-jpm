@@ -9,7 +9,7 @@ export const EntreEmContato = () => {
     <PageSection title="ENTRE EM CONTATO" image={image}>
       <S.Container>
         <header>
-          <h1>Fale Conosco</h1>
+          <h2>Envie sua mensagem</h2>
           <p>
             Quer tirar dúvidas, solicitar um orçamento ou falar com nossa
             equipe? Preencha o formulário abaixo ou utilize um dos canais
@@ -19,19 +19,19 @@ export const EntreEmContato = () => {
       </S.Container>
 
       <S.Form>
-          <SectionsContactus />
+        <SectionsContactus />
       </S.Form>
-         <S.Container>
-          <header>
+      <S.Divider />
+      <S.Container>
+        <header>
           <h1>Localização</h1>
           <p>
-           Nossa sede está localizada em um ponto de fácil acesso em
-           Belo Horizonte. Venha nos visitar ou entre em contato pelos
-           nossos canais de atendimento.
+            Nossa sede está situada em um ponto de fácil acesso em Belo
+            Horizonte. Venha nos visitar ou entre em contato por um de nossos
+            canais de atendimento.
           </p>
         </header>
-
-         </S.Container>
+      </S.Container>
       <MapSection />
     </PageSection>
   );

@@ -51,6 +51,7 @@ export const BorrachasIndustriais = () => {
           ))}
         </S.ContainerProduct>
       </S.Container>
+      <S.Divider />
       <SectionsContactus />
     </PageSection>
   );

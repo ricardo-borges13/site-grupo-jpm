@@ -52,3 +52,12 @@ export const ContainerProduct = styled.div`
   gap: 2rem;
   margin: 4.5rem 0 7.5rem 0;
 `;
+
+export const Divider = styled.hr`
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #d49b09, transparent);
+  margin: 4rem auto;
+  width: 80%;
+  border-radius: 2px;
+`;

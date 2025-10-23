@@ -21,7 +21,7 @@ export const Container = styled.div`
       text-transform: uppercase;
       margin-bottom: 1.5rem;
     }
-    
+
 
     h2::after {
   content: '';
@@ -65,4 +65,13 @@ export const Container = styled.div`
       font-size: 1.6rem;
     }
   }
+`;
+
+export const Divider = styled.hr`
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #d49b09, transparent);
+  margin: 4rem auto;
+  width: 80%;
+  border-radius: 2px;
 `;

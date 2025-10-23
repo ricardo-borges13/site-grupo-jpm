@@ -11,7 +11,7 @@ export const Container = styled.div`
   header {
     margin-bottom: 2rem;
 
-    
+
         h2 {
       font-size: 2rem;
       font-weight: 700;
@@ -57,3 +57,11 @@ export const Container = styled.div`
 `;
 
 
+export const Divider = styled.hr`
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #d49b09, transparent);
+  margin: 4rem auto;
+  width: 80%;
+  border-radius: 2px;
+`;

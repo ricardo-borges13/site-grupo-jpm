@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const wrapper = styled.div`
-  width: 100%;
+  width: 80%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px; /* só nas laterais */
 
   h2 {
     display: flex;
@@ -15,9 +15,14 @@ export const wrapper = styled.div`
 
 export const ImagesArea = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 40px;
   justify-items: center;
+  
+
+  > * {
+    width: 80%;
+  }
 
   img {
     height: 100%;

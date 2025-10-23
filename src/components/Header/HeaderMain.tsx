@@ -1,6 +1,6 @@
 import { Menu } from '../Menu/Menu';
 import * as S from './HeaderMain.styles';
-import logo from '../../assets/images/LogoJPM.png';
+import logo from '../../assets/images/LogoJPM-Site.png';
 import { useEffect, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaAngleRight } from "react-icons/fa";

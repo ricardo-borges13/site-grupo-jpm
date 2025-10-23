@@ -47,6 +47,7 @@ export const Automacao = () => {
           </ul>
         </header>
       </S.Container>
+      <S.Divider />
       <SectionsContactus />
     </PageSection>
   );

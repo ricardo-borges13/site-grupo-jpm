@@ -49,6 +49,7 @@ export const AcessoriosManutencao = () => {
           </p>
         </section>
       </S.Container>
+      <S.Divider />
       <SectionsContactus />
     </PageSection>
   );

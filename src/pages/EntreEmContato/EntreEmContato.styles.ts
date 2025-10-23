@@ -2,13 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 0 1.5rem;
+  margin: 3rem auto;
+  max-width: 1100px;
   font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+
+
 
 
   header {
     margin-bottom: 2rem;
 
-    h1 {
+    h2 {
       font-size: 2rem;
       font-weight: 700;
       color: #d49b09;
@@ -34,6 +39,17 @@ export const Container = styled.div`
 
 
 export const Form = styled.div`
-margin-bottom: 6rem;
+margin: 3rem auto 6rem auto;
+  max-width: 1100px;
 
 `
+
+
+export const Divider = styled.hr`
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #d49b09, transparent);
+  margin: 4rem auto;
+  width: 80%;
+  border-radius: 2px;
+`;

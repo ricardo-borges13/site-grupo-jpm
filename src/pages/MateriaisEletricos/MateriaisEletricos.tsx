@@ -50,6 +50,7 @@ export const MateriaisEletricos = () => {
           ))}
         </S.ContainerProduct>
       </S.Container>
+      <S.Divider />
       <SectionsContactus />
     </PageSection>
   );

@@ -21,7 +21,7 @@ export const Footer = () => {
             <li>
               <Link to="/empresa">A Empresa</Link>
             </li>
-            <li>
+             <li>
               <Link to="/trabalheconosco">Trabalhe Conosco</Link>
             </li>
             <li>

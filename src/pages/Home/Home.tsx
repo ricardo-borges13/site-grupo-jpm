@@ -27,7 +27,7 @@ const sobreData: SectionInfoProps = {
   image1,
   image2,
   buttonText: 'Saiba mais',
-  onButtonClick: () => console.log('Clique em Saiba mais!'),
+  path: '/empresa',
 };
 
 export const Home = () => {

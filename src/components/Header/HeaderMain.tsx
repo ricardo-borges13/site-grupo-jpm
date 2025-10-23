@@ -4,7 +4,7 @@ import logo from '../../assets/images/LogoJPM-Site.png';
 import { useEffect, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaAngleRight } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link} from "react-router-dom";
 
 export const HeaderMain = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +26,10 @@ export const HeaderMain = () => {
   return (
     <S.HeaderContainer $isScrolled={isScrolled}>
       <S.HeaderContent>
+        <Link to='/'>
         <S.Image src={logo} alt="Logo" $isScrolled={isScrolled} />
+        </Link>
+
         <S.MenuWrapper>
           <S.MenuToggle onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FiX /> : <FiMenu />}

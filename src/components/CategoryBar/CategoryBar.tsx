@@ -8,13 +8,13 @@ export const CategoryBar = () => {
   return (
     <S.Container className="containerPrincipal">
       <S.Inner>
-        <CategoryItem icon={<FaPlug />} label="Materiais Elétricos" />
+        <CategoryItem icon={<FaPlug />} label="Materiais Elétricos" path='/produtos/eletricos'/>
         <S.Divider />
-        <CategoryItem icon={<GiTrafficCone />} label="Borrachas Industriais" />
+        <CategoryItem icon={<GiTrafficCone />} label="Borrachas Industriais" path='/produtos/borrachas' />
         <S.Divider />
-        <CategoryItem icon={<MdOutlineSensors />} label="Automação" />
+        <CategoryItem icon={<MdOutlineSensors />} label="Automação" path='/produtos/automacao' />
         <S.Divider />
-        <CategoryItem icon={<FaTools />} label="Acessórios de Manutenção" />
+        <CategoryItem icon={<FaTools />} label="Acessórios de Manutenção" path='/produtos/acessorios' />
       </S.Inner>
     </S.Container>
   );

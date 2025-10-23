@@ -1,4 +1,5 @@
 import * as S from './SectionInfo.styles';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../Button/Button';
 
 export type SectionInfoProps = {
@@ -7,7 +8,7 @@ export type SectionInfoProps = {
   image1: string;
   image2?: string;
   buttonText?: string;
-  onButtonClick?: () => void;
+  path?: string;
 };
 
 export const SectionInfo = ({
@@ -16,15 +17,17 @@ export const SectionInfo = ({
   image1,
   image2,
   buttonText,
-  onButtonClick,
+  path,
 }: SectionInfoProps) => {
+   const navigate = useNavigate();
   return (
+
     <S.Container>
       <S.TextArea>
         <h2>{title}</h2>
         <p dangerouslySetInnerHTML={{ __html: description }} />
         {buttonText && (
-          <Button onClick={onButtonClick} text={buttonText} variant="primary" />
+          <Button onClick={()=> navigate(`${path}`)} text={buttonText} variant="primary" />
         )}
       </S.TextArea>
 

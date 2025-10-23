@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -6,6 +7,9 @@ export const Container = styled.div`
   justify-content: center;
   padding: 15px 0;
 `;
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+`
 
 export const Inner = styled.div`
   width: 100%;
@@ -29,6 +33,7 @@ export const Item = styled.div`
   text-align: center;
   padding: 8px 12px;
   cursor: pointer;
+  list-style: none;
   transition: transform 0.2s ease, color 0.2s ease;
 
   &:hover {

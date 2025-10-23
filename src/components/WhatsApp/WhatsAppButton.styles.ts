@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-
+import styled from 'styled-components';
 
 export const Container = styled.a`
   position: fixed;
@@ -28,4 +26,3 @@ export const Container = styled.a`
     height: 28px;
   }
 `;
-

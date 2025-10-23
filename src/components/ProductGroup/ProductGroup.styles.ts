@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const wrapper = styled.div`
+caret-color: transparent; 
   width: 80%;
   max-width: 1350px;
   margin: 0 auto;
@@ -18,7 +19,6 @@ export const ImagesArea = styled.div`
   grid-template-columns: repeat(2, minmax(0, 1fr));
   row-gap: 40px;
   justify-items: center;
-  
 
   > * {
     width: 80%;
@@ -28,7 +28,7 @@ export const ImagesArea = styled.div`
     height: 100%;
     width: 100%;
     object-fit: cover;
-     }
+  }
 
   @media (max-width: 960px) {
     grid-template-columns: 1fr; /* No mobile, uma coluna só */
@@ -37,4 +37,3 @@ export const ImagesArea = styled.div`
     }
   }
 `;
-

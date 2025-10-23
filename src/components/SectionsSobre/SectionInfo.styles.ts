@@ -8,7 +8,8 @@ export const Container = styled.section`
   padding: 60px 8%;
   background: #f9f9f9;
   border-radius: 20px;
-
+  caret-color: transparent;
+  
   @media (max-width: 960px) {
     flex-direction: column;
     text-align: center;
@@ -43,7 +44,9 @@ export const ImagesArea = styled.div`
     object-fit: cover;
     border-radius: 20px;
     width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
 
     &:hover {
       transform: scale(1.03);
@@ -52,13 +55,11 @@ export const ImagesArea = styled.div`
   }
 
   img:first-child {
-     max-width: 220px;
-
+    max-width: 220px;
   }
 
   img:last-child {
     max-width: 380px;
-
   }
 
   @media (max-width: 960px) {
@@ -66,8 +67,7 @@ export const ImagesArea = styled.div`
     height: 120px;
 
     img:last-child {
-    display: none;
-
-  }
+      display: none;
+    }
   }
 `;

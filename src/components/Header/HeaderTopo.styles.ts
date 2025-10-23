@@ -9,6 +9,7 @@ export const Header = styled.div`
   color: #ffffff;
   font-size: 0.9rem;
   z-index: 1100; /* acima do HeaderMain */
+  caret-color: transparent; 
 `;
 
 export const Container = styled.div`

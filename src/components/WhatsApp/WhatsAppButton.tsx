@@ -3,8 +3,8 @@ import * as S from './WhatsAppButton.styles';
 import { FaWhatsapp } from 'react-icons/fa';
 
 type WhatsAppButtonProps = {
-  phone: string; // Ex: "5531999999999"
-  message?: string; // Mensagem opcional pré-preenchida
+  phone: string; //
+  message?: string; 
 };
 
 export const WhatsAppButton = ({ phone, message }: WhatsAppButtonProps) => {

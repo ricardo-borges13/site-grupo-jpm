@@ -32,10 +32,9 @@ export const PageSection = ({
             }}
           >
             {title}
-
           </motion.h1>
           <motion.p
-             initial={{ y: 30, opacity: 0 }}
+            initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
               type: 'tween',
@@ -43,8 +42,9 @@ export const PageSection = ({
               ease: 'easeOut', // suaviza o final
               delay: 0.5,
             }}
-
-          >{subTitle}</motion.p>
+          >
+            {subTitle}
+          </motion.p>
         </S.Left>
 
         {/* --- Lado direito com imagem animada --- */}

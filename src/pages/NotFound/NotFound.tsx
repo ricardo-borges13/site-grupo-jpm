@@ -25,18 +25,14 @@ export const NotFound = () => {
             }`}
           >
             <AlertTriangle size={56} className="text-red-500 w-20 h-20 mb-4" />
-            <h1 >404</h1>
-            <h1 >
-              Página não encontrada
-            </h1>
+            <h1>404</h1>
+            <h1>Página não encontrada</h1>
             <p>
               O endereço que você tentou acessar não existe ou foi movido.
               Verifique o link ou volte à página inicial.
             </p>
 
-            <Link to="/">
-              Voltar para a Home
-            </Link>
+            <Link to="/">Voltar para a Home</Link>
           </div>
         </div>
       </S.Container>

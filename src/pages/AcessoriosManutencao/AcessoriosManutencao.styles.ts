@@ -7,12 +7,12 @@ export const Container = styled.div`
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #222;
+  caret-color: transparent;
 
   header {
     margin-bottom: 2rem;
 
-
-       h2 {
+    h2 {
       font-size: 2rem;
       font-weight: 700;
       color: #e8b341;
@@ -22,15 +22,14 @@ export const Container = styled.div`
       margin-bottom: 1.5rem;
     }
 
-
     h2::after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: #d49b09;
-  margin-top: 0.4rem;
-}
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: #d49b09;
+      margin-top: 0.4rem;
+    }
 
     p {
       font-size: 1rem;

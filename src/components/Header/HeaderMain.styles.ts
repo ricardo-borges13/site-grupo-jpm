@@ -1,25 +1,26 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.header<{ $isScrolled: boolean }>`
   position: fixed;
   top: 34px;
   left: 0;
   width: 100%;
-
- background: rgba(255, 255, 255, 0.9); /* leve transparência */
+  caret-color: transparent;
+  background: rgba(255, 255, 255, 0.9); /* leve transparência */
   backdrop-filter: blur(10px); /* efeito vidro fosco */
   box-shadow: ${({ $isScrolled }) =>
-    $isScrolled ? "0 2px 10px rgba(0, 0, 0, 0.1)" : "0 2px 6px rgba(0, 0, 0, 0.05)"};
+    $isScrolled
+      ? '0 2px 10px rgba(0, 0, 0, 0.1)'
+      : '0 2px 6px rgba(0, 0, 0, 0.05)'};
   transition: all 0.3s ease;
 
   z-index: 100; /* mantém o header acima do conteúdo */
 
   /* muda a altura ao rolar */
-  height: ${({ $isScrolled }) => ($isScrolled ? "70px" : "110px")};
+  height: ${({ $isScrolled }) => ($isScrolled ? '70px' : '110px')};
 
-   @media (max-width: 900px) {
-    height: ${({ $isScrolled }) => ($isScrolled ? "100px" : "110px")};
+  @media (max-width: 900px) {
+    height: ${({ $isScrolled }) => ($isScrolled ? '100px' : '110px')};
   }
 `;
 
@@ -30,8 +31,7 @@ export const HeaderContent = styled.div`
   max-width: 1100px; /* mesma largura da faixa superior */
   margin: 0 auto; /* centraliza o bloco */
   padding: 0.5rem 2rem; /* padding lateral igual à barra azul */
-  /* flex-wrap: nowrap; */
-width: 100%;
+  width: 100%;
   @media (max-width: 900px) {
     justify-content: space-between;
     margin-top: 15px;
@@ -49,8 +49,12 @@ export const ContactButton = styled.button`
   justify-content: center;
   border: none;
   gap: 10px;
-  background: linear-gradient(32deg, rgb(237, 116, 50) 0%, rgb(254, 170, 18) 100%) !important;
-  color: #FFFDFD;
+  background: linear-gradient(
+    32deg,
+    rgb(237, 116, 50) 0%,
+    rgb(254, 170, 18) 100%
+  ) !important;
+  color: #fffdfd;
   font-weight: 600;
   padding: 0.4rem 1.4rem;
   min-width: 120px;
@@ -59,7 +63,7 @@ export const ContactButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: #F4C27B;
+    background: #f4c27b;
     color: #121212;
   }
 
@@ -87,13 +91,12 @@ export const ContactButton = styled.button`
 `;
 
 export const Image = styled.img<{ $isScrolled: boolean }>`
-  height: ${({ $isScrolled }) => ($isScrolled ? "60px" : "100px")};
+  height: ${({ $isScrolled }) => ($isScrolled ? '60px' : '100px')};
   margin-right: 40px;
   transition: height 0.3s ease;
 
   @media (max-width: 900px) {
-   height: ${({ $isScrolled }) => ($isScrolled ? "45px" : "40px")};
-
+    height: ${({ $isScrolled }) => ($isScrolled ? '45px' : '40px')};
   }
 `;
 
@@ -102,7 +105,7 @@ export const MenuWrapper = styled.div`
   align-items: center;
   gap: 54px; /* <-- controle fino da distância entre menu e botão */
 
-     @media (max-width: 900px) {
+  @media (max-width: 900px) {
     gap: 1rem;
   }
 `;
@@ -138,8 +141,9 @@ export const MenuContainer = styled.div<{ $open: boolean }>`
     gap: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    transform: ${({ $open }) => ($open ? "translateY(0)" : "translateY(-150%)")};
+    transform: ${({ $open }) =>
+      $open ? 'translateY(0)' : 'translateY(-150%)'};
     opacity: ${({ $open }) => ($open ? 1 : 0)};
-    pointer-events: ${({ $open }) => ($open ? "auto" : "none")};
+    pointer-events: ${({ $open }) => ($open ? 'auto' : 'none')};
   }
 `;

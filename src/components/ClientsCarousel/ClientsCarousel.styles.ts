@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 // Configuração de responsividade
 export const responsive = {
@@ -9,11 +9,12 @@ export const responsive = {
 
 // Styled Components
 export const CarouselContainer = styled.div`
+  caret-color: transparent;
   width: 100%;
   background-color: #f7f7f7f7;
   padding: 2rem 0;
   position: relative;
-    .react-multi-carousel-list {
+  .react-multi-carousel-list {
     width: 100%;
   }
 `;
@@ -42,7 +43,7 @@ export const Card = styled.div`
   }
 `;
 
-export const ArrowButton = styled.button<{ side: "left" | "right" }>`
+export const ArrowButton = styled.button<{ side: 'left' | 'right' }>`
   background: none;
   border: none;
   color: #333;
@@ -50,7 +51,7 @@ export const ArrowButton = styled.button<{ side: "left" | "right" }>`
   cursor: pointer;
   position: absolute !important;
   top: 50%;
-  ${(props) => (props.side === "left" ? "left: 0;" : "right: 0;")}
+  ${props => (props.side === 'left' ? 'left: 0;' : 'right: 0;')}
   transform: translateY(-50%);
   z-index: 10;
   padding: 0.5rem;

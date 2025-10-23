@@ -7,6 +7,7 @@ export const Container = styled.div`
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #222;
+  caret-color: transparent;
 
   header {
     margin-bottom: 2rem;

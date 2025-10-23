@@ -1,6 +1,6 @@
 import * as S from './Footer.styles';
 import { BiSolidPhoneOutgoing } from 'react-icons/bi';
-import { MdEmail } from "react-icons/md";
+import { MdEmail } from 'react-icons/md';
 import logo from '../../assets/images/LogoJPMBranco.png';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ export const Footer = () => {
             <li>
               <Link to="/empresa">A Empresa</Link>
             </li>
-             <li>
+            <li>
               <Link to="/trabalheconosco">Trabalhe Conosco</Link>
             </li>
             <li>
@@ -41,7 +41,7 @@ export const Footer = () => {
             <span>
               <S.Icone>
                 {' '}
-               <MdEmail /> sac@grupojpm.com.br{' '}
+                <MdEmail /> sac@grupojpm.com.br{' '}
               </S.Icone>
             </span>
           </address>

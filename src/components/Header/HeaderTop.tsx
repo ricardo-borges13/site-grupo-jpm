@@ -8,14 +8,11 @@ export type HeaderProps = {
   email: string;
 };
 
-
-export const HeaderTop = ( {text, phone, email} : HeaderProps) => {
+export const HeaderTop = ({ text, phone, email }: HeaderProps) => {
   return (
     <S.Header>
       <S.Container>
-        <div>
-          {text}
-        </div>
+        <div>{text}</div>
         <div>
           <LiaPhoneAltSolid />
           {phone}

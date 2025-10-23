@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FormContainer = styled.div`
   background-color: #e8b509;
@@ -81,6 +81,10 @@ export const FormContainer = styled.div`
 export const FieldGroup = styled.div`
   display: flex;
   gap: 0.5rem;
+
+  label{
+    caret-color: transparent;
+  }
 `;
 
 export const Input = styled.input`
@@ -114,4 +118,16 @@ export const Button = styled.button`
   &:hover {
     opacity: 0.9;
   }
+`;
+
+
+export const Assunto = styled.div`
+ label{
+  caret-color: transparent;
+ }
+`;
+export const Mensagem = styled.div`
+ label{
+  caret-color: transparent;
+ }
 `;

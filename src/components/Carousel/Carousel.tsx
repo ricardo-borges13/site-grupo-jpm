@@ -10,8 +10,8 @@ export function CarouselComponent() {
     <Carousel interval={8000} fade>
       {/* --- SLIDE 1 --- */}
 
-        <Carousel.Item>
-          <Link to="/contato">
+      <Carousel.Item>
+        <Link to="/contato">
           <img
             className="d-block w-100"
             src={banner3}
@@ -23,9 +23,8 @@ export function CarouselComponent() {
               <h4>Entre em Contato</h4>
             </S.Caption3>
           </Carousel.Caption>
-          </Link>
-        </Carousel.Item>
-
+        </Link>
+      </Carousel.Item>
 
       {/* --- SLIDE 2 COM VÍDEO --- */}
       <Carousel.Item interval={10000}>

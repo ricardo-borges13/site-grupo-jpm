@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
-
 export const Card = styled.div`
+  caret-color: transparent;
   background-color: #f3f3f3;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-4px);
@@ -29,29 +31,26 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Content = styled.div`
- padding: 1rem 0 0 1rem;
-
-
+  padding: 1rem 0 0 1rem;
 
   h3 {
     font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: #011c39;
-  border-bottom: 2px solid #011c39;
-  display: inline-block;
-  padding-bottom: 0.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #011c39;
+    border-bottom: 2px solid #011c39;
+    display: inline-block;
+    padding-bottom: 0.3rem;
   }
 
   ul {
     list-style: disc;
     padding-left: 1.5rem;
-
   }
 
   li {
-     font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 0.4rem;
   }
 `;

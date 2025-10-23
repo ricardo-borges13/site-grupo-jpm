@@ -19,15 +19,18 @@ export const SectionInfo = ({
   buttonText,
   path,
 }: SectionInfoProps) => {
-   const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-
     <S.Container>
       <S.TextArea>
         <h2>{title}</h2>
         <p dangerouslySetInnerHTML={{ __html: description }} />
         {buttonText && (
-          <Button onClick={()=> navigate(`${path}`)} text={buttonText} variant="primary" />
+          <Button
+            onClick={() => navigate(`${path}`)}
+            text={buttonText}
+            variant="primary"
+          />
         )}
       </S.TextArea>
 

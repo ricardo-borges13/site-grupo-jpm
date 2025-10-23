@@ -10,10 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-  :not(input):not(textarea) {
-    caret-color: transparent;
-  }
-  
+
        body {
         background-color: #F9FAFB;
         width: 100%;

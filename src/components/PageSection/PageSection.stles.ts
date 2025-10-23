@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SectionWrapper = styled.section`
   padding-top: 145px;
@@ -6,6 +6,7 @@ export const SectionWrapper = styled.section`
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
   min-height: 350px;
+  caret-color: transparent;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -29,7 +30,7 @@ export const Left = styled.div<{ bgColor: string }>`
     padding: 0 20px;
   }
 
-  p{
+  p {
     font-size: 1rem;
   }
 `;

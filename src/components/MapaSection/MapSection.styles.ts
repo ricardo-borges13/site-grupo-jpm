@@ -8,7 +8,6 @@ export const Container = styled.section`
   justify-content: center;
 `;
 
-
 export const MapWrapper = styled.div`
   width: 100%;
   height: 400px;

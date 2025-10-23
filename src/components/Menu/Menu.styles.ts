@@ -1,23 +1,23 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
   gap: 4rem;
 
-@media (max-width: 1045px) {
-gap: 2.5rem;
-}
+  @media (max-width: 1045px) {
+    gap: 2.5rem;
+  }
 
-@media (max-width: 960px) {
-gap: 1rem;
-}
+  @media (max-width: 960px) {
+    gap: 1rem;
+  }
 
   @media (max-width: 781px) {
-  align-items: center;
-  gap: 0.8rem;
-}
+    align-items: center;
+    gap: 0.8rem;
+  }
 `;
 
 export const MenuItem = styled.div`
@@ -43,26 +43,28 @@ export const MenuLink = styled(Link)`
 
   /* Linha superior invisível por padrão */
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -10px; /* controla a distância acima do texto */
     left: 0;
     width: 0%;
     height: 4px; /* espessura da linha */
-    background-color: #E89119;
+    background-color: #e89119;
     transition: width 0.3s ease;
     border-radius: 2px;
   }
 
   &:hover {
-    color: #E89119;
+    color: #e89119;
   }
 `;
 
 export const Submenu = styled.ul<{ isOpen?: boolean }>`
   opacity: ${props => (props.isOpen ? 1 : 0)};
   transform: ${props => (props.isOpen ? 'translateY(0)' : 'translateY(-10px)')};
-  transition: opacity 0.5s ease, transform 0.3s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.3s ease;
   pointer-events: ${props => (props.isOpen ? 'auto' : 'none')};
 
   position: absolute;
@@ -70,7 +72,7 @@ export const Submenu = styled.ul<{ isOpen?: boolean }>`
   left: 0;
   background: #dfdedeff;
   border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   list-style: none;
   padding: 0.5rem 0;
   min-width: 220px;
@@ -85,12 +87,11 @@ export const SubmenuItem = styled.li`
     padding: 0.6rem 1rem;
     color: #333;
     text-decoration: none;
-      transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
 
     &:hover {
       background: #f9f9f9;
-      color: #E89119;
+      color: #e89119;
     }
   }
 `;
-

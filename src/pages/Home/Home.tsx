@@ -43,10 +43,10 @@ export const Home = () => {
   }, [location]);
   return (
     <>
-        <SEO
-          title="GRUPO JPM Borrachas e Materiais Elétricos"
-          description="Especialista em borrachas, materiais elétricos e automação industrial desde 1997. Soluções completas para manutenção e produção em diversos setores."
-        />
+      <SEO
+        title="GRUPO JPM Borrachas e Materiais Elétricos"
+        description="Especialista em borrachas, materiais elétricos e automação industrial desde 1997. Soluções completas para manutenção e produção em diversos setores."
+      />
 
       <S.ContainterCarousel>
         <CarouselComponent />

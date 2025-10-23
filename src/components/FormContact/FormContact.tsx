@@ -12,46 +12,48 @@ type FormInputs = {
 };
 
 export const FormContact = () => {
-   const {
+  const {
     register,
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
   } = useForm<FormInputs>();
 
- // Toast de teste (simulação)
-  const onSubmitTest = async (data: FormInputs) => {
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      toast.success(
-        "Mensagem enviada com sucesso! 🎉 Em breve entraremos em contato",
-        { duration: 9000 }
-      );
-      reset();
-    } catch (error) {
-      toast.error("Erro ao enviar (simulação).", { duration: 4000 });
-    }
-  };
+  // Toast de teste (simulação)
+  // const onSubmitTest = async (data: FormInputs) => {
+  //   try {
+  //     await new Promise(resolve => setTimeout(resolve, 1000));
+  //     toast.success(
+  //       'Mensagem enviada com sucesso! 🎉 Em breve entraremos em contato',
+  //       { duration: 9000 }
+  //     );
+  //     reset();
+  //   } catch (error) {
+  //     toast.error('Erro ao enviar (simulação).', { duration: 4000 });
+  //   }
+  // };
 
   const onSubmit = async (data: FormInputs) => {
     try {
-      const response = await fetch("https://formspree.io/f/mldpvpbd", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const response = await fetch('https://formspree.io/f/mldpvpbd', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
 
       if (response.ok) {
         toast.success(
-          "Mensagem enviada com sucesso! 🎉 Em breve entraremos em contato",
+          'Mensagem enviada com sucesso! 🎉 Em breve entraremos em contato',
           { duration: 5000 }
         );
         reset();
       } else {
-        toast.error("Erro ao enviar. Tente novamente.", { duration: 4000 });
+        toast.error('Erro ao enviar. Tente novamente.', { duration: 4000 });
       }
     } catch (error) {
-      toast.error("Erro de conexão. Tente novamente mais tarde.", { duration: 4000 });
+      toast.error('Erro de conexão. Tente novamente mais tarde.', {
+        duration: 4000,
+      });
       console.error(error);
     }
   };
@@ -68,13 +70,13 @@ export const FormContact = () => {
         }}
         toastOptions={{
           style: {
-            background: "#001837",
-            color: "#fff",
-            fontSize: "16px",
-            padding: "16px 24px",
-            borderRadius: "12px",
-            maxWidth: "400px",
-            textAlign: "center",
+            background: '#001837',
+            color: '#fff',
+            fontSize: '16px',
+            padding: '16px 24px',
+            borderRadius: '12px',
+            maxWidth: '400px',
+            textAlign: 'center',
           },
         }}
       />
@@ -82,23 +84,19 @@ export const FormContact = () => {
       <form>
         <S.FieldGroup>
           <div style={{ flex: 1 }}>
-             <label>Nome *</label>
+            <label>Nome *</label>
             <S.Input
               placeholder="Nome"
-              {...register("nome", { required: "O nome é obrigatório." })}
+              {...register('nome', { required: 'O nome é obrigatório.' })}
             />
-            {errors.nome && <S.ErrorMessage>{errors.nome.message}</S.ErrorMessage>}
+            {errors.nome && (
+              <S.ErrorMessage>{errors.nome.message}</S.ErrorMessage>
+            )}
           </div>
 
           <div style={{ flex: 1 }}>
             <label>Empresa</label>
-            <S.Input
-              placeholder="Empresa"
-              {...register("empresa")}
-            />
-            {/* {errors.empresa && (
-              <S.ErrorMessage>{errors.empresa.message}</S.ErrorMessage>
-            )} */}
+            <S.Input placeholder="Empresa" {...register('empresa')} />
           </div>
         </S.FieldGroup>
 
@@ -106,7 +104,7 @@ export const FormContact = () => {
         <S.FieldGroup>
           <div style={{ flex: 1 }}>
             <label>Telefone</label>
-            <S.Input placeholder="Telefone" {...register("telefone")} />
+            <S.Input placeholder="Telefone" {...register('telefone')} />
           </div>
 
           <div style={{ flex: 1 }}>
@@ -114,11 +112,11 @@ export const FormContact = () => {
             <S.Input
               placeholder="E-mail"
               type="email"
-              {...register("email", {
-                required: "O e-mail é obrigatório.",
+              {...register('email', {
+                required: 'O e-mail é obrigatório.',
                 pattern: {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "E-mail inválido.",
+                  message: 'E-mail inválido.',
                 },
               })}
             />
@@ -129,38 +127,43 @@ export const FormContact = () => {
         </S.FieldGroup>
 
         {/* Assunto */}
-        <div>
+        <S.Assunto>
           <label>Assunto</label>
-          <S.Input placeholder="Assunto" {...register("assunto",{required: "O Assunto é obrigatório"})} />
-          {errors.assunto && <S.ErrorMessage>{errors.assunto.message}</S.ErrorMessage>}
-        </div>
+          <S.Input
+            placeholder="Assunto"
+            {...register('assunto', { required: 'O Assunto é obrigatório' })}
+          />
+          {errors.assunto && (
+            <S.ErrorMessage>{errors.assunto.message}</S.ErrorMessage>
+          )}
+        </S.Assunto>
 
         {/* Mensagem */}
-        <div>
+        <S.Mensagem>
           <label>Mensagem *</label>
           <S.TextArea
             placeholder="Mensagem"
             rows={4}
-            {...register("mensagem", {
-              required: "A mensagem é obrigatória.",
+            {...register('mensagem', {
+              required: 'A mensagem é obrigatória.',
               minLength: {
                 value: 5,
-                message: "A mensagem deve ter pelo menos 5 caracteres.",
+                message: 'A mensagem deve ter pelo menos 5 caracteres.',
               },
             })}
           />
           {errors.mensagem && (
             <S.ErrorMessage>{errors.mensagem.message}</S.ErrorMessage>
           )}
-        </div>
+        </S.Mensagem>
 
         {/* Botão de envio */}
         <S.Button
           type="button" // 🔹 evita envio via Enter
-          onClick={handleSubmit(onSubmitTest)} // 🔹 só envia no clique
+          onClick={handleSubmit(onSubmit)} // 🔹 só envia no clique
           disabled={isSubmitting}
         >
-          {isSubmitting ? "Enviando..." : "Enviar"}
+          {isSubmitting ? 'Enviando...' : 'Enviar'}
         </S.Button>
       </form>
     </S.FormContainer>

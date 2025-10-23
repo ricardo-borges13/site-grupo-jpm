@@ -1,12 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   max-width: 1100px;
   margin: 3rem auto;
   padding: 0 1.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #222;
+  caret-color: transparent;
 
   header {
     margin-bottom: 2rem;
@@ -77,5 +78,3 @@ export const Container = styled.div`
     }
   }
 `;
-
-

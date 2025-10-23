@@ -1,9 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 0 1.5rem;
-  font-family: "Poppins", sans-serif;
-
+  font-family: 'Poppins', sans-serif;
 
   header {
     margin-bottom: 2rem;
@@ -21,19 +20,15 @@ export const Container = styled.div`
     }
   }
 
-
   @media (max-width: 768px) {
     padding: 0 1rem;
 
     header h1 {
       font-size: 1.6rem;
     }
-
   }
 `;
 
-
 export const Form = styled.div`
-margin-bottom: 6rem;
-
-`
+  margin-bottom: 6rem;
+`;

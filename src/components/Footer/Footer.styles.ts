@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-
 export const FooterContainer = styled.footer`
   background-color: #e3b021;
   color: #000;
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   margin-top: 4rem;
+  caret-color: transparent;
 `;
 
 export const FooterContent = styled.div`
@@ -37,7 +37,7 @@ export const LogoArea = styled.div`
       width: 150px;
     }
 
-      @media (max-width: 730px) {
+    @media (max-width: 730px) {
       width: 100px;
     }
   }
@@ -121,9 +121,9 @@ export const FooterBottom = styled.div`
   border-top: 2px solid #fff;
   font-size: 0.85rem;
 
-   @media (max-width: 730px) {
-      font-size: 0.75rem;
-    }
+  @media (max-width: 730px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export const Icone = styled.span`
@@ -136,8 +136,7 @@ export const Icone = styled.span`
     color: #000; /* pode mudar a cor se quiser */
 
     @media (max-width: 840px) {
-          font-size: 1rem;
-        }
-
+      font-size: 1rem;
+    }
   }
-`
+`;

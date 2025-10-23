@@ -34,7 +34,7 @@ export const Menu = () => {
     navigate(path); // navega pra página do item
   }
 
-   return (
+  return (
     <Nav>
       {menuItems.map(item => (
         <MenuItem

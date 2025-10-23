@@ -15,8 +15,8 @@ export const StyledButton = styled.button<{
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
-${({ heightVariant }) =>
-    heightVariant === "small"
+  ${({ heightVariant }) =>
+    heightVariant === 'small'
       ? css`
           padding: 0.2rem 1.8rem;
         `
@@ -27,7 +27,11 @@ ${({ heightVariant }) =>
   ${({ variant }) =>
     variant === 'primary'
       ? css`
-          background: linear-gradient(32deg, rgb(237, 116, 50) 0%, rgb(254, 170, 18) 100%) !important;
+          background: linear-gradient(
+            32deg,
+            rgb(237, 116, 50) 0%,
+            rgb(254, 170, 18) 100%
+          ) !important;
           color: #fff;
 
           &:hover {

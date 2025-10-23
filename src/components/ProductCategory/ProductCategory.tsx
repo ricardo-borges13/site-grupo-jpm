@@ -1,6 +1,4 @@
-
-
-import * as S from './ProductCategory.styles'
+import * as S from './ProductCategory.styles';
 
 type ProductCategoryProps = {
   image: string;

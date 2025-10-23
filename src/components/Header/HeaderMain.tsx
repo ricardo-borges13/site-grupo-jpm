@@ -3,16 +3,13 @@ import * as S from './HeaderMain.styles';
 import logo from '../../assets/images/LogoJPM-Site.png';
 import { useEffect, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { FaAngleRight } from "react-icons/fa";
-import { useNavigate, Link} from "react-router-dom";
+import { FaAngleRight } from 'react-icons/fa';
+import { useNavigate, Link } from 'react-router-dom';
 
 export const HeaderMain = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
-
-
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +23,8 @@ export const HeaderMain = () => {
   return (
     <S.HeaderContainer $isScrolled={isScrolled}>
       <S.HeaderContent>
-        <Link to='/'>
-        <S.Image src={logo} alt="Logo" $isScrolled={isScrolled} />
+        <Link to="/">
+          <S.Image src={logo} alt="Logo" $isScrolled={isScrolled} />
         </Link>
 
         <S.MenuWrapper>
@@ -40,7 +37,7 @@ export const HeaderMain = () => {
           </S.MenuContainer>
           <S.ContactButton onClick={() => navigate('/contato')}>
             Entre em Contato
-            {<FaAngleRight  size={16}  className='arrow' />}
+            {<FaAngleRight size={16} className="arrow" />}
           </S.ContactButton>
         </S.MenuWrapper>
       </S.HeaderContent>

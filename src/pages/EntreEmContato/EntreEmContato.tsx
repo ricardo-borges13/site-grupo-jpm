@@ -5,7 +5,7 @@ import { SectionsContactus } from '../../components/SectionsContactUs/SectionsCo
 import { MapSection } from '../../components/MapaSection/MapSecion';
 import { SEO } from '../../components/SEO/Seo';
 
- const EntreEmContato = () => {
+ export const EntreEmContato = () => {
   return (
     <>
       <SEO
@@ -45,4 +45,4 @@ import { SEO } from '../../components/SEO/Seo';
   );
 };
 
-export default EntreEmContato;
+

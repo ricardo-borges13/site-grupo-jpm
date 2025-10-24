@@ -3,7 +3,7 @@ import produtosImg from '../../assets/images/Banner-PagesA-Empresa.png';
 import * as S from './Empresa.styles';
 import { SEO } from '../../components/SEO/Seo';
 
-const Empresa = () => {
+export const Empresa = () => {
   return (
     <>
       <SEO
@@ -94,4 +94,4 @@ const Empresa = () => {
   );
 };
 
-export default Empresa;
+

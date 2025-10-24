@@ -4,7 +4,7 @@ import image from '../../assets/images/Banner-PagesAutomacao.png';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 
- const Automacao = () => {
+ export const Automacao = () => {
   return (
     <>
       <SEO
@@ -61,4 +61,3 @@ import { SEO } from '../../components/SEO/Seo';
   );
 };
 
-export default Automacao;

@@ -6,7 +6,7 @@ import { ProductCategory } from '../../components/ProductCategory/ProductCategor
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 
-const BorrachasIndustriais = () => {
+export const BorrachasIndustriais = () => {
   return (
     <>
       <SEO
@@ -66,4 +66,4 @@ const BorrachasIndustriais = () => {
   );
 };
 
-export default BorrachasIndustriais;
+

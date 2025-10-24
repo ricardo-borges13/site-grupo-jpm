@@ -1,14 +1,22 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Home } from '../pages/Home/Home';
-import { NotFound } from '../pages/NotFound/NotFound';
+import { lazy, Suspense } from 'react';
 import { Layout } from '../components/Layout/Layout';
-import { Empresa } from '../pages/Empresa/Empresa';
-import { TrabalheConosco } from '../pages/TrabalheConosco/TrabalheConosco';
-import { EntreEmContato } from '../pages/EntreEmContato/EntreEmContato';
-import { MateriaisEletricos } from '../pages/MateriaisEletricos/MateriaisEletricos';
-import { BorrachasIndustriais } from '../pages/BorrachasIndustriais/BorrachasIndustriais';
-import { AcessoriosManutencao } from '../pages/AcessoriosManutencao/AcessoriosManutencao';
-import { Automacao } from '../pages/Automacao/Automacao';
+
+// ⏳ Lazy loading das páginas
+const Home = lazy(() => import('../pages/Home/Home'));
+const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
+const Empresa = lazy(() => import('../pages/Empresa/Empresa'));
+const TrabalheConosco = lazy(() => import('../pages/TrabalheConosco/TrabalheConosco'));
+const EntreEmContato = lazy(() => import('../pages/EntreEmContato/EntreEmContato'));
+const MateriaisEletricos = lazy(() => import('../pages/MateriaisEletricos/MateriaisEletricos'));
+const BorrachasIndustriais = lazy(() => import('../pages/BorrachasIndustriais/BorrachasIndustriais'));
+const AcessoriosManutencao = lazy(() => import('../pages/AcessoriosManutencao/AcessoriosManutencao'));
+const Automacao = lazy(() => import('../pages/Automacao/Automacao'));
+
+
+// eslint-disable-next-line react-refresh/only-export-components
+const Loading = () => <div style={{ textAlign: 'center', marginTop: '2rem' }}>Carregando...</div>;
+
 
 export const router = createBrowserRouter([
   {
@@ -16,25 +24,83 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: '/produtos',
-        element: <Home />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: '/empresa',
-        element: <Empresa />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Empresa />
+          </Suspense>
+        ),
       },
-      { path: '/produtos/eletricos', element: <MateriaisEletricos /> },
-      { path: '/produtos/borrachas', element: <BorrachasIndustriais /> },
-      { path: '/produtos/acessorios', element: <AcessoriosManutencao /> },
-      { path: '/produtos/automacao', element: <Automacao /> },
-      { path: '/trabalheconosco', element: <TrabalheConosco /> },
-      { path: '/contato', element: <EntreEmContato /> },
+      {
+        path: '/produtos/eletricos',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <MateriaisEletricos />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/produtos/borrachas',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <BorrachasIndustriais />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/produtos/acessorios',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <AcessoriosManutencao />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/produtos/automacao',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Automacao />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/trabalheconosco',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <TrabalheConosco />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/contato',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <EntreEmContato />
+          </Suspense>
+        ),
+      },
       {
         path: '*',
-        element: <NotFound />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <NotFound />
+          </Suspense>
+        ),
       },
     ],
   },

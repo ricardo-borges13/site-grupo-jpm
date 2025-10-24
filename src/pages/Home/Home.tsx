@@ -30,7 +30,7 @@ const sobreData: SectionInfoProps = {
   path: '/empresa',
 };
 
-export const Home = () => {
+const Home = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -71,3 +71,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

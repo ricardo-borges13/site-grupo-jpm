@@ -6,7 +6,7 @@ import { ProductCategory } from '../../components/ProductCategory/ProductCategor
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 
-export const MateriaisEletricos = () => {
+const MateriaisEletricos = () => {
   return (
     <>
       <SEO
@@ -64,3 +64,5 @@ export const MateriaisEletricos = () => {
     </>
   );
 };
+
+export default MateriaisEletricos;

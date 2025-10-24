@@ -3,7 +3,7 @@ import * as S from './TrabalheConosco.styles';
 import image from '../../assets/images/Banner-TrabalheConosco.png';
 import { SEO } from '../../components/SEO/Seo';
 
-export const TrabalheConosco = () => {
+const TrabalheConosco = () => {
   return (
     <>
       <SEO
@@ -107,3 +107,5 @@ export const TrabalheConosco = () => {
     </>
   );
 };
+
+export default TrabalheConosco;

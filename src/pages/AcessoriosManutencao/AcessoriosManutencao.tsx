@@ -4,7 +4,7 @@ import image from '../../assets/images/Banner-PagesAcessorios.png';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 
-export const AcessoriosManutencao = () => {
+const AcessoriosManutencao = () => {
   return (
     <>
       <SEO
@@ -63,3 +63,5 @@ export const AcessoriosManutencao = () => {
     </>
   );
 };
+
+export default AcessoriosManutencao;

@@ -1,5 +1,5 @@
 import { PageSection } from '../../components/PageSection/PageSection';
-import produtosImg from '../../assets/images/Banner-PagesA-Empresa.png';
+import produtosImg from '../../assets/images/Banner-PagesA-Empresa.jpg';
 import * as S from './Empresa.styles';
 import { SEO } from '../../components/SEO/Seo';
 

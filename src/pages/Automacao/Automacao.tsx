@@ -1,6 +1,6 @@
 import { PageSection } from '../../components/PageSection/PageSection';
 import * as S from './Automacao.styles';
-import image from '../../assets/images/Banner-PagesAutomacao.png';
+import image from '../../assets/images/Banner-PagesAutomacao.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 

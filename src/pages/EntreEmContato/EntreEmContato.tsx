@@ -1,6 +1,6 @@
 import { PageSection } from '../../components/PageSection/PageSection';
 import * as ST from './EntreEmContato.styles';
-import image from '../../assets/images/Banner-EntreContato.png';
+import image from '../../assets/images/Banner-PagesEntreContato.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { MapSection } from '../../components/MapaSection/MapSecion';
 import { SEO } from '../../components/SEO/Seo';

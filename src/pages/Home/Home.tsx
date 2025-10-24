@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { CarouselComponent } from '../../components/Carousel/Carousel';
 import { CategoryBar } from '../../components/CategoryBar/CategoryBar';
-import image1 from '../../assets/images/TecnicoEletrica.jpg';
-import image2 from '../../assets/images/tubos-de-construcao2-freepik.jpg';
+import image1 from '../../assets/images/Sobre-Eletrica.jpg';
+import image2 from '../../assets/images/Sobre-Borracha.jpg';
 import image3 from '../../assets/images/fioeletrico.jpg';
-import image4 from '../../assets/images/mangueira1.jpg';
-import image5 from '../../assets/images/manutencao1.jpg';
-import image6 from '../../assets/images/automação2-freepik.jpg';
+import image4 from '../../assets/images/mangueira.jpg';
+import image5 from '../../assets/images/manutencao.jpg';
+import image6 from '../../assets/images/AutomacaoFREEPIK.jpg'
 import { SectionInfo } from '../../components/SectionsSobre/SectionInfo';
 import type { SectionInfoProps } from '../../components/SectionsSobre/SectionInfo';
 import { ProductGroup } from '../../components/ProductGroup/ProdutctGroup';

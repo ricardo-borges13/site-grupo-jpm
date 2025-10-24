@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AlertTriangle } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import image from '../../assets/images/Banner-Pages-Erro404.png';
+import image from '../../assets/images/Banner-Pages-Erro404.jpg';
 
 import * as S from './NotFound.styles';
 import { PageSection } from '../../components/PageSection/PageSection';

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const wrapper = styled.div`
-caret-color: transparent; 
+caret-color: transparent;
   width: 80%;
   max-width: 1350px;
   margin: 0 auto;
@@ -24,9 +24,10 @@ export const ImagesArea = styled.div`
     width: 80%;
   }
 
+  //Photoshop 500 x 340px
   img {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     object-fit: cover;
   }
 

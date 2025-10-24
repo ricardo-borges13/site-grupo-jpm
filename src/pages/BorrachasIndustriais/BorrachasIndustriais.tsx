@@ -1,6 +1,6 @@
 import { PageSection } from '../../components/PageSection/PageSection';
 import * as S from './BorrachasIndustriais.styles';
-import image from '../../assets/images/Banner-PagesBorracha.png';
+import image from '../../assets/images/Banner-PagesBorracha.jpg';
 import { dataProductRubber } from './dataProductRubber';
 import { ProductCategory } from '../../components/ProductCategory/ProductCategory';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';

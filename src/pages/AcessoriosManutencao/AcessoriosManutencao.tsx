@@ -1,6 +1,6 @@
 import { PageSection } from '../../components/PageSection/PageSection';
 import * as S from './AcessoriosManutencao.styles';
-import image from '../../assets/images/Banner-PagesAcessorios.png';
+import image from '../../assets/images/Banner-PagesAcessorios.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 

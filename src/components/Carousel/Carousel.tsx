@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import video from '../../../public/videos/file.mp4';
-import bannerEletrica from '../../assets/images/Banner-Eletrica-Borracha.png';
+import bannerEletrica from '../../assets/images/Banner-Eletrica-Borracha.jpg';
 import banner3 from '../../assets/images/BannerPrincipal.jpg';
 import { Link } from 'react-router-dom';
 import * as S from './Carousel.styles';

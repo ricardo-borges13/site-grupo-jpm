@@ -1,6 +1,6 @@
 import { PageSection } from '../../components/PageSection/PageSection';
 import * as S from './MateriaisEletricos.styles';
-import image from '../../assets/images/Banner-PagesEletrica.png';
+import image from '../../assets/images/Banner-PagesEletrica.jpg';
 import { dataProductEletric } from './dataProductEletric';
 import { ProductCategory } from '../../components/ProductCategory/ProductCategory';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';

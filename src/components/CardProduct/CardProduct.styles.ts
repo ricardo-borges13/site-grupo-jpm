@@ -33,8 +33,8 @@ export const Content = styled.div`
 
   h3 {
     margin-bottom: 130px;
-    caret-color: transparent; 
-    font-size: 1.5rem;
+    caret-color: transparent;
+    font-size: 1.4rem;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 15px;

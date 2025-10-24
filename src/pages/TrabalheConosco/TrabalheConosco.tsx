@@ -1,6 +1,6 @@
 import { PageSection } from '../../components/PageSection/PageSection';
 import * as S from './TrabalheConosco.styles';
-import image from '../../assets/images/Banner-TrabalheConosco.png';
+import image from '../../assets/images/Banner-TrabalheConosco.jpg';
 import { SEO } from '../../components/SEO/Seo';
 
 export const TrabalheConosco = () => {

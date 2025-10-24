@@ -1,7 +1,7 @@
 import * as S from './Footer.styles';
 import { BiSolidPhoneOutgoing } from 'react-icons/bi';
 import { MdEmail } from 'react-icons/md';
-import logo from '../../assets/images/LogoJPMBranco.png';
+import logo from '../../assets/images/Logo-JPM-Branco.png';
 import { Link } from 'react-router-dom';
 import { APP_VERSION } from '../../version';
 

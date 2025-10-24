@@ -1,10 +1,9 @@
-import React from 'react';
 import * as S from './WhatsAppButton.styles';
 import { FaWhatsapp } from 'react-icons/fa';
 
 type WhatsAppButtonProps = {
   phone: string; //
-  message?: string; 
+  message?: string;
 };
 
 export const WhatsAppButton = ({ phone, message }: WhatsAppButtonProps) => {

@@ -3,6 +3,7 @@ import { BiSolidPhoneOutgoing } from 'react-icons/bi';
 import { MdEmail } from 'react-icons/md';
 import logo from '../../assets/images/LogoJPMBranco.png';
 import { Link } from 'react-router-dom';
+import { APP_VERSION } from '../../version';
 
 export const Footer = () => {
   return (
@@ -59,8 +60,10 @@ export const Footer = () => {
       </S.FooterContent>
       <S.FooterBottom>
         <span>
-          JPM - Todos os direitos reservados | Desenvolvido por Invetec
+          © {new Date().getFullYear()} Grupo JPM Borrachas e Materiais Elétricos – Todos os direitos reservados. | Desenvolvido por Invetec
         </span>
+        <br />
+      <small>Versão {APP_VERSION}</small>
       </S.FooterBottom>
     </S.FooterContainer>
   );

@@ -7,6 +7,7 @@ export const FooterContainer = styled.footer`
   font-size: 0.9rem;
   margin-top: 4rem;
   caret-color: transparent;
+  padding-bottom: 0.5rem;
 `;
 
 export const FooterContent = styled.div`
@@ -120,6 +121,8 @@ export const FooterBottom = styled.div`
   text-align: center;
   border-top: 2px solid #fff;
   font-size: 0.85rem;
+
+
 
   @media (max-width: 730px) {
     font-size: 0.75rem;

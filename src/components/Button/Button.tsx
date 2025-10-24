@@ -16,8 +16,8 @@ export const Button = ({
   return (
     <StyledButton
       onClick={onClick}
-      variant={variant}
-      heightVariant={paddingHeight}
+      $variant={variant}
+      $heightVariant={paddingHeight}
     >
       {text}
     </StyledButton>

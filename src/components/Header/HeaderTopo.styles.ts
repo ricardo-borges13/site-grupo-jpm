@@ -9,7 +9,7 @@ export const Header = styled.div`
   color: #ffffff;
   font-size: 0.9rem;
   z-index: 1100; /* acima do HeaderMain */
-  caret-color: transparent; 
+  caret-color: transparent;
 `;
 
 export const Container = styled.div`
@@ -20,6 +20,15 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
+
+  a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: #e89119; /* cor de destaque */
+  }
+}
 
   > div {
     display: flex;
@@ -51,4 +60,14 @@ export const Container = styled.div`
       flex: unset;
     }
   }
+
+  @media (max-width: 550px){
+      font-size: 0.9rem;
+      
+    a{
+      font-size: 1.3rem;
+    }
+
+  }
+
 `;

@@ -59,13 +59,13 @@ export const MenuLink = styled(Link)`
   }
 `;
 
-export const Submenu = styled.ul<{ isOpen?: boolean }>`
-  opacity: ${props => (props.isOpen ? 1 : 0)};
-  transform: ${props => (props.isOpen ? 'translateY(0)' : 'translateY(-10px)')};
+export const Submenu = styled.ul<{ $isOpen?: boolean }>`
+ opacity: ${({ $isOpen }) => ($isOpen ? 1 : 0)};
+  transform: ${({ $isOpen }) => ($isOpen ? 'translateY(0)' : 'translateY(-10px)')};
   transition:
     opacity 0.5s ease,
     transform 0.3s ease;
-  pointer-events: ${props => (props.isOpen ? 'auto' : 'none')};
+  pointer-events: ${({ $isOpen }) => ($isOpen ? 'auto' : 'none')};
 
   position: absolute;
   top: 100%;

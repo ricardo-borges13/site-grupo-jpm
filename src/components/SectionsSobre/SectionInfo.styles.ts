@@ -9,7 +9,7 @@ export const Container = styled.section`
   background: #f9f9f9;
   border-radius: 20px;
   caret-color: transparent;
-  
+
   @media (max-width: 960px) {
     flex-direction: column;
     text-align: center;
@@ -62,11 +62,9 @@ export const ImagesArea = styled.div`
     max-width: 380px;
   }
 
-  @media (max-width: 960px) {
-    flex-direction: column;
-    height: 120px;
-
-    img:last-child {
+  @media (max-width: 1050px) {
+  
+    img {
       display: none;
     }
   }

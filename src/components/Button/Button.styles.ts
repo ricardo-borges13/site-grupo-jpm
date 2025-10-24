@@ -4,10 +4,9 @@ type ButtonVariant = 'primary' | 'secondary';
 type HeightVariant = 'small' | 'large';
 
 export const StyledButton = styled.button<{
-  variant: ButtonVariant;
-  heightVariant?: HeightVariant;
+  $variant: ButtonVariant;
+  $heightVariant?: HeightVariant;
 }>`
-  padding: 0.8rem 1.4rem;
   border: none;
   border-radius: 20px;
   font-size: 1.3rem;
@@ -15,8 +14,8 @@ export const StyledButton = styled.button<{
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
-  ${({ heightVariant }) =>
-    heightVariant === 'small'
+  ${({ $heightVariant }) =>
+    $heightVariant === 'small'
       ? css`
           padding: 0.2rem 1.8rem;
         `
@@ -24,8 +23,8 @@ export const StyledButton = styled.button<{
           padding: 0.8rem 1.4rem;
         `}
 
-  ${({ variant }) =>
-    variant === 'primary'
+  ${({ $variant }) =>
+    $variant === 'primary'
       ? css`
           background: linear-gradient(
             32deg,

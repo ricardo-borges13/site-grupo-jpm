@@ -22,16 +22,23 @@ export const HeaderContainer = styled.header<{ $isScrolled: boolean }>`
   @media (max-width: 900px) {
     height: ${({ $isScrolled }) => ($isScrolled ? '100px' : '110px')};
   }
+
+  @media (max-width: 550px){
+     top: 84px;
+
+  }
 `;
 
 export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px; /* mesma largura da faixa superior */
-  margin: 0 auto; /* centraliza o bloco */
-  padding: 0.5rem 2rem; /* padding lateral igual à barra azul */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
   width: 100%;
+  box-sizing: border-box; /* ✅ impede vazamento lateral */
+
   @media (max-width: 900px) {
     justify-content: space-between;
     margin-top: 15px;
@@ -40,6 +47,11 @@ export const HeaderContent = styled.div`
   @media (max-width: 775px) {
     justify-content: space-between;
     margin-top: 35px;
+  }
+
+  /* 📱 Ajuste fino para telas muito pequenas */
+  @media (max-width: 550px) {
+    padding: 0.5rem 6rem; /* ✅ reduz o padding lateral */
   }
 `;
 
@@ -88,6 +100,11 @@ export const ContactButton = styled.button`
     min-width: 180px;
     white-space: nowrap;
   }
+
+  /* 📱 Ajuste para celular */
+@media (max-width: 550px) {
+ display: none;
+}
 `;
 
 export const Image = styled.img<{ $isScrolled: boolean }>`
@@ -96,8 +113,10 @@ export const Image = styled.img<{ $isScrolled: boolean }>`
   transition: height 0.3s ease;
 
   @media (max-width: 900px) {
-    height: ${({ $isScrolled }) => ($isScrolled ? '45px' : '40px')};
+    height: ${({ $isScrolled }) => ($isScrolled ? '45px' : '60px')};
   }
+
+ 
 `;
 
 export const MenuWrapper = styled.div`
@@ -107,6 +126,17 @@ export const MenuWrapper = styled.div`
 
   @media (max-width: 900px) {
     gap: 1rem;
+  }
+
+   /* 📱 Versão mobile */
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column ;      /* ✅ botão vai pra baixo do menu */
+    align-items: center;       /* mantém o botão alinhado à direita */
+    width: 100%;
+
+
+
   }
 `;
 

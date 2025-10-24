@@ -20,7 +20,7 @@ export const PageSection = ({
     <>
       <S.SectionWrapper>
         {/* --- Lado esquerdo com título --- */}
-        <S.Left bgColor={bgColor}>
+        <S.Left $bgColor={bgColor}>
           <motion.h1
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

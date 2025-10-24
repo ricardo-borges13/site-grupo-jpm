@@ -20,13 +20,13 @@ export const ClientsCarousel: React.FC = () => {
   ];
 
   const CustomLeftArrow = ({ onClick }: { onClick?: () => void }) => (
-    <S.ArrowButton side="left" onClick={onClick}>
+    <S.ArrowButton $side="left" onClick={onClick}>
       <ChevronLeft />
     </S.ArrowButton>
   );
 
   const CustomRightArrow = ({ onClick }: { onClick?: () => void }) => (
-    <S.ArrowButton side="right" onClick={onClick}>
+    <S.ArrowButton $side="right" onClick={onClick}>
       <ChevronRight />
     </S.ArrowButton>
   );

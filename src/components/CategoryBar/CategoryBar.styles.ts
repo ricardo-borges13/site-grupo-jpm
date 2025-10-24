@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  caret-color: transparent; 
+  caret-color: transparent;
 `;
 export const StyledLink = styled(Link)`
   text-decoration: none;
@@ -26,6 +26,11 @@ export const Inner = styled.div`
   padding: 10px 30px;
   flex-wrap: wrap;
   gap: 10px;
+
+    @media (max-width: 795px) {
+    display: none;
+
+  }
 `;
 
 export const Item = styled.div`
@@ -63,7 +68,5 @@ export const Divider = styled.div`
   height: 45px;
   background-color: #aaa;
 
-  @media (max-width: 768px) {
-    display: none;
-  }
+
 `;

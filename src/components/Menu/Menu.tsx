@@ -51,7 +51,7 @@ export const Menu = () => {
           )}
 
           {item.submenu && (
-            <Submenu isOpen={openMenu === item.id}>
+            <Submenu $isOpen={openMenu === item.id}>
               {item.submenu.map((sub, index) => (
                 <SubmenuItem key={index}>
                   <MenuLink

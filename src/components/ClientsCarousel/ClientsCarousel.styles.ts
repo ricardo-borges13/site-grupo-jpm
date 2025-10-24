@@ -43,7 +43,7 @@ export const Card = styled.div`
   }
 `;
 
-export const ArrowButton = styled.button<{ side: 'left' | 'right' }>`
+export const ArrowButton = styled.button<{ $side: 'left' | 'right' }>`
   background: none;
   border: none;
   color: #333;
@@ -51,7 +51,7 @@ export const ArrowButton = styled.button<{ side: 'left' | 'right' }>`
   cursor: pointer;
   position: absolute !important;
   top: 50%;
-  ${props => (props.side === 'left' ? 'left: 0;' : 'right: 0;')}
+ ${({ $side }) => ($side === 'left' ? 'left: 0;' : 'right: 0;')}
   transform: translateY(-50%);
   z-index: 10;
   padding: 0.5rem;

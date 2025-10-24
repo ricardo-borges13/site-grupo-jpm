@@ -5,12 +5,15 @@ import logo from '../../assets/images/Logo-JPM-Branco.png';
 import { Link } from 'react-router-dom';
 import { APP_VERSION } from '../../version';
 
+
 export const Footer = () => {
   return (
     <S.FooterContainer>
       <S.FooterContent>
         <S.LogoArea>
+          <Link to="/">
           <img src={logo} alt="Logo JPM" />
+           </Link>
         </S.LogoArea>
 
         <S.FooterColumn>

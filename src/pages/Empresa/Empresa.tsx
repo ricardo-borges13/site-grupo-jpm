@@ -7,8 +7,8 @@ export const Empresa = () => {
   return (
     <>
       <SEO
-        title="A Empresa - GRUPO JPM Borrachas e Materiais Elétricos"
-        description="O Grupo JPM atua desde 1997 no fornecimento de insumos industriais. Referência em materiais elétricos, borrachas e automação, com foco em qualidade e atendimento técnico."
+        title="A Empresa - A JPM Borrachas e Materiais Elétricos"
+        description="A JPM atua desde 1997 no fornecimento de insumos industriais. Referência em materiais elétricos, borrachas e automação, com foco em qualidade e atendimento técnico."
       />
 
       <PageSection title="A EMPRESA" image={produtosImg}>
@@ -16,11 +16,11 @@ export const Empresa = () => {
           <header>
             <h1>Sobre o Grupo JPM</h1>
             <p>
-              A <strong>JPM Borrachas e Materiais Elétricos</strong>, integrante
-              do Grupo JPM, é especializada na revenda de insumos industriais
-              diversos. Com sede em <strong>Belo Horizonte (MG)</strong>, atua
-              desde <strong>1997</strong>, oferecendo soluções para múltiplos
-              setores da indústria.
+              A <strong>JPM Borrachas e Materiais Elétricos</strong>, é
+              especializada na revenda de insumos industriais diversos. Com sede
+              em <strong>Belo Horizonte (MG)</strong>, atua desde{' '}
+              <strong>1997</strong>, oferecendo soluções para múltiplos setores
+              da indústria.
             </p>
           </header>
 
@@ -80,12 +80,12 @@ export const Empresa = () => {
                 Minas Gerais
               </dd>
 
-              <dt>Situação jurídica</dt>
+              {/* <dt>Situação jurídica</dt>
               <dd>
                 Empresa com estrutura jurídica ativa, capital social de R$
                 250.000,00 e quadro societário formado por quatro sócios. Regime
                 de tributação: lucro presumido.
-              </dd>
+              </dd> */}
             </dl>
           </section>
         </S.Container>
@@ -93,5 +93,3 @@ export const Empresa = () => {
     </>
   );
 };
-
-

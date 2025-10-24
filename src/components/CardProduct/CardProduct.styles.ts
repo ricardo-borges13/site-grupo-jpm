@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const Card = styled.div<{ side: 'left' | 'right' }>`
+export const Card = styled.div<{ $side: 'left' | 'right' }>`
   position: relative;
   overflow: hidden;
   width: 60%;
   max-width: 500px;
-  border-radius: ${({ side }) =>
-    side === 'right' ? '100% 0 0 100%' : '0 100% 100% 0'};
+  border-radius: ${({ $side }) =>
+    $side === 'right' ? '100% 0 0 100%' : '0 100% 100% 0'};
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.55);
   transition:
     transform 0.3s ease,

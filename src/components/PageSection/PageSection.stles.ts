@@ -13,8 +13,8 @@ export const SectionWrapper = styled.section`
   }
 `;
 
-export const Left = styled.div<{ bgColor: string }>`
-  background-color: ${({ bgColor }) => bgColor};
+export const Left = styled.div<{ $bgColor: string }>`
+  background-color: ${({ $bgColor }) => $bgColor};
   display: flex;
   flex-direction: column;
   align-items: center;

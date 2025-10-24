@@ -17,7 +17,7 @@ export const CardProduto = ({
 }: CardProdutoProps) => {
   const navigate = useNavigate();
   return (
-    <S.Card side={side}>
+    <S.Card $side={side}>
       <img src={image} alt={title} />
       <S.Content>
         <h3>{title}</h3>

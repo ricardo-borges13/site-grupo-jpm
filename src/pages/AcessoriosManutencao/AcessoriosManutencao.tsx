@@ -8,7 +8,7 @@ export const AcessoriosManutencao = () => {
   return (
     <>
       <SEO
-        title="Acessórios para Manutenção - GRUPO JPM Borrachas e Materiais Elétricos"
+        title="Acessórios para Manutenção - JPM Borrachas e Materiais Elétricos"
         description="Vedação, rodas, rodízios e acessórios industriais de manutenção com alta durabilidade e qualidade."
       />
 

@@ -7,7 +7,7 @@ import image2 from '../../assets/images/Sobre-Borracha.jpg';
 import image3 from '../../assets/images/fioeletrico.jpg';
 import image4 from '../../assets/images/mangueira.jpg';
 import image5 from '../../assets/images/manutencao.jpg';
-import image6 from '../../assets/images/AutomacaoFREEPIK.jpg'
+import image6 from '../../assets/images/AutomacaoFREEPIK.jpg';
 import { SectionInfo } from '../../components/SectionsSobre/SectionInfo';
 import type { SectionInfoProps } from '../../components/SectionsSobre/SectionInfo';
 import { ProductGroup } from '../../components/ProductGroup/ProdutctGroup';
@@ -17,12 +17,24 @@ import { SectionsContactus } from '../../components/SectionsContactUs/SectionsCo
 import { SEO } from '../../components/SEO/Seo';
 
 const sobreData: SectionInfoProps = {
-  title: 'Sobre o Grupo JPM',
+  title: 'Sobre a JPM',
   description: `
-      A <strong>JPM Borrachas e Materiais Elétricos</strong>, integrante do Grupo JPM,
-      é especializada no fornecimento de insumos industriais. <br><br>
-      Com sede em Belo Horizonte (MG), atua desde 1997, atendendo múltiplos setores da indústria
-      com um <strong>portfólio que inclui materiais elétricos, borrachas e plásticos industriais</strong>.
+      <p>
+    A <strong>JPM Borrachas e Materiais Elétricos</strong> é especializada no
+    fornecimento de <strong>insumos industriais</strong>, oferecendo soluções em
+    <strong> materiais elétricos, borrachas e automação</strong>.
+  </p>
+  <p>
+    Com sede em <strong>Belo Horizonte (MG)</strong>, atua desde
+    <strong> 1997</strong>, atendendo grandes indústrias brasileiras com um
+    portfólio amplo, qualidade reconhecida e atendimento técnico ágil.
+  </p>
+  <p>
+    Entre seus clientes estão empresas de destaque como
+    <strong> Usiminas</strong>, <strong>ArcelorMittal</strong>,
+    <strong> Belgo Arames</strong>, <strong>Alvoar Lácteos</strong> e
+    <strong> CSN</strong>.
+  </p>
     `,
   image1,
   image2,
@@ -44,7 +56,7 @@ export const Home = () => {
   return (
     <>
       <SEO
-        title="GRUPO JPM Borrachas e Materiais Elétricos"
+        title="JPM Borrachas e Materiais Elétricos"
         description="Especialista em borrachas, materiais elétricos e automação industrial desde 1997. Soluções completas para manutenção e produção em diversos setores."
       />
 
@@ -71,5 +83,3 @@ export const Home = () => {
     </>
   );
 };
-
-

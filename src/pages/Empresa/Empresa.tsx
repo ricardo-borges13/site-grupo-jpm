@@ -7,89 +7,103 @@ export const Empresa = () => {
   return (
     <>
       <SEO
-        title="A Empresa - A JPM Borrachas e Materiais Elétricos"
+        title="A Empresa - JPM Borrachas e Materiais Elétricos"
         description="A JPM atua desde 1997 no fornecimento de insumos industriais. Referência em materiais elétricos, borrachas e automação, com foco em qualidade e atendimento técnico."
       />
 
       <PageSection title="A EMPRESA" image={produtosImg}>
-        <S.Container>
-          <header>
-            <h1>Sobre o Grupo JPM</h1>
-            <p>
-              A <strong>JPM Borrachas e Materiais Elétricos</strong>, é
-              especializada na revenda de insumos industriais diversos. Com sede
-              em <strong>Belo Horizonte (MG)</strong>, atua desde{' '}
-              <strong>1997</strong>, oferecendo soluções para múltiplos setores
-              da indústria.
-            </p>
-          </header>
+  <S.Container>
+    <header>
+      <h1>Sobre a JPM</h1>
+      <p>
+        Fundada em <strong>24 de junho de 1997</strong>, a
+        <strong> JPM Borrachas e Materiais Elétricos</strong> é especializada na
+        <strong> revenda de insumos industriais</strong>, atendendo empresas de
+        diversos segmentos com soluções em <strong>materiais elétricos</strong>,
+        <strong> borrachas industriais</strong>, <strong>automação</strong> e
+        <strong> manutenção</strong>. Com sede em
+        <strong> Belo Horizonte (MG)</strong>, atua em todo o território nacional,
+        oferecendo atendimento técnico e logístico ágil, com foco na eficiência e
+        na confiabilidade das operações de seus clientes.
+      </p>
+    </header>
 
-          <section>
-            <h2>Áreas de atuação</h2>
-            <p>Principais linhas e produtos comercializados:</p>
-            <ul>
-              <li>
-                <strong>Materiais Elétricos:</strong> iluminação, reatores,
-                cabos, painéis de comando e conexões industriais.
-              </li>
-              <li>
-                <strong>Borrachas Industriais:</strong> correias, mangueiras,
-                lençóis de borracha e plásticos industriais.
-              </li>
-              <li>
-                <strong>Automação Industrial:</strong> módulos de interface,
-                IHMs, fontes, CPUs, inversores, PLCs e outros dispositivos de
-                automação.
-              </li>
-              <li>
-                <strong>Acessórios de Manutenção:</strong> produtos para
-                vedação, rodas, rodízios e outros itens de suporte à manutenção
-                industrial.
-              </li>
-            </ul>
-          </section>
+    <section>
+      <h2>Áreas de atuação</h2>
+      <p>Principais linhas e produtos comercializados:</p>
+      <ul>
+        <li>
+          <strong>Materiais Elétricos:</strong> iluminação, cabos, painéis de
+          comando, conexões e dispositivos industriais.
+        </li>
+        <li>
+          <strong>Borrachas e Plásticos Industriais:</strong> correias,
+          mangueiras, lençóis e perfis técnicos.
+        </li>
+        <li>
+          <strong>Automação Industrial:</strong> IHMs, PLCs, inversores, fontes,
+          módulos de interface e CPUs.
+        </li>
+        <li>
+          <strong>Acessórios de Manutenção:</strong> produtos para vedação,
+          rodas, rodízios e componentes de suporte industrial.
+        </li>
+      </ul>
+    </section>
 
-          <section>
-            <h2>Destaques</h2>
-            <ul>
-              <li>
-                Atende diversos segmentos industriais com um portfólio bem
-                diverso e especializado.
-              </li>
-              <li>
-                Combina componentes elétricos, peças em borracha/plástico e
-                soluções de automação — útil tanto para manutenção quanto para
-                operações automatizadas.
-              </li>
-              <li>
-                Sede e canal de comunicação claros, indicando boa presença local
-                e foco em atendimento direto ao cliente.
-              </li>
-            </ul>
-          </section>
+    <section>
+      <h2>Parceiros e Clientes</h2>
+      <p>
+        Ao longo de quase três décadas, a JPM construiu uma sólida reputação de
+        confiança, fornecendo para <strong>grandes empresas da indústria nacional</strong>,
+        entre elas <strong>Usiminas</strong>, <strong>ArcelorMittal</strong>,
+        <strong> Belgo Arames</strong>, <strong>Alvoar Lácteos</strong> e
+        <strong> CSN (Companhia Siderúrgica Nacional)</strong>.
+      </p>
+      <p>
+        Essas parcerias refletem o compromisso da JPM com
+        <strong> qualidade, pontualidade e suporte técnico especializado</strong>,
+        valores que sustentam sua presença constante em importantes cadeias
+        produtivas dos setores <strong>siderúrgico, automotivo, alimentício e de mineração</strong>.
+      </p>
+    </section>
 
-          <section>
-            <h2>Dados institucionais</h2>
-            <dl>
-              <dt>Fundação</dt>
-              <dd>24 de junho de 1997</dd>
+    <section>
+      <h2>Compromisso</h2>
+      <ul>
+        <li>
+          Fornecer <strong>soluções industriais completas</strong> que combinem
+          estoque amplo, atendimento personalizado e agilidade logística.
+        </li>
+        <li>
+          Garantir a <strong>máxima eficiência operacional</strong> e a
+          <strong> confiabilidade</strong> nas operações de nossos clientes.
+        </li>
+        <li>
+          Manter um relacionamento próximo e transparente, com foco em
+          <strong>atendimento técnico especializado</strong>.
+        </li>
+      </ul>
+    </section>
 
-              <dt>Endereço</dt>
-              <dd>
-                Rua Soares Nogueira, nº 10 – Bairro Camargos, Belo Horizonte,
-                Minas Gerais
-              </dd>
+    <section>
+      <h2>Dados institucionais</h2>
+      <dl>
+        <dt>Fundação</dt>
+        <dd>24 de junho de 1997</dd>
 
-              {/* <dt>Situação jurídica</dt>
-              <dd>
-                Empresa com estrutura jurídica ativa, capital social de R$
-                250.000,00 e quadro societário formado por quatro sócios. Regime
-                de tributação: lucro presumido.
-              </dd> */}
-            </dl>
-          </section>
-        </S.Container>
-      </PageSection>
+        <dt>Endereço</dt>
+        <dd>
+          Rua Soares Nogueira, nº 10 – Bairro Camargos, Belo Horizonte, Minas Gerais
+        </dd>
+
+        <dt>CNPJ</dt>
+        <dd>01.952.213/0001-86</dd>
+      </dl>
+    </section>
+  </S.Container>
+</PageSection>
+
     </>
   );
 };

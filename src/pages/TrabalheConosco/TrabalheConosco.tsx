@@ -7,8 +7,8 @@ export const TrabalheConosco = () => {
   return (
     <>
       <SEO
-        title="Trabalhe Conosco - GRUPO JPM Borrachas e Materiais Elétricos"
-        description="Faça parte do Grupo JPM! Envie seu currículo e junte-se a uma equipe com mais de 25 anos de experiência em soluções industriais e compromisso com a excelência."
+        title="Trabalhe Conosco - JPM Borrachas e Materiais Elétricos"
+        description="Faça parte da JPM! Envie seu currículo e junte-se a uma equipe com mais de 25 anos de experiência em soluções industriais e compromisso com a excelência."
       />
 
       <PageSection title="TRABALHE CONOSCO" image={image}>

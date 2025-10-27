@@ -10,7 +10,7 @@ export const MateriaisEletricos = () => {
   return (
     <>
       <SEO
-        title="Materiais Elétricos - GRUPO JPM Borrachas e Materiais Elétricos"
+        title="Materiais Elétricos - JPM Borrachas e Materiais Elétricos"
         description="Cabos, painéis, conexões e soluções em materiais elétricos para indústrias. Qualidade e segurança com o Grupo JPM."
       />
 

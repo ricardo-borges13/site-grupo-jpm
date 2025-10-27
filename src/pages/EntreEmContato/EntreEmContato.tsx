@@ -9,8 +9,8 @@ import { SEO } from '../../components/SEO/Seo';
   return (
     <>
       <SEO
-        title="Fale Conosco - GRUPO JPM Borrachas e Materiais Elétricos"
-        description="Entre em contato com o Grupo JPM. Solicite orçamentos, tire dúvidas e fale com nossa equipe de atendimento em Belo Horizonte."
+        title="Fale Conosco - JPM Borrachas e Materiais Elétricos"
+        description="Entre em contato com a JPM. Solicite orçamentos, tire dúvidas e fale com nossa equipe de atendimento em Belo Horizonte."
       />
 
       <PageSection title="ENTRE EM CONTATO" image={image}>

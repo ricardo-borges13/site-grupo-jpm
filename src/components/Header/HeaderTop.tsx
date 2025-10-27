@@ -15,11 +15,11 @@ export const HeaderTop = ({ text, phone, email }: HeaderProps) => {
         <div>{text}</div>
         <div>
           <LiaPhoneAltSolid />
-         <a href="tel:+553132924650"> {phone} </a>
+          <a href="tel:+553132924650"> {phone} </a>
         </div>
         <div>
           <AiOutlineMail />
-       <a href="mailto:sac@grupojpm.com.br">{email}</a>
+          <a href="mailto:sac@grupojpm.com.br">{email}</a>
         </div>
       </S.Container>
     </S.Header>

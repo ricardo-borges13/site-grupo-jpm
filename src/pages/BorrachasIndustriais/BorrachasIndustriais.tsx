@@ -10,7 +10,7 @@ export const BorrachasIndustriais = () => {
   return (
     <>
       <SEO
-        title="Borrachas Industriais - GRUPO JPM Borrachas e Materiais Elétricos"
+        title="Borrachas Industriais - JPM Borrachas e Materiais Elétricos"
         description="Correias, mangueiras e lençóis de borracha para manutenção e produção industrial. Encontre tudo com o Grupo JPM."
       />
 

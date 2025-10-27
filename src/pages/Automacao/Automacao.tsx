@@ -8,7 +8,7 @@ import { SEO } from '../../components/SEO/Seo';
   return (
     <>
       <SEO
-        title="Automação Industrial - GRUPO JPM Borrachas e Materiais Elétricos"
+        title="Automação Industrial - JPM Borrachas e Materiais Elétricos"
         description="Fontes, IHMs, CLPs e inversores. Componentes e soluções completas em automação industrial pelo Grupo JPM."
       />
 

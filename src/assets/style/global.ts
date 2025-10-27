@@ -32,4 +32,42 @@ export const GlobalStyle = createGlobalStyle`
   font-size: 150px;
 }
 
+ /* Breakpoints para Galaxy Z Fold 5 e outros dispositivos móveis */
+    /* Galaxy Z Fold 5 - Tela externa: 2316 x 904px */
+    @media (max-width: 904px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    /* Galaxy Z Fold 5 - Tela interna: 2176 x 1812px */
+    @media (max-width: 768px) {
+      body {
+        font-size: 13px;
+      }
+    }
+
+    /* Dispositivos móveis pequenos */
+    @media (max-width: 480px) {
+      body {
+        font-size: 12px;
+      }
+
+      .global-container {
+        padding: 0 12px;
+      }
+    }
+
+    /* Dispositivos muito pequenos */
+    @media (max-width: 360px) {
+      body {
+        font-size: 11px;
+      }
+
+      .global-container {
+        padding: 0 8px;
+      }
+    }
+
+
   `;

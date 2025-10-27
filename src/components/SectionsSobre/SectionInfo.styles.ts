@@ -13,6 +13,7 @@ export const Container = styled.section`
   @media (max-width: 960px) {
     flex-direction: column;
     text-align: center;
+    padding: 6px 8%;
   }
 `;
 
@@ -63,7 +64,7 @@ export const ImagesArea = styled.div`
   }
 
   @media (max-width: 1050px) {
-  
+
     img {
       display: none;
     }

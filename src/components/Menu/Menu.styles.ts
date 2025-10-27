@@ -18,6 +18,14 @@ export const Nav = styled.nav`
     align-items: center;
     gap: 0.8rem;
   }
+
+   @media (max-width: 550px) {
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 0.7rem;
+  }
 `;
 
 export const MenuItem = styled.div`

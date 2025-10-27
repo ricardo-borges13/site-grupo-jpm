@@ -46,4 +46,30 @@ export const StyledButton = styled.button<{
             background-color: #064391;
           }
         `}
+
+        @media (max-width: 550px) {
+    font-weight: normal;
+    font-size: 1.1rem;
+    ${({ $heightVariant }) =>
+      $heightVariant === 'small'
+        ? css`
+            padding: 0.1rem 1rem;
+          `
+        : css`
+            padding: 0.6rem 1.2rem;
+          `}
+  }
+
+  @media (max-width: 490px) {
+    font-weight: normal;
+    font-size: 0.9rem;
+    ${({ $heightVariant }) =>
+      $heightVariant === 'small'
+        ? css`
+            padding: 0.1rem 1rem;
+          `
+        : css`
+            padding: 0.6rem 1.2rem;
+          `}
+  }
 `;

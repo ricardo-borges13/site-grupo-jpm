@@ -29,12 +29,6 @@ const sobreData: SectionInfoProps = {
     <strong> 1997</strong>, atendendo grandes indústrias brasileiras com um
     portfólio amplo, qualidade reconhecida e atendimento técnico ágil.
   </p>
-  <p>
-    Entre seus clientes estão empresas de destaque como
-    <strong> Usiminas</strong>, <strong>ArcelorMittal</strong>,
-    <strong> Belgo Arames</strong>, <strong>Alvoar Lácteos</strong> e
-    <strong> CSN</strong>.
-  </p>
     `,
   image1,
   image2,

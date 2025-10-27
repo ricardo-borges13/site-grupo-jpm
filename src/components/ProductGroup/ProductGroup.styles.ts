@@ -12,6 +12,13 @@ caret-color: transparent;
     justify-content: center;
     margin-bottom: 30px;
   }
+
+  /* Quando chegar no mobile, ocupar toda a largura */
+  @media (max-width: 961px) {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
 `;
 
 export const ImagesArea = styled.div`
@@ -31,10 +38,13 @@ export const ImagesArea = styled.div`
     object-fit: cover;
   }
 
-  @media (max-width: 960px) {
-    grid-template-columns: 1fr; /* No mobile, uma coluna só */
-    img {
-      max-width: 100%;
+ @media (max-width: 961px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: stretch; /* faz as imagens ocuparem toda a largura */
+
+    > * {
+      width: 100%; /* garante que cada card use toda a largura */
     }
   }
 `;

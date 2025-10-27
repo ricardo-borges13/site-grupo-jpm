@@ -6,6 +6,13 @@ export const ContainterCarousel = styled.div`
   margin: 0 auto;
   padding: 145px 16px 0 16px;
   caret-color: transparent;
+
+  @media (max-width: 501px) {
+     max-width: 100%;
+    width: 100vw; /* ocupa toda a largura da viewport */
+    padding: 145px 0 0 0; /* remove margens laterais */
+    margin: 0; /* remove centralização */
+  }
 `;
 
 export const CarouselParceiros = styled.div`

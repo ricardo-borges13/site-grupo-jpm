@@ -15,12 +15,13 @@ export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  gap: 2rem;
+
   padding-left: 80px;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
     text-align: center;
+    padding: 0 10px 0 10px;
   }
 `;
 
@@ -45,6 +46,20 @@ export const InfoArea = styled.div`
   .contact p {
     margin-bottom: 0.3rem;
     font-size: 1.2rem;
+  }
+
+  @media (max-width: 900px) {
+    h2{
+      margin-bottom: 0;
+    }
+    .contact{
+      display: none;
+      margin-bottom: 0;
+     
+    }
+    p{
+      margin: 0;
+    }
   }
 `;
 

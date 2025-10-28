@@ -41,6 +41,9 @@ export const ImagesArea = styled.div`
   @media (max-width: 961px) {
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  @media (max-width: 540px) {
     justify-items: stretch; /* faz as imagens ocuparem toda a largura */
 
     > * {

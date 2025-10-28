@@ -35,6 +35,12 @@ export const Container = styled.div`
       font-size: 1rem;
       color: #333;
     }
+
+    @media (max-width: 540px) {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
   }
 
   section {

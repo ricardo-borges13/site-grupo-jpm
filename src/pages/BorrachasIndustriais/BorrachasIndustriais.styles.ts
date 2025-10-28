@@ -37,6 +37,12 @@ export const Container = styled.div`
       margin-bottom: 1rem;
       line-height: 1.7;
     }
+
+    @media (max-width: 540px) {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
   }
 
   @media (max-width: 768px) {

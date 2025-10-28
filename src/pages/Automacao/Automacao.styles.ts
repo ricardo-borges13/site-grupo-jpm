@@ -35,6 +35,12 @@ export const Container = styled.div`
       margin-bottom: 1.2rem;
       line-height: 1.7;
     }
+
+    @media (max-width: 540px) {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
   }
 
   h3 {

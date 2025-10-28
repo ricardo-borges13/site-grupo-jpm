@@ -49,7 +49,7 @@ export const HeaderContent = styled.div`
   }
 
   /* 📱 Ajuste fino para telas muito pequenas */
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     padding: 0.5rem 6rem; /* ✅ reduz o padding lateral */
   }
 `;

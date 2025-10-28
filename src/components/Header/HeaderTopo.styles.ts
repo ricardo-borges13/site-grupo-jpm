@@ -61,11 +61,19 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 550px) {
-    font-size: 0.9rem;
+  @media (max-width: 770px) {
+    font-size: 0.6rem;
 
     a {
-      font-size: 1.3rem;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    font-size: 0.8rem;
+
+    a {
+      font-size: 1.1rem;
     }
   }
 `;

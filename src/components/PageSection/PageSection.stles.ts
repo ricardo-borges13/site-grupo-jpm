@@ -37,6 +37,17 @@ export const Left = styled.div<{ $bgColor: string }>`
   p {
     font-size: 1rem;
   }
+
+  @media (max-width: 540px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+  }
 `;
 
 export const Right = styled.div`

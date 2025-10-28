@@ -10,7 +10,7 @@ export function CarouselComponent() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 490);
+    const handleResize = () => setIsMobile(window.innerWidth <= 820);
     handleResize(); // executa uma vez ao montar
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);

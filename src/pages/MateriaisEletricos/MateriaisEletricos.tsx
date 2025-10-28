@@ -33,8 +33,8 @@ export const MateriaisEletricos = () => {
 
             <p>
               Nossas soluções abrangem <strong>iluminação</strong>,
-              <strong> reatores</strong>,<strong> eletrodutos</strong>, painéis e
-              comandos, cabos e conexões, sempre com foco em{' '}
+              <strong> reatores</strong>,<strong> eletrodutos</strong>, painéis
+              e comandos, cabos e conexões, sempre com foco em{' '}
               <strong> segurança</strong>, <strong>eficiência</strong> e
               <strong> confiabilidade</strong>.
             </p>

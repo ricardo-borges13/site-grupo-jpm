@@ -25,6 +25,14 @@ export const Nav = styled.nav`
     padding: 20px;
     color: white;
   }
+
+  @media (max-width: 400px) {
+    gap: 1.3rem;
+  }
+
+  @media (max-width: 350px) {
+    gap: 1.2rem;
+  }
 `;
 
 export const MenuItem = styled.div`

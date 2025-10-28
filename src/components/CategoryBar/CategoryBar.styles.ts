@@ -27,9 +27,8 @@ export const Inner = styled.div`
   flex-wrap: wrap;
   gap: 10px;
 
-    @media (max-width: 795px) {
+  @media (max-width: 795px) {
     display: none;
-
   }
 `;
 
@@ -67,6 +66,4 @@ export const Divider = styled.div`
   width: 3px;
   height: 45px;
   background-color: #aaa;
-
-
 `;

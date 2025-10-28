@@ -3,7 +3,7 @@ import * as S from './AcessoriosManutencao.styles';
 import image from '../../assets/images/Banner-PagesAcessorios.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
-import { contactData } from '../../components/Header'
+import { contactData } from '../../components/Header';
 
 export const AcessoriosManutencao = () => {
   return (
@@ -64,5 +64,3 @@ export const AcessoriosManutencao = () => {
     </>
   );
 };
-
-

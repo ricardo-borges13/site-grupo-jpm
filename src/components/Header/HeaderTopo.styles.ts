@@ -22,13 +22,13 @@ export const Container = styled.div`
   gap: 1.5rem;
 
   a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 
-  &:hover {
-    color: #e89119; /* cor de destaque */
+    &:hover {
+      color: #e89119; /* cor de destaque */
+    }
   }
-}
 
   > div {
     display: flex;
@@ -61,13 +61,11 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 550px){
-      font-size: 0.9rem;
-      
-    a{
+  @media (max-width: 550px) {
+    font-size: 0.9rem;
+
+    a {
       font-size: 1.3rem;
     }
-
   }
-
 `;

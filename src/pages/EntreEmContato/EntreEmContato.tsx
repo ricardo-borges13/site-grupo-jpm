@@ -4,9 +4,9 @@ import image from '../../assets/images/Banner-PagesEntreContato.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { MapSection } from '../../components/MapaSection/MapSecion';
 import { SEO } from '../../components/SEO/Seo';
-import { contactData } from '../../components/Header'
+import { contactData } from '../../components/Header';
 
- export const EntreEmContato = () => {
+export const EntreEmContato = () => {
   return (
     <>
       <SEO
@@ -45,5 +45,3 @@ import { contactData } from '../../components/Header'
     </>
   );
 };
-
-

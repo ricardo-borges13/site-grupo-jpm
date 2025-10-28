@@ -33,7 +33,7 @@ export const HeaderMain = () => {
           </S.MenuToggle>
 
           <S.MenuContainer $open={menuOpen}>
-            <Menu />
+            <Menu onLinkClick={() => setMenuOpen(false)} />
           </S.MenuContainer>
           <S.ContactButton onClick={() => navigate('/contato')}>
             Entre em Contato

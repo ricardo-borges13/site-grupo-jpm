@@ -6,9 +6,11 @@ import * as S from './Layout.styles';
 import { WhatsAppButton } from '../WhatsApp/WhatsAppButton';
 import { useState, useEffect } from 'react';
 
-
 export const Layout = () => {
-  const [whatsApp, setWhatsApp] = useState<{ phone?: string; message?: string }>({});
+  const [whatsApp, setWhatsApp] = useState<{
+    phone?: string;
+    message?: string;
+  }>({});
 
   useEffect(() => {
     fetch('/whatsApp.json')
@@ -27,7 +29,7 @@ export const Layout = () => {
         <Outlet />
       </S.MainContent>
 
-       {whatsApp.phone && (
+      {whatsApp.phone && (
         <WhatsAppButton
           phone={whatsApp.phone}
           message={whatsApp.message || ''}

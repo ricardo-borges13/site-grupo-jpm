@@ -64,7 +64,6 @@ export const ImagesArea = styled.div`
   }
 
   @media (max-width: 1050px) {
-
     img {
       display: none;
     }

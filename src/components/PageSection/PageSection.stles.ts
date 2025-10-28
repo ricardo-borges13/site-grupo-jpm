@@ -11,6 +11,10 @@ export const SectionWrapper = styled.section`
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
+
+  @media (max-width: 551px) {
+    padding-top: 200px;
+  }
 `;
 
 export const Left = styled.div<{ $bgColor: string }>`

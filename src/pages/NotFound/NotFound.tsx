@@ -6,7 +6,7 @@ import image from '../../assets/images/Banner-Pages-Erro404.jpg';
 import * as S from './NotFound.styles';
 import { PageSection } from '../../components/PageSection/PageSection';
 
- export const NotFound = () => {
+export const NotFound = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -39,5 +39,3 @@ import { PageSection } from '../../components/PageSection/PageSection';
     </PageSection>
   );
 };
-
-

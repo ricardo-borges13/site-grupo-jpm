@@ -3,7 +3,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { menuItems } from './menuData';
 import { Nav, MenuItem, MenuLink, Submenu, SubmenuItem } from './Menu.styles';
 
-export const Menu = () => {
+type MenuProps = {
+  onLinkClick?: () => void; // ✅ função opcional
+};
+
+export const Menu = ({ onLinkClick }: MenuProps) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState<number | null>(null);
@@ -19,6 +23,7 @@ export const Menu = () => {
     } else {
       navigate('/', { state: { scrollTo: 'produtos' } });
     }
+    onLinkClick?.(); // ✅ fecha menu
   }
 
   function handleMouseEnter(id: number) {
@@ -32,6 +37,7 @@ export const Menu = () => {
   function handleSubmenuClick(path: string) {
     setOpenMenu(null); // fecha o submenu
     navigate(path); // navega pra página do item
+    onLinkClick?.(); // ✅ fecha menu
   }
 
   return (
@@ -47,7 +53,12 @@ export const Menu = () => {
               {item.title}
             </MenuLink>
           ) : (
-            <MenuLink to={item.path ?? '#'}>{item.title}</MenuLink>
+            <MenuLink
+              to={item.path ?? '#'}
+              onClick={onLinkClick} // ✅ fecha menu ao clicar em qualquer link
+            >
+              {item.title}
+            </MenuLink>
           )}
 
           {item.submenu && (

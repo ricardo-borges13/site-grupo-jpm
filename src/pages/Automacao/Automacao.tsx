@@ -3,9 +3,9 @@ import * as S from './Automacao.styles';
 import image from '../../assets/images/Banner-PagesAutomacao.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
-import { contactData } from '../../components/Header'
+import { contactData } from '../../components/Header';
 
- export const Automacao = () => {
+export const Automacao = () => {
   return (
     <>
       <SEO
@@ -61,4 +61,3 @@ import { contactData } from '../../components/Header'
     </>
   );
 };
-

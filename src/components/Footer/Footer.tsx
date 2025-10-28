@@ -9,7 +9,7 @@ import { menuItems } from '../Menu/menuData';
 
 export const Footer = ({ phone, email }: ContactInfo) => {
   const footerItems = menuItems.filter(item => item.showInFooter);
- 
+
   return (
     <S.FooterContainer>
       <S.FooterContent>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const wrapper = styled.div`
-caret-color: transparent;
+  caret-color: transparent;
   width: 80%;
   max-width: 1350px;
   margin: 0 auto;
@@ -38,7 +38,7 @@ export const ImagesArea = styled.div`
     object-fit: cover;
   }
 
- @media (max-width: 961px) {
+  @media (max-width: 961px) {
     grid-template-columns: 1fr;
     width: 100%;
     justify-items: stretch; /* faz as imagens ocuparem toda a largura */

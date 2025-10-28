@@ -8,7 +8,7 @@ export const ContainterCarousel = styled.div`
   caret-color: transparent;
 
   @media (max-width: 501px) {
-     max-width: 100%;
+    max-width: 100%;
     width: 100vw; /* ocupa toda a largura da viewport */
     padding: 145px 0 0 0; /* remove margens laterais */
     margin: 0; /* remove centralização */
@@ -16,7 +16,6 @@ export const ContainterCarousel = styled.div`
 `;
 
 export const CarouselParceiros = styled.div`
-
   width: 100%;
   max-width: clamp(320px, 90vw, 1200px);
   margin: 0 auto;

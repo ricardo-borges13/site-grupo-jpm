@@ -8,7 +8,6 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
 
-
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -25,8 +24,8 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-     "resolveJsonModule": true,
-     "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "include": ["src"]
 }

@@ -23,9 +23,8 @@ export const HeaderContainer = styled.header<{ $isScrolled: boolean }>`
     height: ${({ $isScrolled }) => ($isScrolled ? '100px' : '110px')};
   }
 
-  @media (max-width: 550px){
-     top: 84px;
-
+  @media (max-width: 550px) {
+    top: 88px;
   }
 `;
 
@@ -102,9 +101,9 @@ export const ContactButton = styled.button`
   }
 
   /* 📱 Ajuste para celular */
-@media (max-width: 550px) {
- display: none;
-}
+  @media (max-width: 550px) {
+    display: none;
+  }
 `;
 
 export const Image = styled.img<{ $isScrolled: boolean }>`
@@ -115,8 +114,6 @@ export const Image = styled.img<{ $isScrolled: boolean }>`
   @media (max-width: 900px) {
     height: ${({ $isScrolled }) => ($isScrolled ? '45px' : '60px')};
   }
-
- 
 `;
 
 export const MenuWrapper = styled.div`
@@ -128,15 +125,12 @@ export const MenuWrapper = styled.div`
     gap: 1rem;
   }
 
-   /* 📱 Versão mobile */
+  /* 📱 Versão mobile */
   @media (max-width: 550px) {
     display: flex;
-    flex-direction: column ;      /* ✅ botão vai pra baixo do menu */
-    align-items: center;       /* mantém o botão alinhado à direita */
+    flex-direction: column; /* ✅ botão vai pra baixo do menu */
+    align-items: center; /* mantém o botão alinhado à direita */
     width: 100%;
-
-
-
   }
 `;
 

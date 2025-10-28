@@ -6,25 +6,24 @@ export const Nav = styled.nav`
   align-items: center;
   gap: 4rem;
 
-  @media (max-width: 1045px) {
+  @media (max-width: 1079px) {
     gap: 2.5rem;
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 975px) {
     gap: 1rem;
   }
 
   @media (max-width: 781px) {
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
   }
 
-   @media (max-width: 550px) {
-    gap: 0.75rem;
-  }
-
-  @media (max-width: 480px) {
-    gap: 0.7rem;
+  @media (max-width: 550px) {
+    gap: 1.5rem;
+    background-color: #001837;
+    padding: 20px;
+    color: white;
   }
 `;
 
@@ -46,7 +45,7 @@ export const MenuLink = styled(Link)`
   position: relative;
   text-decoration: none;
   color: #222;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s;
 
   /* Linha superior invisível por padrão */
@@ -65,11 +64,16 @@ export const MenuLink = styled(Link)`
   &:hover {
     color: #e89119;
   }
+
+  @media (max-width: 550px) {
+    color: #ffffff;
+  }
 `;
 
 export const Submenu = styled.ul<{ $isOpen?: boolean }>`
- opacity: ${({ $isOpen }) => ($isOpen ? 1 : 0)};
-  transform: ${({ $isOpen }) => ($isOpen ? 'translateY(0)' : 'translateY(-10px)')};
+  opacity: ${({ $isOpen }) => ($isOpen ? 1 : 0)};
+  transform: ${({ $isOpen }) =>
+    $isOpen ? 'translateY(0)' : 'translateY(-10px)'};
   transition:
     opacity 0.5s ease,
     transform 0.3s ease;

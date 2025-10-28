@@ -82,7 +82,7 @@ export const FieldGroup = styled.div`
   display: flex;
   gap: 0.5rem;
 
-  label{
+  label {
     caret-color: transparent;
   }
 `;
@@ -120,14 +120,13 @@ export const Button = styled.button`
   }
 `;
 
-
 export const Assunto = styled.div`
- label{
-  caret-color: transparent;
- }
+  label {
+    caret-color: transparent;
+  }
 `;
 export const Mensagem = styled.div`
- label{
-  caret-color: transparent;
- }
+  label {
+    caret-color: transparent;
+  }
 `;

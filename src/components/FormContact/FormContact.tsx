@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import * as S from './FormContact.styles';
 import toast, { Toaster } from 'react-hot-toast';
+import { Button } from '../Button/Button';
 
 type FormInputs = {
   nome: string;
@@ -128,7 +129,7 @@ export const FormContact = () => {
 
         {/* Assunto */}
         <S.Assunto>
-          <label>Assunto</label>
+          <label>Assunto *</label>
           <S.Input
             placeholder="Assunto"
             {...register('assunto', { required: 'O Assunto é obrigatório' })}
@@ -157,14 +158,14 @@ export const FormContact = () => {
           )}
         </S.Mensagem>
 
-        {/* Botão de envio */}
-        <S.Button
-          type="button" // 🔹 evita envio via Enter
-          onClick={handleSubmit(onSubmit)} // 🔹 só envia no clique
+        <Button
+          text="Enviar"
+          variant="secondary"
+          paddingHeight="large"
+          onClick={handleSubmit(onSubmit)}
           disabled={isSubmitting}
-        >
-          {isSubmitting ? 'Enviando...' : 'Enviar'}
-        </S.Button>
+          loading={isSubmitting}
+        />
       </form>
     </S.FormContainer>
   );

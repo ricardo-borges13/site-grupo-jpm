@@ -5,6 +5,8 @@ type ButtonProps = {
   onClick?: () => void;
   variant?: 'primary' | 'secondary';
   paddingHeight?: 'small' | 'large';
+  disabled?: boolean;
+  loading?: boolean;
 };
 
 export const Button = ({
@@ -12,14 +14,17 @@ export const Button = ({
   onClick,
   variant = 'primary',
   paddingHeight = 'large',
+  disabled = false,
+  loading = false,
 }: ButtonProps) => {
   return (
     <StyledButton
       onClick={onClick}
       $variant={variant}
       $heightVariant={paddingHeight}
+      disabled={disabled || loading}
     >
-      {text}
+      {loading ? 'Enviando...' : text}
     </StyledButton>
   );
 };

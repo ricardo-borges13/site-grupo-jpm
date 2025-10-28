@@ -6,6 +6,7 @@ import { FaPhone } from 'react-icons/fa6';
 
 export const SectionsContactus = () => {
   return (
+   
     <S.Container>
       <S.Content>
         <S.InfoArea>

@@ -5,6 +5,7 @@ import { ScrollToTop } from '..//ScrollToTop/ScrollToTop';
 import * as S from './Layout.styles';
 import { WhatsAppButton } from '../WhatsApp/WhatsAppButton';
 import { useState, useEffect } from 'react';
+import { footerData } from '../Footer/footerData'
 
 export const Layout = () => {
   const [whatsApp, setWhatsApp] = useState<{ phone?: string; message?: string }>({});
@@ -32,7 +33,7 @@ export const Layout = () => {
           message={whatsApp.message || ''}
         />
       )}
-      <Footer />
+      <Footer {...footerData} />
     </S.LayoutWrapper>
   );
 };

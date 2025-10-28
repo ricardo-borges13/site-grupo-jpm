@@ -5,8 +5,12 @@ import logo from '../../assets/images/Logo-JPM-Branco.png';
 import { Link } from 'react-router-dom';
 import { APP_VERSION } from '../../version';
 
+export type FooterProps = {
+  phone: string;
+  email: string;
+}
 
-export const Footer = () => {
+export const Footer = ({phone,email}:FooterProps) => {
   return (
     <S.FooterContainer>
       <S.FooterContent>
@@ -39,13 +43,15 @@ export const Footer = () => {
           <address>
             <span>
               <S.Icone>
-                <BiSolidPhoneOutgoing /> (31) 3292-4650
+                <BiSolidPhoneOutgoing />
+                <a href="tel:+553132924650"> {phone} </a>
               </S.Icone>
             </span>
             <span>
               <S.Icone>
                 {' '}
-                <MdEmail /> sac@grupojpm.com.br{' '}
+                <MdEmail />
+                <a href="mailto:sac@grupojpm.com.br">{email}</a>
               </S.Icone>
             </span>
           </address>

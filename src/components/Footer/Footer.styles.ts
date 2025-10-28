@@ -7,21 +7,28 @@ export const FooterContainer = styled.footer`
   font-size: 0.9rem;
   margin-top: 4rem;
   caret-color: transparent;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0; /* reduz espaçamento geral */
+  overflow-x: hidden;
 `;
 
 export const FooterContent = styled.div`
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
   align-items: start;
-  padding: 0.5rem 3rem 0rem 0;
+  padding: 1rem 3rem 0rem 3rem;
+  gap: 1rem;
 
   @media (max-width: 915px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
   }
 
-  @media (max-width: 730px) {
+  /* mobile */
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 `;
 
@@ -39,7 +46,7 @@ export const LogoArea = styled.div`
     }
 
     @media (max-width: 730px) {
-      width: 100px;
+      width: 120px;
     }
   }
 `;
@@ -56,7 +63,6 @@ export const FooterColumn = styled.div`
     &::after {
       content: '';
       display: block;
-
       width: 200px;
       height: 2px;
       background-color: #fff;
@@ -66,15 +72,40 @@ export const FooterColumn = styled.div`
         width: 100px;
         justify-content: center;
       }
+
+      @media (max-width: 916px) {
+        width: 220px;
+        justify-content: center;
+      }
+
+      @media (max-width: 600px) {
+        width: 250px;
+        justify-content: center;
+      }
     }
   }
 
   address {
     display: flex;
     flex-direction: column;
-    gap: 0.01rem;
+    gap: 0.4rem;
     font-style: normal;
     line-height: 1.4;
+    align-items: start;
+
+    @media (max-width: 915px) {
+      align-items: center;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: #f8f5edff; /* cor de destaque */
+      }
+    }
 
     span {
       @media (max-width: 840px) {
@@ -95,7 +126,7 @@ export const FooterColumn = styled.div`
     margin-top: 0.3rem;
 
     li {
-      margin: 0.1rem 0;
+      margin: 0.4rem 0;
 
       a {
         color: #000;
@@ -103,11 +134,11 @@ export const FooterColumn = styled.div`
         transition: opacity 0.2s;
 
         &:hover {
-          opacity: 0.7;
+          color: #f8f5edff;
         }
 
-        @media (max-width: 840px) {
-          font-size: 12px;
+        @media (max-width: 730px) {
+          font-size: 0.85rem;
         }
       }
     }
@@ -121,11 +152,14 @@ export const FooterBottom = styled.div`
   text-align: center;
   border-top: 2px solid #fff;
   font-size: 0.85rem;
-
-
+  margin-top: 0.5rem; /* ↓ estava alto, reduza aqui */
+  padding-top: 0.5rem; /* ↓ reduz espaço interno */
+  line-height: 1.3;
 
   @media (max-width: 730px) {
     font-size: 0.75rem;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 3rem; /* ainda mais compacto no mobile */
   }
 `;
 

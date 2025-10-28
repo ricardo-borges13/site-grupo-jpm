@@ -15,6 +15,7 @@ import * as S from './Home.styles';
 import { ClientsCarousel } from '../../components/ClientsCarousel/ClientsCarousel';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
+import { contactData } from '../../components/Header'
 
 const sobreData: SectionInfoProps = {
   title: 'Sobre a JPM',
@@ -68,8 +69,8 @@ export const Home = () => {
           image4={image5}
         />
       </section>
+      <SectionsContactus {...contactData} />
 
-      <SectionsContactus />
       <S.CarouselParceiros>
         <h2>Parceiros</h2>
         <ClientsCarousel />

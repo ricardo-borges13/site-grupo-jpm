@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
-import { HeaderTop, HeaderMain, headerInfo } from '../Header';
+import { HeaderTop, HeaderMain, contactData } from '../Header';
 import { Footer } from '../Footer/Footer';
 import { ScrollToTop } from '..//ScrollToTop/ScrollToTop';
 import * as S from './Layout.styles';
 import { WhatsAppButton } from '../WhatsApp/WhatsAppButton';
 import { useState, useEffect } from 'react';
-import { footerData } from '../Footer/footerData'
+
 
 export const Layout = () => {
   const [whatsApp, setWhatsApp] = useState<{ phone?: string; message?: string }>({});
@@ -20,7 +20,7 @@ export const Layout = () => {
   return (
     <S.LayoutWrapper>
       <ScrollToTop />
-      <HeaderTop {...headerInfo} />
+      <HeaderTop {...contactData} />
       <HeaderMain />
 
       <S.MainContent>
@@ -33,7 +33,7 @@ export const Layout = () => {
           message={whatsApp.message || ''}
         />
       )}
-      <Footer {...footerData} />
+      <Footer {...contactData} />
     </S.LayoutWrapper>
   );
 };

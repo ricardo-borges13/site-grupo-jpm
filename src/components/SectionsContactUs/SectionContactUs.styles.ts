@@ -7,7 +7,8 @@ export const Container = styled.section`
   justify-content: center;
   position: relative;
   overflow: visible; /* importante pra permitir que o form ultrapasse a borda */
-  margin: 40px 0 30px 0;
+  margin: 40px 0 30px 0;import { wrapper } from './../ProductGroup/ProductGroup.styles';
+
 `;
 export const Content = styled.div`
   width: 100%;
@@ -34,16 +35,29 @@ export const InfoArea = styled.div`
     margin-bottom: 0.9rem;
   }
 
+   a {
+  color: inherit;
+  text-decoration: none;
+
+
+  &:hover {
+    color: #e89119; /* cor de destaque */
+  }
+}
+
   p {
     font-size: 1.5rem;
     line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0.5rem;
+    gap: 10px;
   }
   .contact {
     margin-top: 10rem;
   }
   .contact p {
+    display: flex;
+    align-items: center;
     margin-bottom: 0.3rem;
     font-size: 1.2rem;
   }
@@ -55,7 +69,7 @@ export const InfoArea = styled.div`
     .contact{
       display: none;
       margin-bottom: 0;
-     
+
     }
     p{
       margin: 0;

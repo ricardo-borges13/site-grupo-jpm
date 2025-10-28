@@ -4,13 +4,9 @@ import { MdEmail } from 'react-icons/md';
 import logo from '../../assets/images/Logo-JPM-Branco.png';
 import { Link } from 'react-router-dom';
 import { APP_VERSION } from '../../version';
+import type { ContactInfo } from '../../types/contact'
 
-export type FooterProps = {
-  phone: string;
-  email: string;
-}
-
-export const Footer = ({phone,email}:FooterProps) => {
+export const Footer = ({phone,email}:ContactInfo) => {
   return (
     <S.FooterContainer>
       <S.FooterContent>

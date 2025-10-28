@@ -3,10 +3,12 @@ import * as S from './SectionContactUs.styles';
 import { MdEmail } from 'react-icons/md';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa6';
+import type { ContactInfo } from "../../types/contact";
 
-export const SectionsContactus = () => {
+
+export const SectionsContactus = ({phone,email}:ContactInfo) => {
   return (
-   
+
     <S.Container>
       <S.Content>
         <S.InfoArea>
@@ -16,10 +18,12 @@ export const SectionsContactus = () => {
           <FaArrowAltCircleRight size={28} />
           <div className="contact">
             <p>
-              <FaPhone /> (31) 3292-4650
+              <FaPhone />
+              <a href="tel:+553132924650"> {phone} </a>
             </p>
             <p>
-              <MdEmail /> sac@grupojpm.com.br
+              <MdEmail />
+              <a href="mailto:sac@grupojpm.com.br">{email}</a>
             </p>
           </div>
         </S.InfoArea>

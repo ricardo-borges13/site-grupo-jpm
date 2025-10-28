@@ -1,14 +1,11 @@
 import * as S from './HeaderTopo.styles';
 import { LiaPhoneAltSolid } from 'react-icons/lia';
 import { AiOutlineMail } from 'react-icons/ai';
+import type { ContactInfo } from '../../types/contact'
 
-export type HeaderProps = {
-  text: string;
-  phone: string;
-  email: string;
-};
 
-export const HeaderTop = ({ text, phone, email }: HeaderProps) => {
+
+export const HeaderTop = ({ text, phone, email }: ContactInfo) => {
   return (
     <S.Header>
       <S.Container>

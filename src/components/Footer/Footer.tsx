@@ -4,30 +4,29 @@ import { MdEmail } from 'react-icons/md';
 import logo from '../../assets/images/Logo-JPM-Branco.png';
 import { Link } from 'react-router-dom';
 import { APP_VERSION } from '../../version';
-import type { ContactInfo } from '../../types/contact'
+import type { ContactInfo } from '../../types/contact';
+import { menuItems } from '../Menu/menuData';
 
-export const Footer = ({phone,email}:ContactInfo) => {
+export const Footer = ({ phone, email }: ContactInfo) => {
+  const footerItems = menuItems.filter(item => item.showInFooter);
+ 
   return (
     <S.FooterContainer>
       <S.FooterContent>
         <S.LogoArea>
           <Link to="/">
-          <img src={logo} alt="Logo JPM" />
-           </Link>
+            <img src={logo} alt="Logo JPM" />
+          </Link>
         </S.LogoArea>
 
         <S.FooterColumn>
           <h4>Menu</h4>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/empresa">A Empresa</Link>
-            </li>
-            <li>
-              <Link to="/trabalheconosco">Trabalhe Conosco</Link>
-            </li>
+            {footerItems.map(item => (
+              <li key={item.id}>
+                <Link to={item.path}>{item.title}</Link>
+              </li>
+            ))}
             <li>
               <Link to="/contato">Entre em Contato</Link>
             </li>
@@ -65,10 +64,11 @@ export const Footer = ({phone,email}:ContactInfo) => {
       </S.FooterContent>
       <S.FooterBottom>
         <span>
-          © {new Date().getFullYear()} Grupo JPM Borrachas e Materiais Elétricos – Todos os direitos reservados. | Desenvolvido por Invetec
+          © {new Date().getFullYear()} Grupo JPM Borrachas e Materiais
+          Elétricos – Todos os direitos reservados. | Desenvolvido por Invetec
         </span>
         <br />
-      <small>Versão {APP_VERSION}</small>
+        <small>Versão {APP_VERSION}</small>
       </S.FooterBottom>
     </S.FooterContainer>
   );

@@ -3,12 +3,10 @@ import * as S from './SectionContactUs.styles';
 import { MdEmail } from 'react-icons/md';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa6';
-import type { ContactInfo } from "../../types/contact";
+import type { ContactInfo } from '../../types/contact';
 
-
-export const SectionsContactus = ({phone,email}:ContactInfo) => {
+export const SectionsContactus = ({ phone, email }: ContactInfo) => {
   return (
-
     <S.Container>
       <S.Content>
         <S.InfoArea>

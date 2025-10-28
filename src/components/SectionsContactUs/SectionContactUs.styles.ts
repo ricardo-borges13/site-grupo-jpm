@@ -7,9 +7,9 @@ export const Container = styled.section`
   justify-content: center;
   position: relative;
   overflow: visible; /* importante pra permitir que o form ultrapasse a borda */
-  margin: 40px 0 30px 0;import { wrapper } from './../ProductGroup/ProductGroup.styles';
-
+  margin: 40px 0 30px 0;
 `;
+
 export const Content = styled.div`
   width: 100%;
   max-width: 1200px;
@@ -35,15 +35,14 @@ export const InfoArea = styled.div`
     margin-bottom: 0.9rem;
   }
 
-   a {
-  color: inherit;
-  text-decoration: none;
+  a {
+    color: inherit;
+    text-decoration: none;
 
-
-  &:hover {
-    color: #e89119; /* cor de destaque */
+    &:hover {
+      color: #e89119; /* cor de destaque */
+    }
   }
-}
 
   p {
     font-size: 1.5rem;
@@ -63,15 +62,14 @@ export const InfoArea = styled.div`
   }
 
   @media (max-width: 900px) {
-    h2{
+    h2 {
       margin-bottom: 0;
     }
-    .contact{
+    .contact {
       display: none;
       margin-bottom: 0;
-
     }
-    p{
+    p {
       margin: 0;
     }
   }

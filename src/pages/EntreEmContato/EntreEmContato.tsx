@@ -4,6 +4,7 @@ import image from '../../assets/images/Banner-PagesEntreContato.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { MapSection } from '../../components/MapaSection/MapSecion';
 import { SEO } from '../../components/SEO/Seo';
+import { contactData } from '../../components/Header'
 
  export const EntreEmContato = () => {
   return (
@@ -26,7 +27,7 @@ import { SEO } from '../../components/SEO/Seo';
         </ST.Container>
 
         <ST.Form>
-          <SectionsContactus />
+          <SectionsContactus {...contactData} />
         </ST.Form>
         <ST.Divider />
         <ST.Container>

@@ -5,6 +5,7 @@ import { dataProductRubber } from './dataProductRubber';
 import { ProductCategory } from '../../components/ProductCategory/ProductCategory';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
+import { contactData } from '../../components/Header'
 
 export const BorrachasIndustriais = () => {
   return (
@@ -60,7 +61,7 @@ export const BorrachasIndustriais = () => {
           </S.ContainerProduct>
         </S.Container>
         <S.Divider />
-        <SectionsContactus />
+        <SectionsContactus {...contactData} />
       </PageSection>
     </>
   );

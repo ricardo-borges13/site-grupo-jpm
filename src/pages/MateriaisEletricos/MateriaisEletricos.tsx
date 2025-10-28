@@ -5,6 +5,7 @@ import { dataProductEletric } from './dataProductEletric';
 import { ProductCategory } from '../../components/ProductCategory/ProductCategory';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
+import { contactData } from '../../components/Header'
 
 export const MateriaisEletricos = () => {
   return (
@@ -59,7 +60,7 @@ export const MateriaisEletricos = () => {
           </S.ContainerProduct>
         </S.Container>
         <S.Divider />
-        <SectionsContactus />
+        <SectionsContactus {...contactData} />
       </PageSection>
     </>
   );

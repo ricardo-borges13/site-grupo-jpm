@@ -3,6 +3,7 @@ import * as S from './Automacao.styles';
 import image from '../../assets/images/Banner-PagesAutomacao.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
+import { contactData } from '../../components/Header'
 
  export const Automacao = () => {
   return (
@@ -55,7 +56,7 @@ import { SEO } from '../../components/SEO/Seo';
           </header>
         </S.Container>
         <S.Divider />
-        <SectionsContactus />
+        <SectionsContactus {...contactData} />
       </PageSection>
     </>
   );

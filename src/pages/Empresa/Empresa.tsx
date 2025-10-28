@@ -59,8 +59,8 @@ export const Empresa = () => {
             <h2>Parceiros e Clientes</h2>
             <p>
               Ao longo de quase três décadas, a JPM construiu uma sólida
-              reputação de confiança, fornecendo para{' '}
-              <strong>grandes empresas da indústria nacional</strong>, entre
+              reputação de confiança, fornecendo para
+              <strong> grandes empresas da indústria nacional</strong>, entre
               elas <strong>Usiminas</strong>, <strong>ArcelorMittal</strong>,
               <strong> Belgo Arames</strong>, <strong>Alvoar Lácteos</strong> e
               <strong> CSN (Companhia Siderúrgica Nacional)</strong>.
@@ -70,12 +70,13 @@ export const Empresa = () => {
               <strong>
                 {' '}
                 qualidade, pontualidade e suporte técnico especializado
-              </strong>
+              </strong>{' '}
               , valores que sustentam sua presença constante em importantes
-              cadeias produtivas dos setores{' '}
+              cadeias produtivas dos setores
               <strong>
+                {' '}
                 siderúrgico, automotivo, alimentício e de mineração
-              </strong>
+              </strong>{' '}
               .
             </p>
           </section>
@@ -95,7 +96,7 @@ export const Empresa = () => {
               </li>
               <li>
                 Manter um relacionamento próximo e transparente, com foco em
-                <strong>atendimento técnico especializado</strong>.
+                <strong> atendimento técnico especializado</strong>.
               </li>
             </ul>
           </section>

@@ -26,22 +26,22 @@ export const MateriaisEletricos = () => {
 
             <p>
               A <strong>JPM</strong> oferece uma linha completa de materiais e
-              componentes elétricos para instalações{' '}
-              <strong>industriais</strong>,<strong> comerciais</strong> e{' '}
-              <strong>prediais</strong>.
+              componentes elétricos para instalações
+              <strong> industriais</strong>,<strong> comerciais</strong> e
+              <strong> prediais</strong>.
             </p>
 
             <p>
-              Nossas soluções abrangem <strong>iluminação</strong>,{' '}
-              <strong>reatores</strong>,<strong>eletrodutos</strong>, painéis e
+              Nossas soluções abrangem <strong>iluminação</strong>,
+              <strong> reatores</strong>,<strong> eletrodutos</strong>, painéis e
               comandos, cabos e conexões, sempre com foco em{' '}
               <strong> segurança</strong>, <strong>eficiência</strong> e
               <strong> confiabilidade</strong>.
             </p>
 
             <p>
-              Também fornecemos sistemas de <strong>ventilação</strong>,{' '}
-              <strong>eletro blindados</strong>, bandejamento para condutores,
+              Também fornecemos sistemas de <strong>ventilação</strong>,
+              <strong> eletro blindados</strong>, bandejamento para condutores,
               postes de iluminação e aparelhos de sinalização, garantindo uma
               infraestrutura elétrica moderna, organizada e de
               <strong> alto desempenho</strong>.

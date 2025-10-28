@@ -17,7 +17,7 @@ export const EntreEmContato = () => {
       <PageSection title="ENTRE EM CONTATO" image={image}>
         <ST.Container>
           <header>
-            <h2>ENVIE SUA MENSAGEM</h2>
+            <h2>Envie sua Mensagem</h2>
             <p>
               Quer tirar dúvidas, solicitar um orçamento ou falar com nossa
               equipe? Preencha o formulário abaixo ou utilize um dos canais

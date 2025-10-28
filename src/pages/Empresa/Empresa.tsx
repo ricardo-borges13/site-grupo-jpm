@@ -11,7 +11,7 @@ export const Empresa = () => {
         description="A JPM atua desde 1997 no fornecimento de insumos industriais. Referência em materiais elétricos, borrachas e automação, com foco em qualidade e atendimento técnico."
       />
 
-      <PageSection title="A EMPRESA" image={produtosImg}>
+      <PageSection title="A Empresa" image={produtosImg}>
         <S.Container>
           <header>
             <h1>Sobre a JPM</h1>

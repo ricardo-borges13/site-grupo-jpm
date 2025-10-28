@@ -12,6 +12,7 @@ export const Container = styled.div`
       font-weight: 700;
       color: #d49b09;
       margin-bottom: 1rem;
+      text-transform: capitalize;
     }
 
     p {

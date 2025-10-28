@@ -14,7 +14,7 @@ export const TrabalheConosco = () => {
       <PageSection title="TRABALHE CONOSCO" image={image}>
         <S.Container>
           <header>
-            <h1>Trabalhe Conosco</h1>
+            <h1>Faça parte da nossa equipe</h1>
             <p>
               Seja bem-vindo(a) à página de oportunidades da{' '}
               <strong>JPM</strong>! Desde 1997, atuamos com excelência no

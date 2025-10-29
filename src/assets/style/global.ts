@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
-       body {
+       body, html {
         background-color: #F9FAFB;
         width: 100%;
         max-width: 100%;
@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
         color: #1A1A1A;
+        overflow-x: hidden; //trava” o layout horizontal e evita qualquer reflow quando o menu é aberto/fechado.
     }
 
     .global-container {

@@ -1,43 +1,60 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { menuItems } from './menuData';
 import { Nav, MenuItem, MenuLink, Submenu, SubmenuItem } from './Menu.styles';
 
 type MenuProps = {
-  onLinkClick?: () => void; // ✅ função opcional
+  onLinkClick?: () => void;
 };
 
 export const Menu = ({ onLinkClick }: MenuProps) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState<number | null>(null);
-  // controla qual submenu está aberto
+  const [isMobile, setIsMobile] = useState(false);
+  const [openSubmenuMobile, setOpenSubmenuMobile] = useState(false);
+
+  // Detecta se é mobile
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 775);
+    handleResize(); // roda uma vez ao iniciar
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   function handleProdutosClick(e: React.MouseEvent) {
-    e.preventDefault(); // evita navegação padrão
-    if (location.pathname === '/') {
-      const section = document.getElementById('produtos');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
+    e.preventDefault();
+
+    if (isMobile) {
+      // 👉 No celular, abre/fecha o submenu
+      setOpenSubmenuMobile(prev => !prev);
     } else {
-      navigate('/', { state: { scrollTo: 'produtos' } });
+      // 👉 No desktop, rola até a seção
+      if (location.pathname === '/') {
+        const section = document.getElementById('produtos');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        navigate('/', { state: { scrollTo: 'produtos' } });
+      }
+      onLinkClick?.();
     }
-    onLinkClick?.(); // ✅ fecha menu
   }
 
   function handleMouseEnter(id: number) {
-    setOpenMenu(id);
+    if (!isMobile) setOpenMenu(id);
   }
 
   function handleMouseLeave() {
-    setOpenMenu(null);
+    if (!isMobile) setOpenMenu(null);
   }
 
   function handleSubmenuClick(path: string) {
-    setOpenMenu(null); // fecha o submenu
-    navigate(path); // navega pra página do item
-    onLinkClick?.(); // ✅ fecha menu
+    setOpenMenu(null);
+    setOpenSubmenuMobile(false);
+    navigate(path);
+    onLinkClick?.();
   }
 
   return (
@@ -49,24 +66,32 @@ export const Menu = ({ onLinkClick }: MenuProps) => {
           onMouseLeave={handleMouseLeave}
         >
           {item.title === 'Produtos' ? (
-            <MenuLink to={item.path ?? '#'} onClick={handleProdutosClick}>
+            <MenuLink
+              to={item.path ?? '#'}
+              onClick={handleProdutosClick}
+            >
               {item.title}
             </MenuLink>
           ) : (
             <MenuLink
               to={item.path ?? '#'}
-              onClick={onLinkClick} // ✅ fecha menu ao clicar em qualquer link
+              onClick={onLinkClick}
             >
               {item.title}
             </MenuLink>
           )}
 
           {item.submenu && (
-            <Submenu $isOpen={openMenu === item.id}>
+            <Submenu
+              $isOpen={
+                (!isMobile && openMenu === item.id) ||
+                (isMobile && openSubmenuMobile)
+              }
+            >
               {item.submenu.map((sub, index) => (
                 <SubmenuItem key={index}>
                   <MenuLink
-                    to={sub.path} // navegação correta
+                    to={sub.path}
                     onClick={() => handleSubmenuClick(sub.path)}
                   >
                     {sub.title}

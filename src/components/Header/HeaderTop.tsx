@@ -4,17 +4,19 @@ import { AiOutlineMail } from 'react-icons/ai';
 import type { ContactInfo } from '../../types/contact';
 
 export const HeaderTop = ({ text, phone, email }: ContactInfo) => {
+  const phoneHref = `tel:${phone.replace(/[^\d+]/g, '')}`;
+  const emailHref = `mailto:${email}`;
   return (
     <S.Header>
       <S.Container>
         <div>{text}</div>
         <div>
           <LiaPhoneAltSolid />
-          <a href="tel:+553132924650"> {phone} </a>
+          <a href={phoneHref}>{phone}</a>
         </div>
         <div>
           <AiOutlineMail />
-          <a href="mailto:sac@grupojpm.com.br">{email}</a>
+          <a href={emailHref}>{email}</a>
         </div>
       </S.Container>
     </S.Header>

@@ -18,7 +18,7 @@ export const Container = styled.div`
       color: #e8b341;
       margin-bottom: 1rem;
       letter-spacing: 0.7px;
-     text-transform: capitalize;
+      text-transform: capitalize;
       margin-bottom: 1.5rem;
     }
 

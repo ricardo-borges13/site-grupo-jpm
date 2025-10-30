@@ -6,6 +6,8 @@ import { FaPhone } from 'react-icons/fa6';
 import type { ContactInfo } from '../../types/contact';
 
 export const SectionsContactus = ({ phone, email }: ContactInfo) => {
+  const phoneHref = `tel:${phone.replace(/[^\d+]/g, '')}`;
+  const emailHref = `mailto:${email}`;
   return (
     <S.Container>
       <S.Content>
@@ -17,11 +19,11 @@ export const SectionsContactus = ({ phone, email }: ContactInfo) => {
           <div className="contact">
             <p>
               <FaPhone />
-              <a href="tel:+553132924650"> {phone} </a>
+              <a href={phoneHref}>{phone}</a>
             </p>
             <p>
               <MdEmail />
-              <a href="mailto:sac@grupojpm.com.br">{email}</a>
+              <a href={emailHref}>{email}</a>
             </p>
           </div>
         </S.InfoArea>

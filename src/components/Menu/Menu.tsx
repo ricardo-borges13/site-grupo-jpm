@@ -66,17 +66,11 @@ export const Menu = ({ onLinkClick }: MenuProps) => {
           onMouseLeave={handleMouseLeave}
         >
           {item.title === 'Produtos' ? (
-            <MenuLink
-              to={item.path ?? '#'}
-              onClick={handleProdutosClick}
-            >
+            <MenuLink to={item.path ?? '#'} onClick={handleProdutosClick}>
               {item.title}
             </MenuLink>
           ) : (
-            <MenuLink
-              to={item.path ?? '#'}
-              onClick={onLinkClick}
-            >
+            <MenuLink to={item.path ?? '#'} onClick={onLinkClick}>
               {item.title}
             </MenuLink>
           )}

@@ -9,7 +9,8 @@ import { menuItems } from '../Menu/menuData';
 
 export const Footer = ({ phone, email }: ContactInfo) => {
   const footerItems = menuItems.filter(item => item.showInFooter);
-
+  const phoneHref = `tel:${phone.replace(/[^\d+]/g, '')}`;
+  const emailHref = `mailto:${email}`;
   return (
     <S.FooterContainer>
       <S.FooterContent>
@@ -39,14 +40,14 @@ export const Footer = ({ phone, email }: ContactInfo) => {
             <span>
               <S.Icone>
                 <BiSolidPhoneOutgoing />
-                <a href="tel:+553132924650"> {phone} </a>
+                <a href={phoneHref}>{phone}</a>
               </S.Icone>
             </span>
             <span>
               <S.Icone>
                 {' '}
                 <MdEmail />
-                <a href="mailto:sac@grupojpm.com.br">{email}</a>
+                <a href={emailHref}>{email}</a>
               </S.Icone>
             </span>
           </address>

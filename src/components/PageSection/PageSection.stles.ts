@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const SectionWrapper = styled.section`
-  padding-top: 145px;
+  /* padding-top: 145px; */
+  padding-top: clamp(120px, 12vh, 160px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
@@ -13,7 +14,7 @@ export const SectionWrapper = styled.section`
   }
 
   @media (max-width: 551px) {
-    padding-top: 200px;
+    padding-top: clamp(200px, 18vh, 220px);
   }
 `;
 
@@ -31,7 +32,6 @@ export const Left = styled.div<{ $bgColor: string }>`
     font-size: 2.5rem;
     line-height: 1.2;
     text-transform: uppercase;
-    padding: 0 20px;
   }
 
   p {
@@ -39,20 +39,18 @@ export const Left = styled.div<{ $bgColor: string }>`
   }
 
   @media (max-width: 540px) {
-    h1 {
-      font-size: 1.5rem;
-    }
+    font-size: 1.5rem;
+  }
 
-    p {
-      font-size: 0.8rem;
-      font-weight: 400;
-    }
+  p {
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 `;
 
 export const Right = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
 
   img {
     width: 100%;

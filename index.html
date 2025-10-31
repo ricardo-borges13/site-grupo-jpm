@@ -2,23 +2,52 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- 🔹 Favicons -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- 🔹 Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description-default"
-      content="JPM-Soluções em materiais elétricos, borrachas e automação industrial. Tradição desde 1997 atendendo diversos setores da indústria."
-    />
 
+    <!-- 🔹 Canonical e hreflang (versões padrão do site) -->
+    <link rel="canonical" href="https://www.grupojpm.com.br/" />
+    <link rel="alternate" href="https://www.grupojpm.com.br/" hreflang="pt-BR" />
+    <link rel="alternate" href="https://www.grupojpm.com.br/" hreflang="x-default" />
+
+    <!-- 🔹 Open Graph genérico (apenas fallback da home) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JPM - Materiais Elétricos e Borrachas Industriais" />
+    <meta property="og:description" content="Soluções em materiais elétricos, borrachas industriais e automação. Tradição desde 1997 atendendo diversos setores da indústria." />
+    <meta property="og:image" content="https://www.grupojpm.com.br/og-banner.jpg" />
+    <meta property="og:url" content="https://www.grupojpm.com.br/" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- 🔹 Schema.org básico -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "JPM Materiais Elétricos e Borrachas Industriais",
+        "url": "https://www.grupojpm.com.br/",
+        "logo": "https://www.grupojpm.com.br/logo.png",
+        "description": "Soluções completas em materiais elétricos, borrachas industriais e automação. Tradição desde 1997 atendendo a indústria brasileira."
+      }
+    </script>
+
+    <!-- 🔹 Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- 🔹 Compatibilidade -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

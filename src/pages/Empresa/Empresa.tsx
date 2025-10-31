@@ -9,6 +9,9 @@ export const Empresa = () => {
       <SEO
         title="A Empresa - JPM Borrachas e Materiais Elétricos"
         description="A JPM atua desde 1997 no fornecimento de insumos industriais. Referência em materiais elétricos, borrachas e automação, com foco em qualidade e atendimento técnico."
+        image="https://www.grupojpm.com.br/images/empresa.jpg"
+        url="https://www.grupojpm.com.br/empresa"
+        keywords="sobre a JPM,empresa de materiais elétricos e borrachas, JPM"
       />
 
       <PageSection title="A Empresa" image={produtosImg}>

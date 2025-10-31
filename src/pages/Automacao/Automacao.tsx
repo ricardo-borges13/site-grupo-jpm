@@ -10,7 +10,10 @@ export const Automacao = () => {
     <>
       <SEO
         title="Automação Industrial - JPM Borrachas e Materiais Elétricos"
-        description="Fontes, IHMs, CLPs e inversores. Componentes e soluções completas em automação industrial pelo Grupo JPM."
+        description="Fontes, IHMs, CLPs e inversores. Componentes e soluções completas em automação industrial. Encontre tudo com a JPM."
+        image="https://www.grupojpm.com.br/images/automacao.jpg"
+        url="https://www.grupojpm.com.br/produtos/automacao"
+        keywords="automação industrial,módulos de expansão, interfaces, IHMs, fonte de alimentação, cartões de memória, CPUs, inversores, chaves de partida, PLCs, acionamentos, JPM"
       />
 
       <PageSection

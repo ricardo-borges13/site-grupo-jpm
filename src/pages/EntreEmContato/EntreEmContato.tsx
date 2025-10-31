@@ -12,6 +12,9 @@ export const EntreEmContato = () => {
       <SEO
         title="Fale Conosco - JPM Borrachas e Materiais Elétricos"
         description="Entre em contato com a JPM. Solicite orçamentos, tire dúvidas e fale com nossa equipe de atendimento em Belo Horizonte."
+        image="https://www.grupojpm.com.br/images/contato.jpg"
+        url="https://www.grupojpm.com.br/contato"
+        keywords="contato JPM, orçamento industrial, atendimento comercial, fale conosco"
       />
 
       <PageSection title="ENTRE EM CONTATO" image={image}>

@@ -10,7 +10,10 @@ export const AcessoriosManutencao = () => {
     <>
       <SEO
         title="Acessórios para Manutenção - JPM Borrachas e Materiais Elétricos"
-        description="Vedação, rodas, rodízios e acessórios industriais de manutenção com alta durabilidade e qualidade."
+        description="Vedação, rodas, rodízios e acessórios industriais de manutenção com alta durabilidade e qualidade. Encontre tudo com a JPM."
+        image="https://www.grupojpm.com.br/images/acessorios-industrial.jpg"
+        url="https://www.grupojpm.com.br/produtos/acessorios"
+        keywords="corrente de elo, corrente de transmissão, cintas de elevação, conexões, retentores, martelo pneumático,manômetros, fitas adesivas, plásticos bolha, lonas, JPM"
       />
 
       <PageSection title="ACESSÓRIOS PARA MANUTENÇÃO INDUSTRIAL" image={image}>

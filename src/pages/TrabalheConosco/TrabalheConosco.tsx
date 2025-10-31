@@ -6,9 +6,13 @@ import { SEO } from '../../components/SEO/Seo';
 export const TrabalheConosco = () => {
   return (
     <>
-      <SEO
+
+        <SEO
         title="Trabalhe Conosco - JPM Borrachas e Materiais Elétricos"
         description="Faça parte da JPM! Envie seu currículo e junte-se a uma equipe com mais de 25 anos de experiência em soluções industriais e compromisso com a excelência."
+        image="https://www.grupojpm.com.br/images/trabalhe-conosco.jpg"
+        url="https://www.grupojpm.com.br/trabalheconosco"
+        keywords="vagas JPM, trabalhar na JPM, envio de currículo, oportunidades"
       />
 
       <PageSection title="TRABALHE CONOSCO" image={image}>

@@ -12,11 +12,15 @@ export const MateriaisEletricos = () => {
     <>
       <SEO
         title="Materiais Elétricos - JPM Borrachas e Materiais Elétricos"
-        description="Cabos, painéis, conexões e soluções em materiais elétricos para indústrias. Qualidade e segurança com o Grupo JPM."
+        description="Cabos, painéis, conexões e soluções em materiais elétricos para indústrias. Qualidade e segurança com a JPM."
+        image="https://www.grupojpm.com.br/images/materiais-eletricos.jpg"
+        url="https://www.grupojpm.com.br/produtos/eletricos"
+        keywords="materiais elétricos, cabos industriais, conectores, iluminação, reatores, eletrodutos, lâmpadas, conexões, poste de iluminação, cabos e fios"
       />
 
+
       <PageSection
-        title="MATERIAIS ELETRICOS"
+        title="MATERIAIS ELÉTRICOS"
         subTitle="Soluções integradas em infraestrutura elétrica e sistemas de energia"
         image={image}
       >

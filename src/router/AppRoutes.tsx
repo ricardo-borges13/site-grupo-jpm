@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
       { path: '/produtos/acessorios', element: <AcessoriosManutencao /> },
       { path: '/produtos/automacao', element: <Automacao /> },
       { path: '/trabalheconosco', element: <TrabalheConosco /> },
-      { path: '/eventos/feira2025', element: <Feira2025 /> },
+      { path: '/eventos/expousipa-2025', element: <Feira2025 /> },
       { path: '/contato', element: <EntreEmContato /> },
       {
         path: '*',

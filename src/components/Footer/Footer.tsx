@@ -7,9 +7,10 @@ import { APP_VERSION } from '../../version';
 import type { ContactInfo } from '../../types/contact';
 import { menuItems } from '../Menu/menuData';
 
-export const Footer = ({ phone, email }: ContactInfo) => {
+export const Footer = ({ phone, phone2, email }: ContactInfo) => {
   const footerItems = menuItems.filter(item => item.showInFooter);
   const phoneHref = `tel:${phone.replace(/[^\d+]/g, '')}`;
+  const phoneHref2 = `tel:${phone2.replace(/[^\d+]/g, '')}`;
   const emailHref = `mailto:${email}`;
   return (
     <S.FooterContainer>
@@ -41,6 +42,12 @@ export const Footer = ({ phone, email }: ContactInfo) => {
               <S.Icone>
                 <BiSolidPhoneOutgoing />
                 <a href={phoneHref}>{phone}</a>
+              </S.Icone>
+            </span>
+            <span>
+              <S.Icone>
+                <BiSolidPhoneOutgoing />
+                <a href={phoneHref2}>{phone2}</a>
               </S.Icone>
             </span>
             <span>

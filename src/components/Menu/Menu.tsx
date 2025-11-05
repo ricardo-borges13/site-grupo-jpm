@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { menuItems } from './menuData';
 import { Nav, MenuItem, MenuLink, Submenu, SubmenuItem } from './Menu.styles';
 
-
 type MenuProps = {
   onLinkClick?: () => void;
 };

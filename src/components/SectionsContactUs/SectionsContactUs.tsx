@@ -5,8 +5,9 @@ import { FaArrowAltCircleRight } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa6';
 import type { ContactInfo } from '../../types/contact';
 
-export const SectionsContactus = ({ phone, email }: ContactInfo) => {
+export const SectionsContactus = ({ phone, phone2, email }: ContactInfo) => {
   const phoneHref = `tel:${phone.replace(/[^\d+]/g, '')}`;
+  const phoneHref2 = `tel:${phone2.replace(/[^\d+]/g, '')}`;
   const emailHref = `mailto:${email}`;
   return (
     <S.Container>
@@ -20,6 +21,10 @@ export const SectionsContactus = ({ phone, email }: ContactInfo) => {
             <p>
               <FaPhone />
               <a href={phoneHref}>{phone}</a>
+            </p>
+            <p>
+              <FaPhone />
+              <a href={phoneHref2}>{phone2}</a>
             </p>
             <p>
               <MdEmail />

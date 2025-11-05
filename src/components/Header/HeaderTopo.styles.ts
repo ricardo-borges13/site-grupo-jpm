@@ -59,6 +59,9 @@ export const Container = styled.div`
     > div:first-child {
       flex: unset;
     }
+    span {
+      display: none;
+    }
   }
 
   @media (max-width: 770px) {

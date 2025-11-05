@@ -25,8 +25,8 @@ export const Feira2025 = () => {
 
   return (
     <PageSection
-      title="Feira Industrial 2025"
-      subTitle="Participação da empresa na maior feira do setor"
+      title="EXPO USIPA 2025"
+      subTitle="Conectando indústrias com soluções em materiais elétricos e borrachas industriais"
       image={feira2025Banner}
       bgColor="#E8B341"
     >
@@ -36,10 +36,56 @@ export const Feira2025 = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          Em 2025, a empresa marcou presença na Feira Industrial Nacional,
-          apresentando soluções em radiocomunicação e automação para diversos
-          segmentos da indústria. Confira abaixo alguns momentos registrados
-          durante o evento:
+          <header>
+            <h1>
+              Participação da JPM na 35ª Expo Usipa
+            </h1>
+
+            <p>
+              Em julho de 2025, a{' '}
+              <strong>JPM Borrachas & Materiais Elétricos</strong> marcou
+              presença na
+              <strong> 35ª edição da Expo Usipa</strong>, uma das maiores feiras
+              industriais do interior de Minas Gerais, realizada em{' '}
+              <strong>Ipatinga (MG)</strong>. O evento reuniu milhares de
+              visitantes e mais de 300 expositores, consolidando-se como um dos
+              principais espaços de negócios, inovação e relacionamento entre{' '}
+              <strong>
+                indústrias, fornecedores e prestadores de serviços
+              </strong>
+              .
+            </p>
+
+            <p>
+              Durante os três dias de feira, a JPM apresentou seu amplo
+              portfólio de
+              <strong>{' '}
+                 materiais elétricos, borrachas técnicas, mangueiras, correias e
+                plásticos industriais
+              </strong>
+              , produtos que contribuem para o{' '}
+              <strong>
+                desempenho, a segurança e a eficiência operacional
+              </strong>{' '}
+              de diversos segmentos da indústria.
+            </p>
+
+            <p>
+              A participação da empresa reforçou seu compromisso em{' '}
+              <strong>oferecer soluções completas e de qualidade </strong>
+              para manutenção e automação industrial, além de fortalecer
+              parcerias com clientes e fornecedores de toda a região.
+            </p>
+
+            <p>
+              A <strong>Expo Usipa</strong> se destacou também por suas
+              <strong>{' '}
+                rodadas de negócios, palestras técnicas e networking empresarial
+              </strong>
+              , que movimentaram o setor produtivo e impulsionaram novas
+              oportunidades de crescimento para a economia do Vale do Aço.
+            </p>
+          </header>
         </motion.p>
 
         {/* --- GALERIA DE FOTOS --- */}
@@ -66,7 +112,7 @@ export const Feira2025 = () => {
           open={open}
           index={index}
           close={() => setOpen(false)}
-          slides={fotos2025.map((src) => ({ src }))}
+          slides={fotos2025.map(src => ({ src }))}
           plugins={[Zoom]}
         />
       </S.Container>

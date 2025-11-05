@@ -1,15 +1,31 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 3rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  caret-color: transparent;
 
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: justify;
+  header {
     margin-bottom: 2rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #d49b09;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 2rem;
+    }
   }
 `;
 
@@ -24,7 +40,9 @@ export const Gallery = styled.div`
     object-fit: cover;
     border-radius: 12px;
     cursor: zoom-in;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
 
     &:hover {
       transform: scale(1.03);

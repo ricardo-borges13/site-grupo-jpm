@@ -21,7 +21,7 @@ export const menuItems = [
     title: 'Eventos',
     path: '/eventos',
     showInFooter: false,
-    submenu: [{ title: 'Feira Industrial 2025', path: '/eventos/feira2025' }],
+    submenu: [{ title: 'Expo Usipa 2025', path: '/eventos/feira2025' }],
   },
   {
     id: 5,

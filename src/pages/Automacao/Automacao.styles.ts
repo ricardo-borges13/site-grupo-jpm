@@ -32,8 +32,11 @@ export const Container = styled.div`
     }
 
     p {
-      margin-bottom: 1.2rem;
-      line-height: 1.7;
+    font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 1.5rem;
     }
 
     @media (max-width: 540px) {

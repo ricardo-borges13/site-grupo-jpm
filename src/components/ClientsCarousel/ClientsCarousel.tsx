@@ -8,6 +8,10 @@ import usiminas from '../../assets/images/clientes/USIMINAS.png';
 import arcelor from '../../assets/images/clientes/ARCELORMITTAL.png';
 import belgo from '../../assets/images/clientes/Belgo.png';
 import alvoar from '../../assets/images/clientes/alvoar-lacteos.png';
+import magnesita from '../../assets/images/clientes/Magnesita.png';
+import petrobras from '../../assets/images/clientes/Petrobras.png';
+import vallourec from '../../assets/images/clientes/Vallourec.png';
+import gerdau from '../../assets/images/clientes/Gerdau.png';
 
 // Componente principal
 export const ClientsCarousel: React.FC = () => {
@@ -17,6 +21,10 @@ export const ClientsCarousel: React.FC = () => {
     { src: arcelor, alt: 'ArcelorMittal' },
     { src: belgo, alt: 'Belgo' },
     { src: alvoar, alt: 'Alvoar' },
+    { src: magnesita, alt: 'Magnesita' },
+    { src: petrobras, alt: 'Petrobras' },
+    { src: vallourec, alt: 'Valourec' },
+    { src: gerdau, alt: 'Gerdau' },
   ];
 
   const CustomLeftArrow = ({ onClick }: { onClick?: () => void }) => (

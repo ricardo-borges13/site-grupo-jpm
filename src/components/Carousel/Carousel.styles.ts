@@ -19,7 +19,7 @@ export const Caption1 = styled(Carousel.Caption)`
   flex-direction: column;
   align-items: flex-end; /* 🔹 alinha conteúdo à direita */
   text-align: right; /* 🔹 texto alinhado à direita */
-  right: 5%; /* 🔹 dá um espaçamento lateral do canto direito */
+  right: 10%; /* 🔹 dá um espaçamento lateral do canto direito */
   left: auto; /* 🔹 evita sobreposição do logo à esquerda */
   bottom: 20%; /* 🔹 sobe um pouco o bloco se quiser mais equilíbrio */
 

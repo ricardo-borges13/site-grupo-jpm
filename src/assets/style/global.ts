@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 16px;
         color: #1A1A1A;
         overflow-x: hidden; //trava” o layout horizontal e evita qualquer reflow quando o menu é aberto/fechado.
-         
+
     }
 
     .global-container {

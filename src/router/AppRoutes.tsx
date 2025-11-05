@@ -9,6 +9,8 @@ import { MateriaisEletricos } from '../pages/MateriaisEletricos/MateriaisEletric
 import { BorrachasIndustriais } from '../pages/BorrachasIndustriais/BorrachasIndustriais';
 import { AcessoriosManutencao } from '../pages/AcessoriosManutencao/AcessoriosManutencao';
 import { Automacao } from '../pages/Automacao/Automacao';
+import { Feira2025 } from '../pages/Eventos/Feira2025/Feira2025';
+
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +33,7 @@ export const router = createBrowserRouter([
       { path: '/produtos/acessorios', element: <AcessoriosManutencao /> },
       { path: '/produtos/automacao', element: <Automacao /> },
       { path: '/trabalheconosco', element: <TrabalheConosco /> },
+      { path: '/eventos/feira2025', element: <Feira2025 /> },
       { path: '/contato', element: <EntreEmContato /> },
       {
         path: '*',

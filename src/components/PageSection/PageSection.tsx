@@ -47,7 +47,7 @@ export const PageSection = ({
           </motion.p>
         </S.Left>
 
-        {/* --- Lado direito com imagem animada --- */}
+        {/* --- Lado direito com imagem animada 800 x 300 --- */}
         <S.Right>
           <motion.img
             src={image}

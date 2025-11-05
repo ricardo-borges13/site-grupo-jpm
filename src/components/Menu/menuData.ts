@@ -18,6 +18,13 @@ export const menuItems = [
   },
   {
     id: 4,
+    title: 'Eventos',
+    path: '/eventos',
+    showInFooter: false,
+    submenu: [{ title: 'Feira Industrial 2025', path: '/eventos/feira2025' }],
+  },
+  {
+    id: 5,
     title: 'Trabalhe Conosco',
     path: '/trabalheconosco',
     showInFooter: true,

@@ -12,33 +12,52 @@ export const Menu = ({ onLinkClick }: MenuProps) => {
   const navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState<number | null>(null);
   const [isMobile, setIsMobile] = useState(false);
-  const [openSubmenuMobile, setOpenSubmenuMobile] = useState(false);
+  const [openSubmenuMobile, setOpenSubmenuMobile] = useState<number | null>(
+    null
+  );
 
   // Detecta se é mobile
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 775);
+    const handleResize = () => setIsMobile(window.innerWidth <= 920);
     handleResize(); // roda uma vez ao iniciar
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  function handleProdutosClick(e: React.MouseEvent) {
-    e.preventDefault();
-
+  function handleMenuClick(
+    e: React.MouseEvent,
+    itemId: number,
+    itemTitle: string
+  ) {
     if (isMobile) {
-      // 👉 No celular, abre/fecha o submenu
-      setOpenSubmenuMobile(prev => !prev);
-    } else {
-      // 👉 No desktop, rola até a seção
-      if (location.pathname === '/') {
-        const section = document.getElementById('produtos');
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
+      // 👉 No mobile, abre/fecha apenas o submenu desse item
+      if (itemTitle === 'Produtos' || itemTitle === 'Eventos') {
+        e.preventDefault();
+        setOpenSubmenuMobile(prev => (prev === itemId ? null : itemId));
       } else {
-        navigate('/', { state: { scrollTo: 'produtos' } });
+        // 👉 Se não tiver submenu, permite navegação normal
+        onLinkClick?.();
       }
-      onLinkClick?.();
+    } else {
+      // 👉 Desktop
+      if (itemTitle === 'Produtos') {
+        e.preventDefault();
+        // rola até a seção de produtos
+        if (location.pathname === '/') {
+          const section = document.getElementById('produtos');
+          if (section) section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          navigate('/', { state: { scrollTo: 'produtos' } });
+        }
+        onLinkClick?.();
+      } else if (itemTitle === 'Eventos') {
+        // 👉 No desktop, não faz nada (apenas mantém hover do submenu)
+        e.preventDefault();
+        return;
+      } else {
+        // 👉 Outros menus — permitem roteamento normal
+        onLinkClick?.();
+      }
     }
   }
 
@@ -52,7 +71,7 @@ export const Menu = ({ onLinkClick }: MenuProps) => {
 
   function handleSubmenuClick(path: string) {
     setOpenMenu(null);
-    setOpenSubmenuMobile(false);
+    setOpenSubmenuMobile(null);
     navigate(path);
     onLinkClick?.();
   }
@@ -65,21 +84,18 @@ export const Menu = ({ onLinkClick }: MenuProps) => {
           onMouseEnter={() => handleMouseEnter(item.id)}
           onMouseLeave={handleMouseLeave}
         >
-          {item.title === 'Produtos' ? (
-            <MenuLink to={item.path ?? '#'} onClick={handleProdutosClick}>
-              {item.title}
-            </MenuLink>
-          ) : (
-            <MenuLink to={item.path ?? '#'} onClick={onLinkClick}>
-              {item.title}
-            </MenuLink>
-          )}
+          <MenuLink
+            to={item.path ?? '#'}
+            onClick={e => handleMenuClick(e, item.id, item.title)}
+          >
+            {item.title}
+          </MenuLink>
 
           {item.submenu && (
             <Submenu
               $isOpen={
                 (!isMobile && openMenu === item.id) ||
-                (isMobile && openSubmenuMobile)
+                (isMobile && openSubmenuMobile === item.id)
               }
             >
               {item.submenu.map((sub, index) => (

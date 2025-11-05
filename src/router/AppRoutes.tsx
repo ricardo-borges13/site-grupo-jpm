@@ -11,7 +11,6 @@ import { AcessoriosManutencao } from '../pages/AcessoriosManutencao/AcessoriosMa
 import { Automacao } from '../pages/Automacao/Automacao';
 import { Feira2025 } from '../pages/Eventos/Feira2025/Feira2025';
 
-
 export const router = createBrowserRouter([
   {
     element: <Layout />,

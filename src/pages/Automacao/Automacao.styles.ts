@@ -32,7 +32,7 @@ export const Container = styled.div`
     }
 
     p {
-    font-size: 1rem;
+      font-size: 1rem;
       color: #333;
       line-height: 1.6;
       text-align: justify;

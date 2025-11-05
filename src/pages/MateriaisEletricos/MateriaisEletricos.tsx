@@ -18,7 +18,6 @@ export const MateriaisEletricos = () => {
         keywords="materiais elétricos, cabos industriais, conectores, iluminação, reatores, eletrodutos, lâmpadas, conexões, poste de iluminação, cabos e fios"
       />
 
-
       <PageSection
         title="MATERIAIS ELÉTRICOS"
         subTitle="Soluções integradas em infraestrutura elétrica e sistemas de energia"

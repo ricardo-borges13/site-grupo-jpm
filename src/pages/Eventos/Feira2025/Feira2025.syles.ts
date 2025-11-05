@@ -27,6 +27,18 @@ export const Container = styled.div`
       margin-bottom: 2rem;
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 export const Gallery = styled.div`

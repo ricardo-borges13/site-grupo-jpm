@@ -140,13 +140,13 @@ export const Submenu = styled.ul<{ $isOpen?: boolean }>`
     padding: 0 20px;
     overflow: hidden; /* ← impede que o conteúdo crie vão */
     transition: max-height 0.3s ease;
-    max-height: ${({ $isOpen }) => ($isOpen ? '500px' : '0')}; /* animação suave */
+    max-height: ${({ $isOpen }) =>
+      $isOpen ? '500px' : '0'}; /* animação suave */
     opacity: ${({ $isOpen }) => ($isOpen ? 1 : 0)};
     transform: none;
     display: block; /* sempre no fluxo, mas com altura controlada */
   }
 `;
-
 
 export const SubmenuItem = styled.li`
   padding: 0;

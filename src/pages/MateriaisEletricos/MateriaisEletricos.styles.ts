@@ -38,13 +38,13 @@ export const Container = styled.div`
       text-align: justify;
       margin-bottom: 1.5rem;
 
-    @media (max-width: 540px) {
-      h2 {
-        font-size: 1.4rem;
+      @media (max-width: 540px) {
+        h2 {
+          font-size: 1.4rem;
+        }
       }
     }
   }
-}
 
   @media (max-width: 768px) {
     padding: 0 1rem;

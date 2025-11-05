@@ -23,7 +23,7 @@ export const ClientsCarousel: React.FC = () => {
     { src: alvoar, alt: 'Alvoar' },
     { src: magnesita, alt: 'Magnesita' },
     { src: petrobras, alt: 'Petrobras' },
-    { src: vallourec, alt: 'Valourec' },
+    { src: vallourec, alt: 'Vallourec' },
     { src: gerdau, alt: 'Gerdau' },
   ];
 

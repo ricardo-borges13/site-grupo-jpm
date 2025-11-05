@@ -1,9 +1,11 @@
 import { PageSection } from '../../components/PageSection/PageSection';
 import * as S from './Automacao.styles';
 import image from '../../assets/images/Banner-PagesAutomacao.jpg';
+import { dataAutomacao } from './dataAutomacao';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 import { contactData } from '../../components/Header';
+import { ProductCategory } from '../../components/ProductCategory/ProductCategory';
 
 export const Automacao = () => {
   return (
@@ -31,14 +33,20 @@ export const Automacao = () => {
             <p>
               A JPM oferece uma linha completa de{' '}
               <strong>Automação Industrial</strong>, com equipamentos de alto
-              desempenho como{' '}
-              <strong>
-                {' '}
-                módulos de expansão, interfaces, IHMs, fontes de alimentação,
-                cartões de memória, CPUs, inversores, chaves de partida, PLCs e
-                acionamentos.
-              </strong>
+              desempenho como:
             </p>
+
+            <S.ContainerProduct>
+              {dataAutomacao.map((category, index) => (
+                <ProductCategory
+                  key={index}
+                  image={category.image}
+                  title={category.title}
+                  items={category.items}
+                />
+              ))}
+            </S.ContainerProduct>
+
             <p>
               Nossos produtos são projetados para proporcionar{' '}
               <strong>

@@ -62,3 +62,35 @@ export const Gallery = styled.div`
     }
   }
 `;
+
+export const VideoWrapper = styled.div`
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  max-width: 420px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 340px;
+    margin: 20px auto;
+  }
+`;
+
+export const Divider = styled.hr`
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #d49b09, transparent);
+  margin: 3rem auto;
+  width: 80%;
+  border-radius: 2px;
+`;

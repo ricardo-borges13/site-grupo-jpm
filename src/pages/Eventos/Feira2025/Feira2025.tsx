@@ -129,6 +129,33 @@ export const Feira2025 = () => {
             slides={fotos2025.map(src => ({ src }))}
             plugins={[Zoom]}
           />
+
+          <S.Divider />
+
+          {/* --- TEXTO INTRODUTÓRIO DO VÍDEO --- */}
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            style={{ textAlign: 'center', marginTop: '2rem' }}
+          >
+            Confira também o registro em vídeo da participação da JPM na Expo
+            Usipa 2025, destacando os principais momentos da feira e a presença
+            da empresa no evento.
+          </motion.p>
+
+          <S.VideoWrapper>
+            <iframe
+              src="https://www.instagram.com/reel/DO6YOn6jbz3/embed"
+              width="100%"
+              height="720"
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency={true}
+              allow="encrypted-media"
+              title="Vídeo Expo Usipa 2025 - JPM"
+            ></iframe>
+          </S.VideoWrapper>
         </S.Container>
       </PageSection>
     </>

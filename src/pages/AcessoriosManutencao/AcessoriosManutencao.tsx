@@ -1,9 +1,11 @@
 import { PageSection } from '../../components/PageSection/PageSection';
 import * as S from './AcessoriosManutencao.styles';
+import { dataAcessoriosManut } from './dataAcessoriosManut';
 import image from '../../assets/images/Banner-PagesAcessorios.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 import { contactData } from '../../components/Header';
+import { ProductCategory } from '../../components/ProductCategory/ProductCategory';
 
 export const AcessoriosManutencao = () => {
   return (
@@ -21,43 +23,36 @@ export const AcessoriosManutencao = () => {
           <header>
             <h2>Suprimentos e Acessórios Industriais</h2>
             <p>
-              Além de um amplo mix de <strong>produtos elétricos</strong>, itens
-              para <strong>automação</strong> e
-              <strong> borrachas industriais</strong>, a <strong>JPM</strong>{' '}
-              oferece uma linha completa de
-              <strong> acessórios para manutenção industrial</strong>, com as
-              mais diversas marcas, especificações técnicas e alto padrão de
-              qualidade.
+              A <strong>JPM</strong> oferece uma linha completa de{' '}
+              <strong>produtos elétricos</strong>, itens para{' '}
+              <strong>automação</strong>, <strong>vedação</strong> e
+              <strong> manutenção industrial</strong>, reunindo marcas
+              reconhecidas no mercado e alto padrão de qualidade.
+            </p>
+
+            <p>
+              Com soluções versáteis e duráveis, atendemos às mais diversas
+              demandas da indústria, sempre com foco em{' '}
+              <strong>eficiência</strong> e <strong>confiabilidade</strong>.
             </p>
           </header>
 
+          <S.ContainerProduct>
+            {dataAcessoriosManut.map((category, index) => (
+              <ProductCategory
+                key={index}
+                image={category.image}
+                title={category.title}
+                items={category.items}
+              />
+            ))}
+          </S.ContainerProduct>
           <section>
-            <h3>Acessórios Industriais</h3>
-            <ul>
-              <li>Correntes de elo</li>
-              <li>Correntes de transmissão</li>
-              <li>Cintas de elevação</li>
-              <li>Conexões</li>
-              <li>Rodas e rodízios</li>
-              <li>Rolamentos</li>
-              <li>Retentores</li>
-              <li>Pregos e grampos (martelo pneumático)</li>
-              <li>Manômetros</li>
-              <li>Fitas adesivas</li>
-              <li>Plástico bolha</li>
-              <li>Lonas e encerados</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Vedações</h3>
+            <h3>Precisa de um item específico?</h3>
             <p>
-              Precisa de <strong>acessórios de vedação</strong>? A{' '}
-              <strong>JPM</strong> oferece
-              <strong> juntas</strong>, <strong>gaxetas</strong>,{' '}
-              <strong>retentores</strong>,<strong> anéis orings</strong>,{' '}
-              <strong>papelão hidráulico</strong> e muito mais.
-              <strong> Solicite seu orçamento conosco.</strong>
+              A JPM possui uma ampla linha de vedações e acessórios sob medida.{' '}
+              <br />
+              <strong>Entre em contato e solicite seu orçamento.</strong>
             </p>
           </section>
         </S.Container>

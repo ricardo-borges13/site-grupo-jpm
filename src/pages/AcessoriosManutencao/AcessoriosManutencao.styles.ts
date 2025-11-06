@@ -83,3 +83,10 @@ export const Divider = styled.hr`
   width: 80%;
   border-radius: 2px;
 `;
+
+export const ContainerProduct = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0 2.5rem 0;
+`;

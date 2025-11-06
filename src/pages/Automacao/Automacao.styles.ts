@@ -36,7 +36,7 @@ export const Container = styled.div`
       color: #333;
       line-height: 1.6;
       text-align: justify;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     @media (max-width: 540px) {
@@ -46,16 +46,8 @@ export const Container = styled.div`
     }
   }
 
-  h3 {
-    font-size: 1.4rem;
-    color: #d49b09;
-    border-left: 5px solid #d49b09;
-    padding-left: 0.5rem;
-  }
-
   @media (max-width: 768px) {
     padding: 0 1rem;
-
     header h1 {
       font-size: 1.6rem;
     }
@@ -66,7 +58,7 @@ export const ContainerProduct = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin: 4.5rem 0 7.5rem 0;
+  margin: 2.5rem 0 2.5rem 0;
 `;
 
 export const Divider = styled.hr`
@@ -77,3 +69,4 @@ export const Divider = styled.hr`
   width: 80%;
   border-radius: 2px;
 `;
+

@@ -31,9 +31,10 @@ export const Automacao = () => {
               custos e garantir mais segurança nos processos industriais.
             </p>
             <p>
-              A JPM oferece uma linha completa de{' '}
-              <strong>Automação Industrial</strong>, com equipamentos de alto
-              desempenho como:
+              A <strong>JPM</strong> oferece uma linha completa de{' '}
+              <strong>equipamentos e soluções em automação</strong>, projetados
+              para alto desempenho e integração nos mais diversos sistemas
+              industriais.
             </p>
 
             <S.ContainerProduct>
@@ -48,22 +49,21 @@ export const Automacao = () => {
             </S.ContainerProduct>
 
             <p>
-              Nossos produtos são projetados para proporcionar{' '}
+              Nossos produtos são desenvolvidos para oferecer{' '}
               <strong>
-                {' '}
                 confiabilidade, precisão e facilidade de integração
               </strong>
               , assegurando que sua operação alcance o máximo desempenho com o
-              suporte e a qualidade que só a JPM oferece.
+              suporte e a qualidade que só a JPM proporciona.
             </p>
 
-            <h3>Aplicações da Automação</h3>
+            {/* <h3>Aplicações da Automação</h3>
             <ul>
               <li>Controle de processos industriais</li>
               <li>Automação de linhas de montagem</li>
               <li>Monitoramento de máquinas e sensores</li>
               <li>Integração com sistemas supervisórios</li>
-            </ul>
+            </ul> */}
           </header>
         </S.Container>
         <S.Divider />

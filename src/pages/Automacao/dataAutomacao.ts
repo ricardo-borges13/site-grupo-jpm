@@ -1,10 +1,11 @@
-import correiasIcon from '../../assets/images/iconeCorreia.png';
+import automacaoIcon from '../../assets/images/icone-automacao.png';
+import aplicacaoIcon from '../../assets/images/icone-aplicacao.png';
 
 
 export const dataAutomacao = [
   {
-    image: correiasIcon,
-    title: 'Automação Idustrial',
+    image: automacaoIcon,
+    title: 'Principais Equipamentos',
     items: [
       'Módulos de expansão',
       'interfaces',
@@ -16,6 +17,17 @@ export const dataAutomacao = [
       'chaves de partida',
       'PLCs',
       'acionamentos'
+    ],
+  },
+
+    {
+    image: aplicacaoIcon,
+    title: 'Aplicação da Automação',
+    items: [
+      'Controle de processos industriais',
+      'Automação de linhas de montagem',
+      'Monitoramento de máquinas e sensores',
+      'Integração com sistemas supervisórios',
     ],
   },
 

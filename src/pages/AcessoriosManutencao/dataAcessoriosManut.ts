@@ -1,10 +1,10 @@
-import correiasIcon from '../../assets/images/iconeCorreia.png';
-import plasticosIcon from '../../assets/images/icone-tubo.png';
+import acessoriosIcon from '../../assets/images/icone-acessorios.png';
+import vedacaoIcon from '../../assets/images/icone-vedacao.png';
 
 
 export const dataAcessoriosManut = [
   {
-    image: correiasIcon,
+    image: acessoriosIcon,
     title: 'Acessórios Industsriais',
     items: [
       'Transmissão em V perfis A-B-C-D',
@@ -16,20 +16,14 @@ export const dataAcessoriosManut = [
     ],
   },
   {
-    image: plasticosIcon,
+    image: vedacaoIcon,
     title: 'Vedações',
     items: [
-      'Acrílico',
-      'Baquelite',
-      'Celeron',
-      'Nylon',
-      'Micanite',
-      'Poliacetal',
-      'Polietilenos',
-      'Polipropileno',
-      'Poliuretano',
-      'PVC',
-      'Teflon',
+      'Juntas',
+      'Gaxetas',
+      'Retentores',
+      'Anéis orings',
+      'Papelão hidráulico',
     ],
   },
 

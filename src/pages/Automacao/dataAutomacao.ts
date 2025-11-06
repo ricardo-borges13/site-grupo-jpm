@@ -1,7 +1,6 @@
 import automacaoIcon from '../../assets/images/icone-automacao.png';
 import aplicacaoIcon from '../../assets/images/icone-aplicacao.png';
 
-
 export const dataAutomacao = [
   {
     image: automacaoIcon,
@@ -16,11 +15,11 @@ export const dataAutomacao = [
       'inversores',
       'chaves de partida',
       'PLCs',
-      'acionamentos'
+      'acionamentos',
     ],
   },
 
-    {
+  {
     image: aplicacaoIcon,
     title: 'Aplicação da Automação',
     items: [
@@ -30,7 +29,4 @@ export const dataAutomacao = [
       'Integração com sistemas supervisórios',
     ],
   },
-
-
-
 ];

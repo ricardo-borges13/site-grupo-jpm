@@ -32,14 +32,14 @@ export const Left = styled.div<{ $bgColor: string }>`
     font-size: 2.5rem;
     line-height: 1.2;
     text-transform: uppercase;
+
+    @media (max-width: 540px) {
+      font-size: 1.5rem;
+    }
   }
 
   p {
     font-size: 1rem;
-  }
-
-  @media (max-width: 540px) {
-    font-size: 1.5rem;
   }
 
   p {

@@ -68,10 +68,6 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     padding: 0 1rem;
-
-    header h1 {
-      font-size: 1.6rem;
-    }
   }
 `;
 

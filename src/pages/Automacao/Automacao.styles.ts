@@ -69,4 +69,3 @@ export const Divider = styled.hr`
   width: 80%;
   border-radius: 2px;
 `;
-

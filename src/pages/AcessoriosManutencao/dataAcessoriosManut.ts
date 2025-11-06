@@ -1,7 +1,6 @@
 import acessoriosIcon from '../../assets/images/icone-acessorios.png';
 import vedacaoIcon from '../../assets/images/icone-vedacao.png';
 
-
 export const dataAcessoriosManut = [
   {
     image: acessoriosIcon,
@@ -26,5 +25,4 @@ export const dataAcessoriosManut = [
       'Papelão hidráulico',
     ],
   },
-
 ];

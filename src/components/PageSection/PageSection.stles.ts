@@ -13,6 +13,10 @@ export const SectionWrapper = styled.section`
     grid-template-columns: 1fr;
   }
 
+  @media (max-width: 900px) {
+    padding-top: clamp(160px, 18vh, 220px);
+  }
+
   @media (max-width: 551px) {
     padding-top: clamp(200px, 18vh, 220px);
   }

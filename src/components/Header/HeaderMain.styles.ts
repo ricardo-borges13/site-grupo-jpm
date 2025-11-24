@@ -19,8 +19,16 @@ export const HeaderContainer = styled.header<{ $isScrolled: boolean }>`
   /* muda a altura ao rolar */
   height: ${({ $isScrolled }) => ($isScrolled ? '70px' : '110px')};
 
+  @media (max-width: 957px) {
+    top: 48px;
+  }
+
   @media (max-width: 900px) {
     height: ${({ $isScrolled }) => ($isScrolled ? '100px' : '110px')};
+  }
+
+  @media (max-width: 805px) {
+    top: 58px;
   }
 
   @media (max-width: 550px) {
@@ -38,13 +46,15 @@ export const HeaderContent = styled.div`
   width: 100%;
   box-sizing: border-box; /* ✅ impede vazamento lateral */
 
-  @media (max-width: 900px) {
+  @media (max-width: 970px) {
     justify-content: space-between;
-    margin-top: 15px;
+  }
+
+  @media (max-width: 900px) {
+    margin-top: 25px;
   }
 
   @media (max-width: 775px) {
-    justify-content: space-between;
     margin-top: 35px;
   }
 
@@ -121,8 +131,8 @@ export const MenuWrapper = styled.div`
   align-items: center;
   gap: 54px; /* <-- controle fino da distância entre menu e botão */
 
-  @media (max-width: 900px) {
-    gap: 1rem;
+  @media (max-width: 1053px) {
+    gap: 2rem;
   }
 
   /* 📱 Versão mobile */

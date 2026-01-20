@@ -16,6 +16,7 @@ import { ClientsCarousel } from '../../components/ClientsCarousel/ClientsCarouse
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
 import { SEO } from '../../components/SEO/Seo';
 import { contactData } from '../../components/Header';
+import { SectionCarousel } from '../../components/SectionCarousel/SectionCarousel';
 
 const sobreData: SectionInfoProps = {
   title: 'Sobre a JPM',
@@ -74,10 +75,9 @@ export const Home = () => {
       </section>
       <SectionsContactus {...contactData} />
 
-      <S.CarouselParceiros>
-        <h2>Parceiros</h2>
+      <SectionCarousel title="Parceiros">
         <ClientsCarousel />
-      </S.CarouselParceiros>
+      </SectionCarousel>
     </>
   );
 };

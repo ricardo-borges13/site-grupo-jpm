@@ -106,20 +106,6 @@ export const ErrorMessage = styled.span`
   font-size: 0.8rem;
 `;
 
-export const Button = styled.button`
-  background: #001f3f;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: opacity 0.2s;
-  &:hover {
-    opacity: 0.9;
-  }
-`;
-
 export const Assunto = styled.div`
   label {
     caret-color: transparent;

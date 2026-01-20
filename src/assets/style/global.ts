@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        box-sizing: border-box; //ajuste para não quebrar a pagina caso tiver uma margin ou padding
     }
 
 

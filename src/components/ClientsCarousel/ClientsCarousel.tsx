@@ -13,6 +13,17 @@ import petrobras from '../../assets/images/clientes/Petrobras.png';
 import vallourec from '../../assets/images/clientes/Vallourec.png';
 import gerdau from '../../assets/images/clientes/Gerdau.png';
 
+const CustomLeftArrow = ({ onClick }: { onClick?: () => void }) => (
+  <S.ArrowButton $side="left" onClick={onClick}>
+    <ChevronLeft />
+  </S.ArrowButton>
+);
+
+const CustomRightArrow = ({ onClick }: { onClick?: () => void }) => (
+  <S.ArrowButton $side="right" onClick={onClick}>
+    <ChevronRight />
+  </S.ArrowButton>
+);
 // Componente principal
 export const ClientsCarousel: React.FC = () => {
   const logos = [
@@ -26,18 +37,6 @@ export const ClientsCarousel: React.FC = () => {
     { src: vallourec, alt: 'Vallourec' },
     { src: gerdau, alt: 'Gerdau' },
   ];
-
-  const CustomLeftArrow = ({ onClick }: { onClick?: () => void }) => (
-    <S.ArrowButton $side="left" onClick={onClick}>
-      <ChevronLeft />
-    </S.ArrowButton>
-  );
-
-  const CustomRightArrow = ({ onClick }: { onClick?: () => void }) => (
-    <S.ArrowButton $side="right" onClick={onClick}>
-      <ChevronRight />
-    </S.ArrowButton>
-  );
 
   return (
     <S.CarouselContainer>

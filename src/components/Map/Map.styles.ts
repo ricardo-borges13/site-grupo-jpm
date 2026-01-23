@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  background-color: #00214d; /* azul escuro padrão */
+  background-color: #f4f4f4;
+
+  border: 4px solid #00214d;
   padding: 1rem 1rem;
   display: flex;
   justify-content: center;

@@ -2,9 +2,10 @@ import { PageSection } from '../../components/PageSection/PageSection';
 import * as ST from './EntreEmContato.styles';
 import image from '../../assets/images/Banner-PagesEntreContato.jpg';
 import { SectionsContactus } from '../../components/SectionsContactUs/SectionsContactUs';
-import { MapSection } from '../../components/MapaSection/MapSecion';
+
 import { SEO } from '../../components/SEO/Seo';
 import { contactData } from '../../components/Header';
+import { SectionMap } from '../../components/SectionMap/SectionMap';
 
 export const EntreEmContato = () => {
   return (
@@ -33,17 +34,7 @@ export const EntreEmContato = () => {
           <SectionsContactus {...contactData} />
         </ST.Form>
         <ST.Divider />
-        <ST.Container>
-          <header>
-            <h1>Localização</h1>
-            <p>
-              Nossa sede está situada em um ponto de fácil acesso em Belo
-              Horizonte. Venha nos visitar ou entre em contato por um de nossos
-              canais de atendimento.
-            </p>
-          </header>
-        </ST.Container>
-        <MapSection />
+        <SectionMap />
       </PageSection>
     </>
   );

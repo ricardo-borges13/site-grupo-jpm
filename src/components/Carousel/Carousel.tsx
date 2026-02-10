@@ -5,6 +5,7 @@ import video from '../../../public/videos/file.mp4';
 import banner3 from '../../assets/images/BannerPrincipal-EmBranco.jpg';
 import bannerEletrica from '../../assets/images/Banner-Eletrica-Borracha.jpg';
 import * as S from './Carousel.styles';
+import { MotionReveal } from '../Motion/MotionReveal/MotionReveal';
 
 export function CarouselComponent() {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,12 +30,14 @@ export function CarouselComponent() {
               style={{ objectFit: 'cover', height: '410px' }}
             />
             <S.Caption1>
+              <MotionReveal delay={0.2}>
               <h1>Soluções que impulsionam a indústria brasileira</h1>
               <h3>
                 Especialista em borrachas e materiais elétricos sob medida para
                 sua empresa
               </h3>
               <h4>Entre em Contato</h4>
+              </MotionReveal>
             </S.Caption1>
           </Link>
         </Carousel.Item>
@@ -55,6 +58,7 @@ export function CarouselComponent() {
         </video>
 
         <S.Caption2>
+          <MotionReveal delay={0.2}>
           <h1>
             {isMobile
               ? 'Soluções JPM'
@@ -65,6 +69,7 @@ export function CarouselComponent() {
               ? 'Mais de 25 anos em soluções elétricas e borrachas industriais'
               : 'Há mais de 25 anos fornecendo soluções completas em materiais elétricos e borrachas industriais.'}
           </h4>
+          </MotionReveal>
         </S.Caption2>
       </Carousel.Item>
 
@@ -78,8 +83,10 @@ export function CarouselComponent() {
             style={{ objectFit: 'cover', height: '410px' }}
           />
           <S.Caption3>
+            <MotionReveal delay={0.2}>
             <h1>Suprimentos Industriais</h1>
             <h4>Borrachas & Materiais Elétricos.</h4>
+            </MotionReveal>
           </S.Caption3>
         </Carousel.Item>
       )}

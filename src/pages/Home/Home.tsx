@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { CarouselComponent } from '../../components/Carousel/Carousel';
 import { CategoryBar } from '../../components/CategoryBar/CategoryBar';
 import image1 from '../../assets/images/Sobre-Eletrica.jpg';
-import image2 from '../../assets/images/Sobre-Borracha.jpg';
+import image2 from '../../assets/images/Sobre-Borracha2.jpg';
 import image3 from '../../assets/images/fioeletrico.jpg';
 import image4 from '../../assets/images/mangueira.jpg';
 import image5 from '../../assets/images/manutencao.jpg';

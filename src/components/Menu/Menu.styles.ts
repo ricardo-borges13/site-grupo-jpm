@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 
   @media (max-width: 1210px) {
     gap: 1.9rem;

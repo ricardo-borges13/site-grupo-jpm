@@ -1,6 +1,7 @@
 import * as S from './SectionInfo.styles';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../Button/Button';
+import { MotionReveal } from '../Motion/MotionReveal/MotionReveal';
 
 export type SectionInfoProps = {
   title: string;
@@ -23,6 +24,7 @@ export const SectionInfo = ({
   return (
     <S.Container>
       <S.TextArea>
+        <MotionReveal delay={0.4}>
         <h2>{title}</h2>
         <p dangerouslySetInnerHTML={{ __html: description }} />
         {buttonText && (
@@ -32,12 +34,14 @@ export const SectionInfo = ({
             variant="primary"
           />
         )}
+        </MotionReveal>
       </S.TextArea>
-
+        <MotionReveal delay={0.6}>
       <S.ImagesArea>
         <img src={image1} alt="" />
         {image2 && <img src={image2} alt="" />}
       </S.ImagesArea>
+      </MotionReveal>
     </S.Container>
   );
 };

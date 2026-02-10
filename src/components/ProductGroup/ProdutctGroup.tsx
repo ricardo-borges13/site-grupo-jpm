@@ -1,4 +1,5 @@
 import { CardProduto } from '../CardProduct/CardProduct';
+import { MotionReveal } from '../Motion/MotionReveal/MotionReveal';
 import * as S from './ProductGroup.styles';
 
 type ProductProps = {
@@ -19,7 +20,9 @@ export const ProductGroup = ({
   return (
     <S.wrapper>
       <h2>{title}</h2>
+        <MotionReveal delay={0.6}>
       <S.ImagesArea>
+
         <CardProduto
           image={image1}
           title="Materiais Elétricos"
@@ -32,6 +35,7 @@ export const ProductGroup = ({
           side="right"
           path="/produtos/borrachas"
         />
+
         <CardProduto
           image={image3}
           title="Automação Industrial"
@@ -45,6 +49,7 @@ export const ProductGroup = ({
           path="/produtos/acessorios"
         />
       </S.ImagesArea>
+      </MotionReveal>
     </S.wrapper>
   );
 };

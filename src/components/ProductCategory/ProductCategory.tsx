@@ -1,3 +1,4 @@
+import { MotionReveal } from '../Motion/MotionReveal/MotionReveal';
 import * as S from './ProductCategory.styles';
 
 type ProductCategoryProps = {
@@ -14,11 +15,13 @@ export function ProductCategory({ image, title, items }: ProductCategoryProps) {
       </S.ImageWrapper>
       <S.Content>
         <h3>{title}</h3>
+        <MotionReveal delay={1}>
         <ul>
           {items.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
+        </MotionReveal>
       </S.Content>
     </S.Card>
   );

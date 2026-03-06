@@ -43,7 +43,7 @@ export const Feira2025 = () => {
         bgColor="#E8B341"
       >
         <S.Container>
-          <motion.p
+          <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
@@ -100,7 +100,7 @@ export const Feira2025 = () => {
                 oportunidades de crescimento para a economia do Vale do Aço.
               </p>
             </header>
-          </motion.p>
+          </motion.div>
 
           {/* --- GALERIA DE FOTOS --- */}
           <S.Gallery>
@@ -133,7 +133,7 @@ export const Feira2025 = () => {
           <S.Divider />
 
           {/* --- TEXTO INTRODUTÓRIO DO VÍDEO --- */}
-          <motion.p
+          <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -142,10 +142,11 @@ export const Feira2025 = () => {
             Confira também o registro em vídeo da participação da JPM na Expo
             Usipa 2025, destacando os principais momentos da feira e a presença
             da empresa no evento.
-          </motion.p>
+          </motion.div>
 
           <S.VideoWrapper>
             <iframe
+              loading="lazy"
               src="https://www.instagram.com/reel/DO6YOn6jbz3/embed"
               width="100%"
               height="720"

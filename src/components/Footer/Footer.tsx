@@ -73,7 +73,15 @@ export const Footer = ({ phone, phone2, email }: ContactInfo) => {
       <S.FooterBottom>
         <span>
           © {new Date().getFullYear()} Grupo JPM Borrachas e Materiais
-          Elétricos – Todos os direitos reservados. | Desenvolvido por Invetec
+          Elétricos – Todos os direitos reservados. | Desenvolvido por {' '}
+          <a
+            href="https://www.invetec.com.br/"
+            title="Invetec - Investindo em Tecnologia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INVETEC.
+          </a>
         </span>
         <br />
         <small>Versão {APP_VERSION}</small>

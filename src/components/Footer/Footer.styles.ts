@@ -156,6 +156,16 @@ export const FooterBottom = styled.div`
   padding-top: 0.5rem; /* ↓ reduz espaço interno */
   line-height: 1.3;
 
+  a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: #f8f5edff;
+    }
+  }
+
   @media (max-width: 730px) {
     font-size: 0.75rem;
     padding: 0.5rem 0.5rem;

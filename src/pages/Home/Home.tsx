@@ -18,7 +18,6 @@ import { SEO } from '../../components/SEO/Seo';
 import { contactData } from '../../components/Header';
 import { SectionCarousel } from '../../components/SectionCarousel/SectionCarousel';
 
-
 const sobreData: SectionInfoProps = {
   title: 'Sobre a JPM',
   description: `
@@ -53,7 +52,7 @@ export const Home = () => {
   return (
     <>
       <SEO
-        title="JPM Borrachas e Materiais Elétricos"
+        title="JPM | Borrachas Industriais e Materiais Elétricos"
         description="Especialista em borrachas, materiais elétricos e automação industrial desde 1997. Soluções completas para manutenção e produção em diversos setores."
         image="https://www.grupojpm.com.br/images/home.jpg"
         url="https://www.grupojpm.com.br"
@@ -76,7 +75,7 @@ export const Home = () => {
       </section>
       <SectionsContactus {...contactData} />
 
-       <SectionCarousel title="Parceiros">
+      <SectionCarousel title="Parceiros">
         <ClientsCarousel />
       </SectionCarousel>
     </>

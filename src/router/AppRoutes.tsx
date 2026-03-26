@@ -1,15 +1,18 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Home } from '../pages/Home/Home';
-import { NotFound } from '../pages/NotFound/NotFound';
 import { Layout } from '../components/Layout/Layout';
-import { Empresa } from '../pages/Empresa/Empresa';
-import { TrabalheConosco } from '../pages/TrabalheConosco/TrabalheConosco';
-import { EntreEmContato } from '../pages/EntreEmContato/EntreEmContato';
-import { MateriaisEletricos } from '../pages/MateriaisEletricos/MateriaisEletricos';
-import { BorrachasIndustriais } from '../pages/BorrachasIndustriais/BorrachasIndustriais';
-import { AcessoriosManutencao } from '../pages/AcessoriosManutencao/AcessoriosManutencao';
-import { Automacao } from '../pages/Automacao/Automacao';
-import { Feira2025 } from '../pages/Eventos/Feira2025/Feira2025';
+import { lazy } from 'react';
+
+const NotFound = lazy(() => import('../pages/NotFound'));
+const Empresa = lazy(() => import('../pages/Empresa'));
+const TrabalheConosco = lazy(() => import('../pages/TrabalheConosco'));
+const EntreEmContato = lazy(() => import('../pages/EntreEmContato'));
+const MateriaisEletricos = lazy(() => import('../pages/MateriaisEletricos'));
+const BorrachasIndustriais = lazy(() => import('../pages/BorrachasIndustriais'));
+const AcessoriosManutencao = lazy(() => import('../pages/AcessoriosManutencao'));
+const Automacao = lazy(() => import('../pages/Automacao'));
+const Feira2025 = lazy(() => import('../pages/Eventos/Feira2025'));
+
 
 export const router = createBrowserRouter([
   {
@@ -19,10 +22,7 @@ export const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
-      {
-        path: '/produtos',
-        element: <Home />,
-      },
+   
       {
         path: '/empresa',
         element: <Empresa />,

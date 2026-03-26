@@ -11,7 +11,7 @@ export const BorrachasIndustriais = () => {
   return (
     <>
       <SEO
-        title="Borrachas Industriais em BH | JPM Materiais Elétricos e Borrachas"
+        title="Borrachas Industriais em BH | JPM"
         description="Fornecedor de borrachas industriais em Belo Horizonte. Mangueiras, correias, vedação e soluções para manutenção e produção industrial."
         image="https://www.grupojpm.com.br/images/borrachas-industriais.jpg"
         url="https://www.grupojpm.com.br/produtos/borrachas"

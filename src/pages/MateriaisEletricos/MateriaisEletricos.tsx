@@ -11,8 +11,8 @@ export const MateriaisEletricos = () => {
   return (
     <>
       <SEO
-        title="Materiais Elétricos - JPM Borrachas e Materiais Elétricos"
-        description="Cabos, painéis, conexões e soluções em materiais elétricos para indústrias. Qualidade e segurança com a JPM."
+        title="Materiais Elétricos Industriais em BH | JPM"
+        description="Distribuidor de materiais elétricos industriais em Belo Horizonte. Cabos, conexões, painéis e soluções completas para indústria."
         image="https://www.grupojpm.com.br/images/materiais-eletricos.jpg"
         url="https://www.grupojpm.com.br/produtos/eletricos"
         keywords="materiais elétricos, cabos industriais, conectores, iluminação, reatores, eletrodutos, lâmpadas, conexões, poste de iluminação, cabos e fios"

@@ -52,11 +52,10 @@ export const Home = () => {
   return (
     <>
       <SEO
-        title="JPM | Borrachas Industriais e Materiais Elétricos"
-        description="Especialista em borrachas, materiais elétricos e automação industrial desde 1997. Soluções completas para manutenção e produção em diversos setores."
+        title="Materiais Elétricos e Borrachas em BH | JPM"
+        description="Fornecedor de materiais elétricos, borrachas industriais e automação em Belo Horizonte. Soluções completas para manutenção e produção industrial."
         image="https://www.grupojpm.com.br/images/home.jpg"
         url="https://www.grupojpm.com.br"
-        keywords="soluções industriais, materiais elétricos, borrachas industriais, automação, acessórios de manutenção, JPM"
       />
 
       <S.ContainterCarousel>

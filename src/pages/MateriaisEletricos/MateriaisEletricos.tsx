@@ -12,10 +12,9 @@ export const MateriaisEletricos = () => {
     <>
       <SEO
         title="Materiais Elétricos Industriais em BH | JPM"
-        description="Distribuidor de materiais elétricos industriais em Belo Horizonte. Cabos, conexões, painéis e soluções completas para indústria."
+        description="Distribuidor de materiais elétricos em Belo Horizonte. Cabos, eletrodutos, conectores, iluminação, reatores e lâmpadas para sua indústria."
         image="https://www.grupojpm.com.br/images/materiais-eletricos.jpg"
         url="https://www.grupojpm.com.br/produtos/eletricos"
-        keywords="materiais elétricos, cabos industriais, conectores, iluminação, reatores, eletrodutos, lâmpadas, conexões, poste de iluminação, cabos e fios"
       />
 
       <PageSection

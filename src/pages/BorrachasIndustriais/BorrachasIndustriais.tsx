@@ -15,7 +15,6 @@ export const BorrachasIndustriais = () => {
         description="Fornecedor de borrachas industriais em Belo Horizonte. Mangueiras, correias, vedação e soluções para manutenção e produção industrial."
         image="https://www.grupojpm.com.br/images/borrachas-industriais.jpg"
         url="https://www.grupojpm.com.br/produtos/borrachas"
-        keywords="borrachas industriais, mangueiras, correias, vedação, tapetes industriais, correias, plásticos, lençoies de borracha"
       />
 
       <PageSection

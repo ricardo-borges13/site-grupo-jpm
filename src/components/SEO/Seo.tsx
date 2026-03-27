@@ -22,31 +22,32 @@ export const SEO = ({
   <>
     {/* Título e descrição principais */}
     <Title>{title}</Title>
-    <Meta name="description" content={description} />
-    {keywords && <Meta name="keywords" content={keywords} />}
+    <Meta name="description" content={description} key="desc" />
+    {keywords && <Meta name="keywords" content={keywords} key="keywords" />}
 
     {/* Canonical */}
-    <Link rel="canonical" href={url} />
+    <Link rel="canonical" href={url} key="canonical" />
 
     {/* Open Graph (Facebook / WhatsApp / LinkedIn) */}
-    <Meta property="og:type" content="website" />
-    <Meta property="og:title" content={title} />
-    <Meta property="og:description" content={description} />
-    <Meta property="og:image" content={image} />
-    <Meta property="og:url" content={url} />
-    <Meta property="og:locale" content="pt_BR" />
+   <Meta property="og:type" content="website" key="og:type" />
+    <Meta property="og:title" content={title} key="og:title" />
+    <Meta property="og:description" content={description} key="og:desc" />
+    <Meta property="og:image" content={image} key="og:image" />
+    <Meta property="og:url" content={url} key="og:url" />
+    <Meta property="og:locale" content="pt_BR" key="og:locale" />
 
     {/* Twitter Card (mantém compatibilidade com outras redes) */}
-    <Meta name="twitter:card" content="summary_large_image" />
-    <Meta name="twitter:title" content={title} />
-    <Meta name="twitter:description" content={description} />
-    <Meta name="twitter:image" content={image} />
+    <Meta name="twitter:card" content="summary_large_image" key="tw:card" />
+    <Meta name="twitter:title" content={title} key="tw:title" />
+    <Meta name="twitter:description" content={description} key="tw:desc" />
+    <Meta name="twitter:image" content={image} key="tw:image" />
 
     {/* Robots (SEO flags) */}
     {(noindex || nofollow) && (
       <Meta
         name="robots"
         content={`${noindex ? 'noindex' : ''}${noindex && nofollow ? ', ' : ''}${nofollow ? 'nofollow' : ''}`}
+        key="robots"
       />
     )}
   </>
